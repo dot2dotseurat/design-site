@@ -8,6 +8,8 @@ Materials mood board for the renovation. Static site: `index.html` + `app.js` re
 
 Run locally: `python3 scripts/serve.py` and open http://localhost:8000. This adds a Hide / Unhide button to each card that saves `hidden: true` into `data.json`; hidden items stay out of the board unless "Show hidden and poor fits" is ticked. A plain `python3 -m http.server`, or the published site, shows no Hide buttons.
 
-Pages: Materials (`index.html`), Budget (`budget.html`: square footage in, boxes and cost out, with saved scenarios and a CSV download), Palettes (`palettes.html`).
+Pages: Materials (`index.html`), Budget (`budget.html`: square footage in, boxes and cost out, named scenarios, who orders what, CSV download), One-pager (`summary.html`: a printable materials list for your GC or designer), Palettes (`palettes.html`).
+
+Budget scenarios save in the browser by default. To store them in Supabase, with a read-only share link per scenario, follow `docs/supabase-setup.md` and fill in `supabase-config.js`.
 
 What counts as a good fit is written down in `REQUIREMENTS.md`. Each item's `specs` block holds typed facts, and `python3 scripts/check_fit.py` computes `fit` from them using `fit-rules.json`; run it after editing `data.json` (`--check` verifies it is current).

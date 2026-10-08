@@ -31,16 +31,20 @@
   <section class="intro wrap">
     <p class="eyebrow">Budget · what it costs to cover it</p>
     <h1>How much do we need?</h1>
-    <p class="lede">Pick a material, enter how much surface you're covering, and see boxes, cost and ship time. Make a scenario for each set of assumptions, like a tight budget or a splurge, and compare them at the bottom. Saved in this browser; download a CSV to open in Google Sheets or Excel.</p>
+    <p class="lede">Pick a material, enter how much surface you're covering, and see boxes, cost and ship time. Make a scenario for each set of assumptions, like a tight budget or a splurge, and compare them at the bottom. Download a CSV to open in Google Sheets or Excel, or open the one-pager to send to your GC or designer.</p>
     <div class="toolbar">
       <label>Scenario <select id="scenario"></select></label>
-      <button class="btn" id="newScenario" type="button">New</button>
-      <button class="btn" id="dupScenario" type="button">Duplicate</button>
-      <button class="btn" id="renameScenario" type="button">Rename</button>
-      <button class="btn btn--quiet" id="delScenario" type="button">Delete</button>
-      <label class="poor"><input type="checkbox" id="showPoor"><span>Include hidden and poor fits</span></label>
+      <span class="tools" id="editTools">
+        <button class="btn" id="newScenario" type="button">New</button>
+        <button class="btn" id="dupScenario" type="button">Duplicate</button>
+        <button class="btn" id="renameScenario" type="button">Rename</button>
+        <button class="btn btn--quiet" id="delScenario" type="button">Delete</button>
+        <label class="poor"><input type="checkbox" id="showPoor"><span>Include hidden and poor fits</span></label>
+      </span>
       <button class="btn btn--primary" id="csv" type="button">Download CSV</button>
+      <span class="tools auth" id="authBar"></span>
     </div>
+    <p class="notice" id="notice" hidden></p>
   </section>
 
   <section class="room" id="lines"><div class="wrap">
@@ -64,6 +68,8 @@
 <footer class="wrap foot">
   <p>Estimates use each vendor's box, carton or roll size and list price on the date shown on the Materials page. They leave out freight, tax, grout, setting materials and labor. Confirm quantities with your installer before ordering.</p>
 </footer>
+<script src="supabase-config.js"></script>
+<script src="budget-core.js"></script>
 <script src="budget.js"></script>
 </body>
 </html>
