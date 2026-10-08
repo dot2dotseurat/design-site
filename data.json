@@ -824,6 +824,37 @@
    "outdoor": "\u2014",
    "kind": "wallcovering",
    "overage": 0.1
+  },
+  {
+   "id": "W3",
+   "room": "Wallpaper",
+   "name": "Western Horizon, Green (for the basement)",
+   "url": "https://belartestudio.com/products/western-horizon-green-wall-mural",
+   "size": "Custom to your wall; one continuous scene across 45 cm (17\u00be\") panels",
+   "flags": [
+    "Hand-painted mesas in rust, tan and blue-grey sky over an olive-green band",
+    "Basement: paper wallpaper needs dry, sealed walls; check for damp before hanging below grade",
+    "It's one continuous landscape, so send exact wall measurements when ordering",
+    "Also in Sand"
+   ],
+   "local": [
+    "img/W3_0.jpg",
+    "img/W3_1.jpg"
+   ],
+   "vendor": "BelarteSTUDIO",
+   "material": "FSC non-woven wallpaper mural, 147 g",
+   "finish": "Matte",
+   "price_sqft": 7.9,
+   "unit": "m\u00b2 (whole m\u00b2, about 10.76 sq ft)",
+   "unit_price": 85.0,
+   "sqft_per_unit": 10.764,
+   "ship": "Ships 1\u20133 days after ordering, then 2\u20133 days delivery; free worldwide shipping (US timing not stated)",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A4 sample; large sample on some designs (price not listed)",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.1
   }
  ],
  "palettes": [
