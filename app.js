@@ -4,6 +4,8 @@
   const items = data.items.map((it, i) => ({ ...it, order: i }));
   const ROOM_NOTES = {
     Deck: 'Outdoor floor — needs to survive freeze/thaw',
+    Closets: 'Closet doors, interiors and wardrobe panels',
+    Wallpaper: 'Murals and wallpaper, priced per square meter',
     Bathroom: 'Floor and wall options',
     Kitchen: 'Backsplash',
     Liners: 'Pencil liners and trim to run with the bathroom tile'
@@ -44,7 +46,7 @@
     return `<article class="card${lf ? ' card--liner' : ''}" id="card-${it.id}">
       <button class="card__media" type="button" data-id="${it.id}" aria-label="Enlarge photo of ${esc(it.name)}">
         <img src="${a}" alt="${esc(it.name)}" loading="lazy">
-        ${b ? `<img class="alt" src="${b}" alt="" loading="lazy"><span class="hint">${it.id === 'D6' ? 'Hover: second color' : 'Hover: installed'}</span>` : ''}
+        ${b ? `<img class="alt" src="${b}" alt="" loading="lazy"><span class="hint">${it.id === 'D6' ? 'Hover: second color' : it.kind === 'wallcovering' ? 'Hover: in a room' : 'Hover: installed'}</span>` : ''}
         ${tag}
       </button>
       <div class="card__body">
@@ -56,7 +58,7 @@
         <dl>
           <dt>Ships</dt><dd>${esc(it.ship)}</dd>
           <dt>Sample</dt><dd>${esc(it.sample)}</dd>
-          ${lf ? '' : `<dt>Outdoor</dt><dd>${esc(it.outdoor)}</dd>`}
+          ${it.kind === 'tile' ? `<dt>Outdoor</dt><dd>${esc(it.outdoor)}</dd>` : ''}
         </dl>
         ${flags ? `<ul class="flags">${flags}</ul>` : ''}
         <div class="card__foot"><a href="${it.url}" target="_blank" rel="noopener">View at ${esc(it.vendor)} ↗</a><span class="id">${it.id}</span></div>

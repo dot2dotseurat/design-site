@@ -734,6 +734,66 @@
     "#3c3c3c",
     "#6a6a6a"
    ]
+  },
+  {
+   "id": "C1",
+   "room": "Closets",
+   "name": "Vibrant Veneer, Cherry Wood",
+   "url": "https://belartestudio.com/products/vibrant-veneer-cherry-wall-mural",
+   "size": "Custom to your wall, 45 cm (17\u00be\") panels",
+   "flags": [
+    "Printed wood-grain mural, not real wood veneer",
+    "Paste-the-wall glue; doors or MDF need priming first. Wipe with a damp sponge only, so high-touch spots may wear",
+    "Also in Grey, Green, Pink, Marsala Red, Brown and Mint"
+   ],
+   "local": [
+    "img/C1_0.jpg",
+    "img/C1_1.jpg"
+   ],
+   "vendor": "BelarteSTUDIO",
+   "material": "FSC non-woven wallpaper mural, 147 g",
+   "finish": "Matte",
+   "price_sqft": 7.9,
+   "unit": "m\u00b2 (whole m\u00b2, about 10.76 sq ft)",
+   "unit_price": 85.0,
+   "sqft_per_unit": 10.764,
+   "ship": "Ships 1\u20133 days after ordering, then 2\u20133 days delivery; free worldwide shipping (US timing not stated)",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A4 sample; large sample on some designs (price not listed)",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.1
+  },
+  {
+   "id": "W1",
+   "room": "Wallpaper",
+   "name": "Art Fleuri, Off-White (by Sonia Dubois)",
+   "url": "https://belartestudio.com/products/art-fleuri-off-white-wallpaper",
+   "size": "Custom to your wall, 45 cm (17\u00be\") panels",
+   "flags": [
+    "Hand-drawn botanical print in soft blue on off-white",
+    "Also comes in Dove Blue",
+    "Add 20 cm to width and 10 cm to height when sizing"
+   ],
+   "local": [
+    "img/W1_0.jpg",
+    "img/W1_1.jpg"
+   ],
+   "vendor": "BelarteSTUDIO",
+   "material": "FSC non-woven wallpaper mural, 147 g",
+   "finish": "Matte",
+   "price_sqft": 7.9,
+   "unit": "m\u00b2 (whole m\u00b2, about 10.76 sq ft)",
+   "unit_price": 85.0,
+   "sqft_per_unit": 10.764,
+   "ship": "Ships 1\u20133 days after ordering, then 2\u20133 days delivery; free worldwide shipping (US timing not stated)",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A4 sample; large sample on some designs (price not listed)",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.1
   }
  ],
  "palettes": [
