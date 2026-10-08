@@ -21,6 +21,13 @@
   const lum = h => { const [r, g, b] = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
   const fmt = n => '$' + n.toFixed(2);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const MARK = { good: '✓', caution: '!', poor: '✗' };
+  const whyChecked = fit => {
+    const cs = fit.checks || [];
+    if (!cs.length) return '';
+    const open = cs.filter(c => c.level !== 'good').length;
+    return `<details class="fit__why"><summary>${cs.length - open} of ${cs.length} checks passed${open ? `, ${open} to confirm` : ''}</summary><ul>${cs.map(c => `<li class="chk chk--${c.level}"><b>${MARK[c.level]}</b> <span>${esc(c.rule)}${c.use ? ` (${esc(c.use)})` : ''}: ${esc(c.detail)}</span></li>`).join('')}</ul></details>`;
+  };
   const isBad = f => /NOT frost|not publish|Longest lead/i.test(f);
 
   document.getElementById('checked').textContent =
@@ -73,7 +80,7 @@
         </dl>
         ${it.moved ? `<p class="moved">${esc(it.moved)}</p>` : ''}
         ${(it.uses || []).length ? `<div class="uses"><span>Best for</span>${it.uses.map(u => `<em>${esc(u)}</em>`).join('')}</div>` : ''}
-        ${it.fit ? `<div class="fit fit--${it.fit.level}"><p class="fit__h">NYC + kids: <strong>${{ good: 'Good fit', caution: 'Use with care', poor: 'Poor fit' }[it.fit.level]}</strong> <a class="fit__how" href="#rubric" data-rubric>How we rate</a></p><ul>${it.fit.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></div>` : ''}
+        ${it.fit ? `<div class="fit fit--${it.fit.level}"><p class="fit__h">NYC + kids: <strong>${{ good: 'Good fit', caution: 'Use with care', poor: 'Poor fit' }[it.fit.level]}</strong> <a class="fit__how" href="#rubric" data-rubric>How we rate</a></p><ul>${it.fit.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>${whyChecked(it.fit)}</div>` : ''}
         ${flags ? `<ul class="flags">${flags}</ul>` : ''}
         ${(it.liners || []).length ? `<div class="liners"><p class="pairs__h">Liners that match</p>${it.liners.map(id => { const l = byId[id]; return l ? `<a class="liner" href="${l.url}" target="_blank" rel="noopener"><img src="${l.local[0]}" alt=""><span><strong>${esc(l.name)}</strong>${fmt(l.price_sqft)} / linear ft · ${esc(l.ship)}${l.fit && l.fit.level !== 'good' ? ` · <i>${esc(l.fit.notes[0])}</i>` : ''}</span></a>` : ''; }).join('')}</div>` : ''}
         ${(it.pairings || []).length ? `<div class="pairs"><p class="pairs__h">Palettes to try</p>${it.pairings.map(p => `<div class="pair">

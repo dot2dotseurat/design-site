@@ -10,4 +10,4 @@ Run locally: `python3 -m http.server` and open http://localhost:8000.
 
 Pages: Materials (`index.html`), Budget (`budget.html`: square footage in, boxes and cost out, with saved scenarios and a CSV download), Palettes (`palettes.html`).
 
-What counts as a good fit is written down in `REQUIREMENTS.md`; each item's `fit` in `data.json` follows it.
+What counts as a good fit is written down in `REQUIREMENTS.md`. Each item's `specs` block holds typed facts, and `python3 scripts/check_fit.py` computes `fit` from them using `fit-rules.json`; run it after editing `data.json` (`--check` verifies it is current).

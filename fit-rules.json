@@ -1,0 +1,20 @@
+{
+  "_comment": "Thresholds for scripts/check_fit.py. Change a number here and re-run the script to re-rate every item. See REQUIREMENTS.md for the reasoning.",
+  "dcof_min": 0.42,
+  "r_min": 10,
+  "lead_good_below_wk": 4,
+  "lead_poor_above_wk": 12,
+  "min_order_care_sqft": 25,
+  "min_order_poor_sqft": 100,
+  "slip_safe_finishes": ["matte", "satin", "honed", "tumbled"],
+  "wallpaper_ok_cleanable": ["scrubbable", "spongeable"],
+  "enums": {
+    "check_uses": ["deck", "floor", "wall", "wallpaper"],
+    "freeze_thaw": ["pass", "fail", "unknown", "conflict"],
+    "finish_class": ["matte", "satin", "honed", "tumbled", "gloss", "polished", "mixed", "unknown"],
+    "porosity": ["non-porous", "seal-once", "seal-regular", "etches", "unknown"],
+    "rated_for": ["floor", "wall", "shower", "outdoor"],
+    "sample": ["sold", "full-size-only", "none", "unknown"],
+    "cleanable": ["scrubbable", "spongeable", "damp-sponge", "unknown"]
+  }
+}

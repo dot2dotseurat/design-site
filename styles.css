@@ -208,3 +208,10 @@ dt{color:var(--muted)} dd{margin:0}
 .rubric__note{margin:12px 0 0;font-size:13px}
 .fit__how{font-weight:400;font-size:12px;margin-left:6px}
 @media (max-width:800px){.rubric__grid{grid-template-columns:1fr}}
+
+.fit__why{margin-top:8px;font-size:12px}
+.fit__why summary{cursor:pointer;color:var(--muted)}
+.fit__why ul{list-style:none;margin:6px 0 0;padding:0}
+.chk{display:flex;gap:6px;margin-bottom:3px}
+.chk b{width:14px;flex:none;text-align:center}
+.chk--good b{color:#2f5d4e}.chk--caution b{color:#8a4a14}.chk--poor b{color:#a3392b}
