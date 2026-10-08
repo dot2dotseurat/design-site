@@ -1428,6 +1428,116 @@
    }
   },
   {
+   "id": "D12",
+   "room": "Deck",
+   "name": "Palmer Checkerboard 12x12 Matte, White + Ocean Blue",
+   "vendor": "Edward Martin",
+   "url": "https://www.edwardmartin.com/products/palmer-12x12-checkerboard-matte-porcelain-tile-in-white-and-ocean-blue",
+   "material": "Concrete-look porcelain, rectified, made in the USA (pre-paired checkerboard bundle)",
+   "size": "12\" x 12\"",
+   "finish": "Matte (soft-touch)",
+   "price_sqft": 6.09,
+   "unit": "bundle (26 sq ft)",
+   "unit_price": 158.46,
+   "sqft_per_unit": 26.0,
+   "ship": "In stock; ships in 5\u20137 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$6 sample",
+   "flags": [
+    "Warm off-white against a steel slate blue, in a soft concrete-look finish: a calm blue checkerboard, the cheapest here at $6.09 a sq ft",
+    "The page lists it for wall, floor and outdoor, but gives no freeze/thaw rating, slip number or water absorption",
+    "Its description says \"walls to floors, kitchens to bathrooms\", while the Raw-finish Palmer checkerboards say \"poolsides and patios\"; ask whether this matte version is meant for outdoors"
+   ],
+   "outdoor": "Listed for outdoor use; no freeze/thaw statement, and the description does not mention patios",
+   "local": [
+    "img/D12_0.jpg",
+    "img/D12_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Matte surface \"improves slip resistance\" but no DCOF or R number is published: ask Edward Martin for it and for the freeze/thaw result before the deck",
+     "The Raw-finish Palmer checkerboards are the ones marketed for patios; ask whether Ocean Blue comes in Raw"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "Edward Martin lists \"Wall, Floor, Outdoor\" but no freeze/thaw statement, and the description omits patios"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
    "id": "D1",
    "room": "Bathroom",
    "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
