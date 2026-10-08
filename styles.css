@@ -111,3 +111,15 @@ dt{color:var(--muted)} dd{margin:0}
 @media (max-width:640px){.inspo{grid-template-columns:1fr}.pal--inspo{grid-template-columns:120px 1fr}.pages{border-right:0;padding-right:0}}
 .pal__sw{text-align:left}
 .pages:only-child{border-right:0;padding-right:0}
+
+/* Per-material palettes */
+.pairs{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:14px}
+.pairs__h{margin:0;font:600 12px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pair__strip{display:flex;height:34px;border-radius:4px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.pair__sw{flex:1;border:0;padding:0;cursor:copy;position:relative}
+.pair__sw:hover{flex:1.4;transition:flex .15s}
+.pair__sw.copied::after{content:"Copied";position:absolute;inset:auto 0 0 0;font:600 10px var(--body);background:rgba(255,255,255,.85);color:#24221d;text-align:center}
+.pair__name{margin:6px 0 0;font-size:14px}
+.pair__name span{color:var(--muted);font-size:12px;margin-left:4px}
+.pair__names{margin:2px 0 0;font-size:12px;color:var(--muted)}
+.pair__why{margin:4px 0 0;font-size:13px;line-height:1.4}

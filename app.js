@@ -61,6 +61,11 @@
           ${it.kind === 'tile' ? `<dt>Outdoor</dt><dd>${esc(it.outdoor)}</dd>` : ''}
         </dl>
         ${flags ? `<ul class="flags">${flags}</ul>` : ''}
+        ${(it.pairings || []).length ? `<div class="pairs"><p class="pairs__h">Palettes to try</p>${it.pairings.map(p => `<div class="pair">
+          <div class="pair__strip">${p.colors.map(([hex, label]) => `<button class="pair__sw" style="background:${hex}" data-hex="${hex}" title="${esc(label)} ${hex} — click to copy" aria-label="${esc(label)} ${hex}"></button>`).join('')}</div>
+          <p class="pair__name"><strong>${esc(p.name)}</strong> <span>${esc(p.rule)}</span></p>
+          <p class="pair__names">${p.colors.map(c => esc(c[1])).join(' · ')}</p>
+          <p class="pair__why">${esc(p.why)}</p></div>`).join('')}</div>` : ''}
         <div class="card__foot"><a href="${it.url}" target="_blank" rel="noopener">View at ${esc(it.vendor)} ↗</a><span class="id">${it.id}</span></div>
       </div>
     </article>`;
@@ -116,6 +121,10 @@
     const el = document.querySelector(location.hash);
     if (el) setTimeout(() => { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1800); }, 300);
   }
+  document.addEventListener('click', e => {
+    const sw = e.target.closest('.pair__sw'); if (!sw) return;
+    navigator.clipboard?.writeText(sw.dataset.hex); sw.classList.add('copied'); setTimeout(() => sw.classList.remove('copied'), 900);
+  });
   const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
   document.getElementById('rooms').addEventListener('click', e => {
     const m = e.target.closest('.card__media'); if (!m) return;

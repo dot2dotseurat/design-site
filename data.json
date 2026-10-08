@@ -32,6 +32,62 @@
     "#2a3636",
     "#c6b6a6",
     "#cbbcab"
+   ],
+   "pairings": [
+    {
+     "name": "Garden room",
+     "rule": "Complement",
+     "why": "Green's complement is pink-red \u2014 a fig pot or cushion makes the verde glow.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Oxblood porch",
+     "rule": "Warm contrast",
+     "why": "Deep red furniture against dark green is the Avanti's richest pairing.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#6e1712",
+       "Oxblood"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -65,6 +121,54 @@
     "#a1a48f",
     "#696a5a",
     "#b9b4a7"
+   ],
+   "pairings": [
+    {
+     "name": "Terrazzo caf\u00e9",
+     "rule": "Analogous + accent",
+     "why": "Terracotta pots echo the red chips in the terrazzo.",
+     "colors": [
+      [
+       "#a1a48f",
+       "Lisbon green"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#b0583a",
+       "Terracotta"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Soft garden",
+     "rule": "Tonal",
+     "why": "Keeps it light; blush adds the pink you like without competing.",
+     "colors": [
+      [
+       "#a1a48f",
+       "Lisbon green"
+      ],
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#e3c9bf",
+       "Blush"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -98,6 +202,54 @@
     "#505b68",
     "#4e5966",
     "#48525e"
+   ],
+   "pairings": [
+    {
+     "name": "Harbor",
+     "rule": "Warm-cool",
+     "why": "Rust and caramel warm up a cool blue-grey floor.",
+     "colors": [
+      [
+       "#4e5966",
+       "Ocean blue"
+      ],
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#c9a274",
+       "Caramel"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ]
+     ]
+    },
+    {
+     "name": "Dusk",
+     "rule": "Tonal blue",
+     "why": "Calm and monochrome, with cream to brighten.",
+     "colors": [
+      [
+       "#4e5966",
+       "Ocean blue"
+      ],
+      [
+       "#a7b4cf",
+       "Powder blue"
+      ],
+      [
+       "#253761",
+       "Navy"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -130,6 +282,54 @@
     "#bbc8b3",
     "#94a992",
     "#eef2f1"
+   ],
+   "pairings": [
+    {
+     "name": "Jungle + fig",
+     "rule": "Complement",
+     "why": "Pink-red planters are the natural opposite of the green squares.",
+     "colors": [
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#b0583a",
+       "Terracotta"
+      ]
+     ]
+    },
+    {
+     "name": "Patio stripes",
+     "rule": "Analogous",
+     "why": "Butter-yellow cushions and striped awnings, like the Mediterranean Patio mural (W5).",
+     "colors": [
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#e9df98",
+       "Butter"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -162,6 +362,54 @@
     "#45524e",
     "#687570",
     "#a5aeab"
+   ],
+   "pairings": [
+    {
+     "name": "Classic Italian",
+     "rule": "Complement",
+     "why": "Deep green and white take an oxblood accent the way old caf\u00e9s do.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#6e1712",
+       "Oxblood"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ]
+     ]
+    },
+    {
+     "name": "Riviera",
+     "rule": "Warm-cool",
+     "why": "Cobalt and butter (from your reels) sharpen the green.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#1f3fa8",
+       "Cobalt"
+      ],
+      [
+       "#e9df98",
+       "Butter"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -196,6 +444,54 @@
     "#b7b79b",
     "#b2b194",
     "#aeae91"
+   ],
+   "pairings": [
+    {
+     "name": "Green + pink",
+     "rule": "Complement",
+     "why": "Your favorite pairing, settled with cream grout and dark wood.",
+     "colors": [
+      [
+       "#a9ab8a",
+       "Cypress"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    },
+    {
+     "name": "Fig + berry",
+     "rule": "Split complement",
+     "why": "Adds depth with berry and a little butter-yellow light.",
+     "colors": [
+      [
+       "#a9ab8a",
+       "Cypress"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#7e3a44",
+       "Berry"
+      ],
+      [
+       "#e9df98",
+       "Butter"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -228,6 +524,54 @@
     "#406389",
     "#3b5878",
     "#476c94"
+   ],
+   "pairings": [
+    {
+     "name": "Dusty pink + steel",
+     "rule": "Complement",
+     "why": "Straight from your saved reel: blue tile with dusty pink and brass.",
+     "colors": [
+      [
+       "#3f6491",
+       "Iconic blue"
+      ],
+      [
+       "#c4908f",
+       "Dusty pink"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ]
+     ]
+    },
+    {
+     "name": "Blue + oxblood",
+     "rule": "Warm-cool",
+     "why": "Deep red towels or a cabinet against blue \u2014 the burgundy/powder-blue reel, flipped.",
+     "colors": [
+      [
+       "#3f6491",
+       "Iconic blue"
+      ],
+      [
+       "#6e1712",
+       "Oxblood"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -260,6 +604,54 @@
     "#a55b58",
     "#be6e6a",
     "#c27e7c"
+   ],
+   "pairings": [
+    {
+     "name": "Fig + sage",
+     "rule": "Complement",
+     "why": "Pink walls with sage trim and warm oak.",
+     "colors": [
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Fig + steel",
+     "rule": "Warm-cool",
+     "why": "Pink with steel blue, like the bathroom reel you saved.",
+     "colors": [
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#3f5891",
+       "Steel blue"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -292,6 +684,54 @@
     "#3b423d",
     "#ebeae8",
     "#545c54"
+   ],
+   "pairings": [
+    {
+     "name": "Verde + marfil",
+     "rule": "Tonal neutral",
+     "why": "The Avanti look indoors; brass keeps it warm.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ]
+     ]
+    },
+    {
+     "name": "Verde + berry",
+     "rule": "Complement",
+     "why": "A berry curtain or vanity skirt against green marble.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#7e3a44",
+       "Berry"
+      ],
+      [
+       "#c4908f",
+       "Dusty pink"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -325,6 +765,54 @@
     "#ededeb",
     "#dcdbd6",
     "#ededea"
+   ],
+   "pairings": [
+    {
+     "name": "Blush + calcite",
+     "rule": "Light tonal",
+     "why": "Quiet white with a pink line and warm wood.",
+     "colors": [
+      [
+       "#ededeb",
+       "Calcite"
+      ],
+      [
+       "#e3c9bf",
+       "Blush"
+      ],
+      [
+       "#d9c7a6",
+       "Sand"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Calcite + cobalt",
+     "rule": "High contrast",
+     "why": "A crisp white field that lets cobalt and butter accents pop.",
+     "colors": [
+      [
+       "#ededeb",
+       "Calcite"
+      ],
+      [
+       "#1f3fa8",
+       "Cobalt"
+      ],
+      [
+       "#e9df98",
+       "Butter"
+      ],
+      [
+       "#1e1e1e",
+       "Ink"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -357,6 +845,54 @@
     "#424242",
     "#ebe5d6",
     "#83817c"
+   ],
+   "pairings": [
+    {
+     "name": "Sea + bone",
+     "rule": "Warm-cool",
+     "why": "Black-and-bone floor with blue walls.",
+     "colors": [
+      [
+       "#ebe5d6",
+       "Bone"
+      ],
+      [
+       "#1e1e1e",
+       "Ink"
+      ],
+      [
+       "#3f6491",
+       "Iconic blue"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ]
+     ]
+    },
+    {
+     "name": "Bone + fig",
+     "rule": "Neutral + accent",
+     "why": "Pink and moss accents soften the graphic floor.",
+     "colors": [
+      [
+       "#ebe5d6",
+       "Bone"
+      ],
+      [
+       "#1e1e1e",
+       "Ink"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#6c7a5e",
+       "Moss"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -389,6 +925,54 @@
     "#f2eee6",
     "#eae6db",
     "#f0ece3"
+   ],
+   "pairings": [
+    {
+     "name": "Cream + fig",
+     "rule": "Neutral + accent",
+     "why": "A calm cream floor under pink walls and sage trim.",
+     "colors": [
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Cream + plum",
+     "rule": "Neutral + deep",
+     "why": "The plum chair and mustard trim from your attic photo.",
+     "colors": [
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#4c1a22",
+       "Plum"
+      ],
+      [
+       "#c29a3e",
+       "Mustard"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -420,6 +1004,54 @@
     "#999994",
     "#959690",
     "#ccc0b0"
+   ],
+   "pairings": [
+    {
+     "name": "Marfil + steel",
+     "rule": "Warm-cool",
+     "why": "Steel-blue walls over the warm checkerboard.",
+     "colors": [
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#999994",
+       "Amani grey"
+      ],
+      [
+       "#3f5891",
+       "Steel blue"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ]
+     ]
+    },
+    {
+     "name": "Marfil + verde",
+     "rule": "Analogous neutral",
+     "why": "Picks up the Avanti green you love.",
+     "colors": [
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#999994",
+       "Amani grey"
+      ],
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -452,6 +1084,54 @@
     "#ede7e1",
     "#efebe7",
     "#e4caa2"
+   ],
+   "pairings": [
+    {
+     "name": "Tamarisk + rose",
+     "rule": "Tonal warm",
+     "why": "Soft, sunlit, all warm.",
+     "colors": [
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#d9c7a6",
+       "Sand"
+      ],
+      [
+       "#b98a86",
+       "Old rose"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Tamarisk + periwinkle",
+     "rule": "Warm-cool",
+     "why": "Periwinkle walls, like your saved walnut-and-rust living room.",
+     "colors": [
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#d9c7a6",
+       "Sand"
+      ],
+      [
+       "#8f99b8",
+       "Periwinkle"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -484,6 +1164,54 @@
     "#33302d",
     "#e9e1cc",
     "#4a5e6e"
+   ],
+   "pairings": [
+    {
+     "name": "Deep sea + rust",
+     "rule": "Complement",
+     "why": "Rust is blue's opposite; a rust towel or stool brightens the room.",
+     "colors": [
+      [
+       "#253761",
+       "Navy"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    },
+    {
+     "name": "Deep sea + butter",
+     "rule": "Warm-cool",
+     "why": "Cobalt-and-butter energy, a bit softer.",
+     "colors": [
+      [
+       "#253761",
+       "Navy"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#e9df98",
+       "Butter"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -517,6 +1245,54 @@
     "#d2ab7b",
     "#ddb681",
     "#b18a5e"
+   ],
+   "pairings": [
+    {
+     "name": "Sun + periwinkle",
+     "rule": "Complement",
+     "why": "Periwinkle is the cool opposite of ochre.",
+     "colors": [
+      [
+       "#b8862e",
+       "Ochre"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#8f99b8",
+       "Periwinkle"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    },
+    {
+     "name": "Sun + oxblood",
+     "rule": "Analogous warm",
+     "why": "Oxblood + caramel from your reels, grounded by a sunny floor.",
+     "colors": [
+      [
+       "#b8862e",
+       "Ochre"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#6e1712",
+       "Oxblood"
+      ],
+      [
+       "#c9a274",
+       "Caramel"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -546,6 +1322,54 @@
    "local": [
     "img/B11_0.jpg",
     "img/B11_1.jpg"
+   ],
+   "pairings": [
+    {
+     "name": "Zellige + plum",
+     "rule": "Pull from the tile",
+     "why": "Choose the tile's darkest note (mulberry/plum) for a vanity and the pink for walls.",
+     "colors": [
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#c4908f",
+       "Dusty pink"
+      ],
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#4c1a22",
+       "Plum"
+      ]
+     ]
+    },
+    {
+     "name": "Zellige + ice blue",
+     "rule": "Light + bright",
+     "why": "Keep the room light so the confetti squares do the work.",
+     "colors": [
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#c9dfe3",
+       "Ice blue"
+      ],
+      [
+       "#c4908f",
+       "Dusty pink"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -576,6 +1400,54 @@
    "local": [
     "img/B12_0.jpg",
     "img/B12_1.jpg"
+   ],
+   "pairings": [
+    {
+     "name": "Check + bone",
+     "rule": "Neutral calm",
+     "why": "Bone walls let the 3-D pattern stand alone.",
+     "colors": [
+      [
+       "#1f3fa8",
+       "Cobalt"
+      ],
+      [
+       "#8fc3c4",
+       "Aqua"
+      ],
+      [
+       "#4c1a22",
+       "Plum"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ]
+     ]
+    },
+    {
+     "name": "Check + mustard",
+     "rule": "Complement",
+     "why": "Mustard is the opposite of blue-violet and sets off the check pattern.",
+     "colors": [
+      [
+       "#1f3fa8",
+       "Cobalt"
+      ],
+      [
+       "#4c1a22",
+       "Plum"
+      ],
+      [
+       "#c29a3e",
+       "Mustard"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -608,6 +1480,54 @@
     "#28497d",
     "#2c4f84",
     "#234075"
+   ],
+   "pairings": [
+    {
+     "name": "Essa + butter",
+     "rule": "Complement",
+     "why": "The cobalt-and-butter pairing from your reels, in a kitchen.",
+     "colors": [
+      [
+       "#28497d",
+       "Essa blue"
+      ],
+      [
+       "#e9df98",
+       "Butter"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Essa + rust",
+     "rule": "Warm-cool",
+     "why": "Rust cabinets with blue tile, like your burnt-orange kitchen reel.",
+     "colors": [
+      [
+       "#28497d",
+       "Essa blue"
+      ],
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -640,6 +1560,27 @@
     "#cbc4b5",
     "#e3dfd6",
     "#bfb19b"
+   ],
+   "pairings": [
+    {
+     "name": "Verde line",
+     "rule": "Tonal",
+     "why": "A thin verde line on white tile \u2014 pairs with B3 and B4.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#d8cbb5",
+       "Marfil"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -671,6 +1612,46 @@
     "#9fa68e",
     "#6c7a5e",
     "#828e77"
+   ],
+   "pairings": [
+    {
+     "name": "Green on blue",
+     "rule": "Analogous",
+     "why": "A glossy green line between blue tile and bone walls.",
+     "colors": [
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#3f6491",
+       "Iconic blue"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ]
+     ]
+    },
+    {
+     "name": "Green on fig",
+     "rule": "Complement",
+     "why": "Green liner as the stem to the pink tile.",
+     "colors": [
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -700,6 +1681,27 @@
    "kind": "liner",
    "swatches": [
     "#dfd4c4"
+   ],
+   "pairings": [
+    {
+     "name": "Marfil line",
+     "rule": "Tonal neutral",
+     "why": "A soft cream edge for white or grey tile.",
+     "colors": [
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#ededeb",
+       "Calcite"
+      ],
+      [
+       "#999994",
+       "Amani grey"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -731,6 +1733,27 @@
     "#818276",
     "#8d8f84",
     "#e9e9e8"
+   ],
+   "pairings": [
+    {
+     "name": "Sage edges",
+     "rule": "Complement",
+     "why": "Sage quarter round to finish pink-tiled niches.",
+     "colors": [
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -761,6 +1784,46 @@
    "swatches": [
     "#dfc6bb",
     "#f3e9e4"
+   ],
+   "pairings": [
+    {
+     "name": "Pink line",
+     "rule": "Accent",
+     "why": "A soft pink line in a white or cream room.",
+     "colors": [
+      [
+       "#e3c9bf",
+       "Blush"
+      ],
+      [
+       "#ededeb",
+       "Calcite"
+      ],
+      [
+       "#d9c7a6",
+       "Sand"
+      ]
+     ]
+    },
+    {
+     "name": "Pink on blue",
+     "rule": "Warm-cool",
+     "why": "A pink pencil line through blue tile.",
+     "colors": [
+      [
+       "#e3c9bf",
+       "Blush"
+      ],
+      [
+       "#3f6491",
+       "Iconic blue"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -792,6 +1855,27 @@
     "#3f3f3f",
     "#3c3c3c",
     "#6a6a6a"
+   ],
+   "pairings": [
+    {
+     "name": "Black line",
+     "rule": "Graphic",
+     "why": "A dark frame for Flora black + bone (B5).",
+     "colors": [
+      [
+       "#1e1e1e",
+       "Ink"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ],
+      [
+       "#3f6491",
+       "Iconic blue"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -822,7 +1906,55 @@
    "sample": "A4 sample; large sample on some designs (price not listed)",
    "outdoor": "\u2014",
    "kind": "wallcovering",
-   "overage": 0.1
+   "overage": 0.1,
+   "pairings": [
+    {
+     "name": "Cherry + powder",
+     "rule": "Warm-cool",
+     "why": "Powder blue inside the closet or on trim cools the wood grain \u2014 the burgundy + powder blue reel.",
+     "colors": [
+      [
+       "#7a4630",
+       "Cherry wood"
+      ],
+      [
+       "#c8a582",
+       "Weathered tan"
+      ],
+      [
+       "#a7b4cf",
+       "Powder blue"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    },
+    {
+     "name": "Cherry + mustard",
+     "rule": "Analogous warm",
+     "why": "The 70s warmth of your burnt-orange + mustard reel.",
+     "colors": [
+      [
+       "#7a4630",
+       "Cherry wood"
+      ],
+      [
+       "#c8a582",
+       "Weathered tan"
+      ],
+      [
+       "#c29a3e",
+       "Mustard"
+      ],
+      [
+       "#6e1712",
+       "Oxblood"
+      ]
+     ]
+    }
+   ]
   },
   {
    "id": "W1",
@@ -852,7 +1984,55 @@
    "sample": "A4 sample; large sample on some designs (price not listed)",
    "outdoor": "\u2014",
    "kind": "wallcovering",
-   "overage": 0.1
+   "overage": 0.1,
+   "pairings": [
+    {
+     "name": "Fleuri + oak",
+     "rule": "Light tonal",
+     "why": "Soft blue plants with warm wood, like the photos.",
+     "colors": [
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#a7b4cf",
+       "Powder blue"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    },
+    {
+     "name": "Fleuri + cherry",
+     "rule": "Warm-cool",
+     "why": "Rust or cherry furniture gives the pale paper some weight.",
+     "colors": [
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#a7b4cf",
+       "Powder blue"
+      ],
+      [
+       "#7a4630",
+       "Cherry wood"
+      ],
+      [
+       "#a5502d",
+       "Rust"
+      ]
+     ]
+    }
+   ]
   },
   {
    "id": "W2",
@@ -882,7 +2062,55 @@
    "sample": "A4 sample; large sample on some designs (price not listed)",
    "outdoor": "\u2014",
    "kind": "wallcovering",
-   "overage": 0.1
+   "overage": 0.1,
+   "pairings": [
+    {
+     "name": "Fauna + caramel",
+     "rule": "Analogous warm",
+     "why": "Oxblood + caramel from your reels.",
+     "colors": [
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#1e1e1e",
+       "Ink"
+      ],
+      [
+       "#c9a274",
+       "Caramel"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    },
+    {
+     "name": "Fauna + powder",
+     "rule": "Complement",
+     "why": "Powder-blue bedding or trim cools the deep red.",
+     "colors": [
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#1e1e1e",
+       "Ink"
+      ],
+      [
+       "#a7b4cf",
+       "Powder blue"
+      ],
+      [
+       "#ebe5d6",
+       "Bone"
+      ]
+     ]
+    }
+   ]
   },
   {
    "id": "W3",
@@ -913,7 +2141,55 @@
    "sample": "A4 sample; large sample on some designs (price not listed)",
    "outdoor": "\u2014",
    "kind": "wallcovering",
-   "overage": 0.1
+   "overage": 0.1,
+   "pairings": [
+    {
+     "name": "Mesa + moss",
+     "rule": "From the mural",
+     "why": "Pull the mesa colors into furniture: moss sofa, rust cushions.",
+     "colors": [
+      [
+       "#c8a582",
+       "Weathered tan"
+      ],
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#7c7a52",
+       "Olive"
+      ],
+      [
+       "#a7b4cf",
+       "Powder blue"
+      ]
+     ]
+    },
+    {
+     "name": "Mesa + plum",
+     "rule": "Deepen",
+     "why": "Plum and mustard push it toward the 70s den feel.",
+     "colors": [
+      [
+       "#c8a582",
+       "Weathered tan"
+      ],
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#4c1a22",
+       "Plum"
+      ],
+      [
+       "#c29a3e",
+       "Mustard"
+      ]
+     ]
+    }
+   ]
   },
   {
    "id": "W4",
@@ -943,7 +2219,55 @@
    "sample": "A4 sample; large sample on some designs (price not listed)",
    "outdoor": "\u2014",
    "kind": "wallcovering",
-   "overage": 0.1
+   "overage": 0.1,
+   "pairings": [
+    {
+     "name": "Moss + oxblood",
+     "rule": "Complement",
+     "why": "Deep red against olive \u2014 the richest pairing for this paper.",
+     "colors": [
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#6e1712",
+       "Oxblood"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ]
+     ]
+    },
+    {
+     "name": "Moss + blush",
+     "rule": "Soft complement",
+     "why": "Pink linens with moss walls: your green + pink, softened.",
+     "colors": [
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#9aa58a",
+       "Sage"
+      ],
+      [
+       "#e3c9bf",
+       "Blush"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    }
+   ]
   },
   {
    "id": "W5",
@@ -973,7 +2297,55 @@
    "sample": "A4 sample; large sample on some designs (price not listed)",
    "outdoor": "\u2014",
    "kind": "wallcovering",
-   "overage": 0.1
+   "overage": 0.1,
+   "pairings": [
+    {
+     "name": "Patio + fig",
+     "rule": "Complement",
+     "why": "Pink-red accents bring the caf\u00e9 scene to life.",
+     "colors": [
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#b0583a",
+       "Terracotta"
+      ]
+     ]
+    },
+    {
+     "name": "Patio + butter",
+     "rule": "Analogous",
+     "why": "Sunny, striped-awning feeling.",
+     "colors": [
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#f3f0ea",
+       "Chalk white"
+      ],
+      [
+       "#e9df98",
+       "Butter"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    }
+   ]
   }
  ],
  "palettes": [
