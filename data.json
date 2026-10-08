@@ -4598,6 +4598,120 @@
    }
   },
   {
+   "id": "B27",
+   "room": "Bathroom",
+   "name": "Draper Saguaro 12x12 Terrazzo",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/draper-saguaro-12x12",
+   "material": "Handmade cement terrazzo, unglazed (5/8\" thick)",
+   "size": "12\" x 12\"",
+   "finish": "Matte, unglazed cement terrazzo",
+   "price_sqft": 19.85,
+   "unit": "box (10 tiles, 9.68 sq ft)",
+   "unit_price": 192.15,
+   "sqft_per_unit": 9.68,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Sage green terrazzo with a cream border that curves at one corner: four tiles join into rounded green squares in a cream grid",
+    "A green and cream pair in a single tile, close to the Verde and Marfil palette",
+    "Radiant-heat compatible; Zia says color and aggregate vary from tile to tile"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B27_0.jpg",
+    "img/B27_1.jpg"
+   ],
+   "kind": "tile",
+   "hover_hint": "Hover: four tiles joined",
+   "uses": [
+    "Bathroom floor",
+    "Walls",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement terrazzo is porous: Zia says sealing is required, so budget for resealing",
+     "DCOF 0.51 clears the wet-floor line",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 0.51 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 0.51
+    },
+    "finish_class": "matte",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
    "id": "B19",
    "room": "Bathroom",
    "name": "Agave 4x4 Ceramic, Matte",
