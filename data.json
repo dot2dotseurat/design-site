@@ -1538,6 +1538,126 @@
    }
   },
   {
+   "id": "D13",
+   "room": "Deck",
+   "name": "RUNNEN Outdoor Decking Tiles, Acacia",
+   "vendor": "IKEA",
+   "url": "https://www.ikea.com/us/en/p/runnen-decking-outdoor-acacia-60518486/",
+   "material": "Solid acacia wood top with acrylic stain, polypropylene base (click-together tiles)",
+   "size": "11\u00be\" x 11\u00be\" x \u00be\" (9 tiles a pack)",
+   "finish": "Stained wood slats",
+   "price_sqft": 4.01,
+   "unit": "pack (9 tiles, 8.72 sq ft)",
+   "unit_price": 34.99,
+   "sqft_per_unit": 8.72,
+   "ship": "Availability and delivery depend on your zip code; IKEA's page showed \"checking availability\"",
+   "lead_wk": null,
+   "stock": "Availability depends on zip code",
+   "sample": "No samples; one $34.99 pack works as a trial",
+   "flags": [
+    "A warm honey-brown wood in a 12-inch slat pattern: the one deck option that is not tile, and the cheapest at about $4 a sq ft",
+    "Clicks together with no subfloor, but only for use on a hard, even surface",
+    "IKEA says to re-glaze it once or twice a year, and that color change, small cracks or dry-looking wood mean it is due",
+    "The page gives no slip rating or freeze/thaw statement"
+   ],
+   "outdoor": "Designated for outdoor use on hard, even surfaces; no freeze/thaw statement",
+   "local": [
+    "img/D13_0.jpg",
+    "img/D13_1.jpg"
+   ],
+   "kind": "tile",
+   "overage": 0.1,
+   "uses": [
+    "Deck",
+    "Balcony",
+    "Over an existing hard surface"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Wood needs yearly upkeep (re-glazing) where tile needs none; you can take the tiles apart and relay them",
+     "No slip or freeze/thaw numbers are published: wet acrylic-stained wood can be slick, so test one pack in the rain before covering the deck",
+     "It will not give the green or pink checkerboard look, but it could sit beside a tile inset"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Finish not stated"
+     },
+     {
+      "rule": "Care",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "caution",
+      "detail": "Only a full-size sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Wood: IKEA says to re-glaze it once or twice a year"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "IKEA says outdoor use on hard even surfaces; no freeze/thaw statement"
+    },
+    "slip": null,
+    "finish_class": "unknown",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "outdoor"
+    ],
+    "sample": "full-size-only",
+    "care_flags": [
+     "Wood: IKEA says to re-glaze it once or twice a year"
+    ]
+   }
+  },
+  {
    "id": "D1",
    "room": "Bathroom",
    "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
