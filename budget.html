@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Budget · Materials Mood Board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='13' height='13' fill='%232f5d4e'/%3E%3Crect x='17' y='17' width='13' height='13' fill='%232f5d4e'/%3E%3Crect x='17' y='2' width='13' height='13' fill='none' stroke='%232f5d4e' stroke-width='2'/%3E%3Crect x='2' y='17' width='13' height='13' fill='none' stroke='%232f5d4e' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=gambetta@400,500,600&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="index.html" aria-label="Materials mood board">
+      <svg viewBox="0 0 40 40" width="34" height="34" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="16" height="16" fill="currentColor"/>
+        <rect x="21" y="21" width="16" height="16" fill="currentColor"/>
+        <rect x="22" y="4" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+        <rect x="4" y="22" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span>Reno <em>materials</em></span>
+    </a>
+    <div class="masthead__nav">
+      <nav class="pages" aria-label="Pages"><a href="index.html">Materials</a><a href="budget.html" aria-current="page">Budget</a><a href="palettes.html">Palettes</a></nav>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="intro wrap">
+    <p class="eyebrow">Budget · what it costs to cover it</p>
+    <h1>How much do we need?</h1>
+    <p class="lede">Pick a material, enter how much surface you're covering, and see boxes, cost and ship time. Make a scenario for each set of assumptions, like a tight budget or a splurge, and compare them at the bottom. Saved in this browser; download a CSV to open in Google Sheets or Excel.</p>
+    <div class="toolbar">
+      <label>Scenario <select id="scenario"></select></label>
+      <button class="btn" id="newScenario" type="button">New</button>
+      <button class="btn" id="dupScenario" type="button">Duplicate</button>
+      <button class="btn" id="renameScenario" type="button">Rename</button>
+      <button class="btn btn--quiet" id="delScenario" type="button">Delete</button>
+      <label class="poor"><input type="checkbox" id="showPoor"><span>Include poor fits</span></label>
+      <button class="btn btn--primary" id="csv" type="button">Download CSV</button>
+    </div>
+  </section>
+
+  <section class="room" id="lines"><div class="wrap">
+    <div class="room__head"><h2 id="scenarioName">Scenario</h2><span class="room__meta" id="scenarioMeta"></span></div>
+    <div class="bud" id="budTable"></div>
+    <button class="btn btn--primary" id="addLine" type="button">+ Add a line</button>
+    <p class="bud__hint">Area can be a number of sq ft, or a sum of rooms like <code>10x8 + 4x3</code> (feet). For liners, enter linear feet. Wallpaper is sold by whole square meters; its overage defaults to the vendor's figure.</p>
+  </div></section>
+
+  <section class="room" id="totals"><div class="wrap">
+    <div class="room__head"><h2>Totals</h2><span class="room__meta">This scenario</span></div>
+    <div class="bud-totals" id="budTotals"></div>
+  </div></section>
+
+  <section class="room" id="compare"><div class="wrap">
+    <div class="room__head"><h2>Compare scenarios</h2><span class="room__meta">Every scenario saved in this browser</span></div>
+    <div class="bud" id="budCompare"></div>
+  </div></section>
+</main>
+
+<footer class="wrap foot">
+  <p>Estimates use each vendor's box, carton or roll size and list price on the date shown on the Materials page. They leave out freight, tax, grout, setting materials and labor. Confirm quantities with your installer before ordering.</p>
+</footer>
+<script src="budget.js"></script>
+</body>
+</html>

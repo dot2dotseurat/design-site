@@ -65,7 +65,7 @@
         <h3>${esc(it.name)}</h3>
         <p class="spec">${esc(it.material)} · ${esc(it.size)} · ${esc(it.finish)}</p>
         <p class="price"><strong>${fmt(it.price_sqft)}</strong><span>/ ${lf ? 'linear ft' : 'sq ft'} · ${fmt(it.unit_price)} per ${esc(it.unit)}</span></p>
-        <p class="spec">${it.sqft_needed ? `Estimate: <strong>${fmt(Math.ceil(it.sqft_needed * (1 + (it.overage ?? 0.15)) / it.sqft_per_unit) * it.unit_price)}</strong> for ${it.sqft_needed} sq ft + ${Math.round((it.overage ?? 0.15) * 100)}% overage` : (lf ? 'Estimate: add linear ft in the budget sheet' : 'Estimate: add sq ft in the budget sheet')}</p>
+        <p class="spec">${it.sqft_needed ? `Estimate: <strong>${fmt(Math.ceil(it.sqft_needed * (1 + (it.overage ?? 0.15)) / it.sqft_per_unit) * it.unit_price)}</strong> for ${it.sqft_needed} sq ft + ${Math.round((it.overage ?? 0.15) * 100)}% overage` : `<a href="budget.html?add=${it.id}">Add to budget</a> to estimate ${lf ? 'linear ft' : 'sq ft'}`}</p>
         <dl>
           <dt>Ships</dt><dd>${esc(it.ship)}</dd>
           <dt>Sample</dt><dd>${esc(it.sample)}</dd>

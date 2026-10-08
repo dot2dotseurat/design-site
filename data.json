@@ -385,11 +385,11 @@
    "stock": "In stock",
    "sample": "$3; first 5 samples free",
    "flags": [
-    "Both colors rated for freeze/thaw exterior floors",
+    "Zia's description says freeze/thaw, but its usage panel does not list exterior freeze/thaw floors \u2014 confirm with Zia before using on the deck",
     "Exactly green + pink, but small tiles mean lots of grout outdoors",
     "Satin finish \u2014 test a wet sample for slip"
    ],
-   "outdoor": "Freeze/thaw exterior floors listed",
+   "outdoor": "Conflicting: Zia's description says freeze/thaw, but its usage panel does not list exterior freeze/thaw floors",
    "local": [
     "img/D6_0.jpg",
     "img/D6_1.jpg"
@@ -479,7 +479,8 @@
    "fit": {
     "level": "caution",
     "notes": [
-     "Freeze/thaw rated, but 4x4 tiles mean lots of grout outdoors \u2014 seal it or it darkens with dirt",
+     "Zia's listings conflict on freeze/thaw (description yes, usage panel no) \u2014 confirm in writing before the deck",
+     "4x4 tiles mean lots of grout outdoors \u2014 seal it or it darkens with dirt",
      "Satin finish: test a wet sample for slip before committing to a deck kids play on"
     ]
    }
@@ -524,6 +525,96 @@
     ]
    },
    "kind": "tile"
+  },
+  {
+   "id": "D8",
+   "room": "Deck",
+   "name": "Natural Press Checkerboard 12x12, Salt Creek + Alberta Blue",
+   "vendor": "Fireclay Tile",
+   "url": "https://www.fireclaytile.com/products/natural-press-ceramic-checkerboard-matte-salt-creek-alberta-blue-tile-12x12",
+   "material": "Natural Press ceramic (recycled clay body)",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 19.0,
+   "unit": "sq ft",
+   "unit_price": 19.0,
+   "sqft_per_unit": 1,
+   "ship": "Ships in 7\u20139 weeks (rush 6\u20137 weeks at +15%, 5\u20136 weeks at +30%); $100 small-batch fee under 25 sq ft",
+   "lead_wk": 8,
+   "stock": "Made to order",
+   "sample": "$6 sample (ships same day if ordered by 1 pm)",
+   "flags": [
+    "Crisp white against a pale grey-blue \u2014 a blue checkerboard cousin to the Sea + Bone palette",
+    "12\" tiles mean far less grout outdoors than the 4x4s",
+    "Orders under 25 sq ft carry a $100 small-batch fee"
+   ],
+   "outdoor": "Passes freeze/thaw testing; listed for pool and outdoor",
+   "local": [
+    "img/D8_0.jpg",
+    "img/D8_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Passes freeze/thaw testing and a matte, slip-resistant DCOF \u2014 the same line is listed for floors, showers, pools and outdoors",
+     "Made to order, so plan around the 7\u20139 week wait (rush options cost 15\u201330% more)"
+    ]
+   },
+   "small_batch_fee": {
+    "below_sqft": 25,
+    "fee": 100
+   }
+  },
+  {
+   "id": "D9",
+   "room": "Deck",
+   "name": "Natural Press Checkerboard 12x12, Salt Creek + Red Iron Oxide",
+   "vendor": "Fireclay Tile",
+   "url": "https://www.fireclaytile.com/products/natural-press-ceramic-checkerboard-matte-salt-creek-red-iron-oxide-tile-12x12",
+   "material": "Natural Press ceramic (recycled clay body)",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 19.0,
+   "unit": "sq ft",
+   "unit_price": 19.0,
+   "sqft_per_unit": 1,
+   "ship": "Ships in 7\u20139 weeks (rush 6\u20137 weeks at +15%, 5\u20136 weeks at +30%); $100 small-batch fee under 25 sq ft",
+   "lead_wk": 8,
+   "stock": "Made to order",
+   "sample": "$6 sample (ships same day if ordered by 1 pm)",
+   "flags": [
+    "Crisp white against a deep red-brown: the oxblood and terracotta from your saves, in a frost-rated checkerboard",
+    "12\" tiles mean far less grout outdoors than the 4x4s",
+    "Orders under 25 sq ft carry a $100 small-batch fee"
+   ],
+   "outdoor": "Passes freeze/thaw testing; listed for pool and outdoor",
+   "local": [
+    "img/D9_0.jpg",
+    "img/D9_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Passes freeze/thaw testing and a matte, slip-resistant DCOF \u2014 the same line is listed for floors, showers, pools and outdoors",
+     "Made to order, so plan around the 7\u20139 week wait (rush options cost 15\u201330% more)"
+    ]
+   },
+   "small_batch_fee": {
+    "below_sqft": 25,
+    "fee": 100
+   }
   },
   {
    "id": "D1",
@@ -651,7 +742,7 @@
    "flags": [
     "Floors, walls and showers; DCOF 0.74"
    ],
-   "outdoor": "Indoor + outdoor (freeze/thaw listed)",
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
    "local": [
     "img/B1_0.jpg",
     "img/B1_1.jpg"
@@ -736,14 +827,13 @@
    "uses": [
     "Shower floor",
     "Bathroom floor",
-    "Walls",
-    "Deck"
+    "Walls"
    ],
    "fit": {
     "level": "good",
     "notes": [
-     "DCOF 0.74 and freeze/thaw rated \u2014 the best wet-floor option for a kids' bath",
-     "Also tough enough for the deck"
+     "DCOF 0.74 \u2014 the best wet-floor option for a kids' bath",
+     "Zia's description mentions freeze/thaw, but its usage panel doesn't list it \u2014 treat as indoor"
     ]
    },
    "liners": [
@@ -772,7 +862,7 @@
    "flags": [
     "Same body as Iconic Blue, in a pink satin"
    ],
-   "outdoor": "Indoor + outdoor (freeze/thaw listed)",
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
    "local": [
     "img/B2_0.jpg",
     "img/B2_1.jpg"
@@ -856,14 +946,14 @@
    ],
    "uses": [
     "Walls",
-    "Bathroom floor",
-    "Deck"
+    "Bathroom floor"
    ],
    "fit": {
     "level": "good",
     "notes": [
-     "Freeze/thaw rated ceramic, same body as Iconic Blue",
-     "Satin glaze: check the slip rating before using on a shower floor"
+     "Same ceramic body as Iconic Blue",
+     "Satin glaze: check the slip rating before using on a shower floor",
+     "Zia's description mentions freeze/thaw, but its usage panel doesn't list it \u2014 treat as indoor"
     ]
    },
    "liners": [
@@ -1960,7 +2050,8 @@
     "L2",
     "L4"
    ],
-   "kind": "tile"
+   "kind": "tile",
+   "min_order_sqft": 5
   },
   {
    "id": "B14",
@@ -2005,7 +2096,8 @@
     "L2",
     "L6"
    ],
-   "kind": "tile"
+   "kind": "tile",
+   "min_order_sqft": 5
   },
   {
    "id": "B15",
@@ -2051,7 +2143,8 @@
    "liners": [
     "L2",
     "L6"
-   ]
+   ],
+   "min_order_sqft": 5
   },
   {
    "id": "B16",
@@ -2091,6 +2184,301 @@
      "300 sq ft minimum order and a 12\u201316 week wait make it a non-starter for a single bath",
      "Marble must be sealed before and after grouting, and it etches from shampoo and cleaners"
     ]
+   },
+   "min_order_sqft": 300
+  },
+  {
+   "id": "B17",
+   "room": "Bathroom",
+   "name": "Linen 4x4 Ceramic, Matte",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/linen-4x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "4\" x 4\" (3.8\" actual)",
+   "finish": "Matte (DCOF 0.74)",
+   "price_sqft": 15.85,
+   "unit": "box (110 tiles, 12.22 sq ft)",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Soft cream: the Marfil / chalk note from your palettes, in a tile you can floor with",
+    "Pairs with Cypress (D6), Wild Fig (B2) and Iconic Blue (B1) in the same body and size",
+    "Zia recommends a grout-release sealer to avoid haze and staining"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B17_0.jpg",
+    "img/B17_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower floor",
+    "Kitchen floor",
+    "Walls"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Matte ceramic at DCOF 0.74: the grippiest wet floor on the board with non-porous glaze",
+     "Listed for high-traffic interior floors, including kitchens and primary baths"
+    ]
+   }
+  },
+  {
+   "id": "B18",
+   "room": "Bathroom",
+   "name": "Pink Dahlia 2x4 Ceramic, Matte",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/pink-dahlia-2x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "2\" x 4\"",
+   "finish": "Matte (DCOF 0.74)",
+   "price_sqft": 16.85,
+   "unit": "box (200 tiles, 11.11 sq ft)",
+   "unit_price": 187.2,
+   "sqft_per_unit": 11.11,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Coral-pink, warmer and bolder than Wild Fig",
+    "Brick-pattern 2x4 means 200 small tiles a box and plenty of grout",
+    "Zia recommends a grout-release sealer to avoid haze and staining"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B18_0.jpg",
+    "img/B18_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower walls",
+    "Backsplash"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Matte ceramic at DCOF 0.74, non-porous and wet-floor safe",
+     "Lots of grout lines: use a stain-resistant grout in a kids' bath"
+    ]
+   }
+  },
+  {
+   "id": "B19",
+   "room": "Bathroom",
+   "name": "Agave 4x4 Ceramic, Matte",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/agave-4x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "4\" x 4\" (3.8\" actual)",
+   "finish": "Matte (DCOF 0.74)",
+   "price_sqft": 15.85,
+   "unit": "box (110 tiles, 12.22 sq ft)",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Pale sky blue, softer than Iconic Blue (B1)",
+    "Same body and size as the Zia deck and bath tiles, so they mix freely",
+    "Zia recommends a grout-release sealer to avoid haze and staining"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B19_0.jpg",
+    "img/B19_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower floor",
+    "Walls"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Matte ceramic at DCOF 0.74, safe on a wet floor",
+     "Light color shows soap film more than the deeper blues"
+    ]
+   }
+  },
+  {
+   "id": "B20",
+   "room": "Bathroom",
+   "name": "Sequoia 4x4 Ceramic, Satin",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/sequoia-4x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "4\" x 4\" (3.8\" actual)",
+   "finish": "Satin (DCOF 0.45)",
+   "price_sqft": 15.85,
+   "unit": "box (110 tiles, 12.22 sq ft)",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Deep moss green, the closest to your Verde palette in a stocked tile that floors",
+    "Satin DCOF is 0.45: clears the 0.42 wet-floor line with less margin than matte"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B20_0.jpg",
+    "img/B20_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom walls",
+    "Shower walls",
+    "Kitchen backsplash"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Satin DCOF 0.45 passes the wet-floor line, but test a wet sample before using it on a floor kids run on",
+     "Non-porous glaze: wipes clean, no sealing of the tile itself"
+    ]
+   }
+  },
+  {
+   "id": "B21",
+   "room": "Bathroom",
+   "name": "Eucalyptus 4x4 Ceramic, Satin",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/eucalyptus-4x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "4\" x 4\" (3.8\" actual)",
+   "finish": "Satin (DCOF 0.45)",
+   "price_sqft": 15.85,
+   "unit": "box (110 tiles, 12.22 sq ft)",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Pale sage green: the Sage note in the Fig + Sage palette",
+    "Satin DCOF is 0.45: clears the 0.42 wet-floor line with less margin than matte"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B21_0.jpg",
+    "img/B21_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom walls",
+    "Shower walls",
+    "Kitchen backsplash"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Satin DCOF 0.45 passes the wet-floor line, but test a wet sample before using it on a floor kids run on",
+     "Non-porous glaze: wipes clean, no sealing of the tile itself"
+    ]
+   }
+  },
+  {
+   "id": "B22",
+   "room": "Bathroom",
+   "name": "Natural Press Terre Verte 4x4, Matte",
+   "vendor": "Fireclay Tile",
+   "url": "https://www.fireclaytile.com/products/natural-press-ceramic-matte-terre-verte-tile-4x4",
+   "material": "Natural Press ceramic (recycled clay body)",
+   "size": "4\" x 4\"",
+   "finish": "Matte",
+   "price_sqft": 19.0,
+   "unit": "sq ft",
+   "unit_price": 19.0,
+   "sqft_per_unit": 1,
+   "ship": "Ships in 7\u20139 weeks (rush 6\u20137 weeks at +15%, 5\u20136 weeks at +30%); $100 small-batch fee under 25 sq ft",
+   "lead_wk": 8,
+   "stock": "Made to order",
+   "sample": "$3 sample (ships same day if ordered by 1 pm)",
+   "flags": [
+    "Cool sage green: the Sage in Fig + Sage, with a velvety matte finish",
+    "Sold by the square foot; orders under 25 sq ft carry a $100 small-batch fee"
+   ],
+   "outdoor": "Passes freeze/thaw testing; listed for pool and outdoor",
+   "local": [
+    "img/B22_0.jpg",
+    "img/B22_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower floor",
+    "Backsplash",
+    "Deck"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Passes freeze/thaw testing and a matte, slip-resistant DCOF \u2014 the same line is listed for floors, showers, pools and outdoors",
+     "Made to order, so plan around the 7\u20139 week wait (rush options cost 15\u201330% more)"
+    ]
+   },
+   "small_batch_fee": {
+    "below_sqft": 25,
+    "fee": 100
+   }
+  },
+  {
+   "id": "B23",
+   "room": "Bathroom",
+   "name": "Natural Press Red Jasper 4x4, Matte",
+   "vendor": "Fireclay Tile",
+   "url": "https://www.fireclaytile.com/products/natural-press-ceramic-matte-red-jasper-tile-4x4",
+   "material": "Natural Press ceramic (recycled clay body)",
+   "size": "4\" x 4\"",
+   "finish": "Matte",
+   "price_sqft": 19.0,
+   "unit": "sq ft",
+   "unit_price": 19.0,
+   "sqft_per_unit": 1,
+   "ship": "Ships in 7\u20139 weeks (rush 6\u20137 weeks at +15%, 5\u20136 weeks at +30%); $100 small-batch fee under 25 sq ft",
+   "lead_wk": 8,
+   "stock": "Made to order",
+   "sample": "$3 sample (ships same day if ordered by 1 pm)",
+   "flags": [
+    "Dusky salmon pink-brown, like a faded rose petal: the Blush in Blush + Calcite",
+    "Sold by the square foot; orders under 25 sq ft carry a $100 small-batch fee"
+   ],
+   "outdoor": "Passes freeze/thaw testing; listed for pool and outdoor",
+   "local": [
+    "img/B23_0.jpg",
+    "img/B23_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower floor",
+    "Backsplash",
+    "Deck"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Passes freeze/thaw testing and a matte, slip-resistant DCOF \u2014 the same line is listed for floors, showers, pools and outdoors",
+     "Made to order, so plan around the 7\u20139 week wait (rush options cost 15\u201330% more)"
+    ]
+   },
+   "small_batch_fee": {
+    "below_sqft": 25,
+    "fee": 100
    }
   },
   {
