@@ -164,7 +164,7 @@
     h += `<div class="lay__sec"><label class="lay__lbl">Selected wall</label><input id="wName" value="${esc(w.name)}"><div class="lay__row"><label>Width<span>${num('wW', w.w, 1)}</span></label><label>Height<span>${num('wH', w.h, 1)}</span></label></div><label class="lay__lbl">What is it?</label>${sel1('wKind', [['shower', 'Shower wall'], ['wall', 'Dry wall'], ['floor', 'Floor']], w.kind)}</div>`;
     // additions
     h += `<h3 class="lay__h">Cutouts and additions</h3><div class="lay__sec"><div class="lay__btns"><button class="btn" id="addNiche" type="button">+ Niche</button><button class="btn" id="addWindow" type="button">+ Window</button><button class="btn" id="addPanel" type="button">+ Accent panel</button><button class="btn" id="addLinerH" type="button">+ Liner (across)</button><button class="btn" id="addLinerV" type="button">+ Liner (up)</button><button class="btn" id="addFrame" type="button" ${s ? '' : 'disabled'}>Frame selection with liner</button></div>`;
-    h += `<div class="lay__items">${w.cutouts.map(c => `<div class="lay__item${c.id === P.sel ? ' on' : ''}" data-sel="${c.id}">${c.kind === 'window' ? '▭' : '▢'} ${esc(c.name)} <span>${frac(c.w)}×${frac(c.h)}"</span><button class="bud__x" data-delcut="${c.id}" type="button" aria-label="Remove">×</button></div>`).join('')}${w.regions.map(r => `<div class="lay__item${r.id === P.sel ? ' on' : ''}" data-sel="${r.id}">${r.role === 'field' ? '▦' : r.role === 'liner' ? '━' : r.role === 'niche' ? '▢' : '◧'} ${esc(r.name)} <span>${byId[r.item] ? esc(byId[r.item].id) : ''}</span></div>`).join('')}</div></div>`;
+    h += `<div class="lay__items">${w.cutouts.map(c => `<div class="lay__item${c.id === P.sel ? ' on' : ''}" data-sel="${c.id}">${c.kind === 'window' ? '▭' : '▢'} ${esc(c.name)} <span>${frac(c.w)}×${frac(c.h)}"</span><button class="bud__x" data-delcut="${c.id}" type="button" aria-label="Remove">×</button></div>`).join('')}${w.regions.map(r => `<div class="lay__item${r.id === P.sel ? ' on' : ''}" data-sel="${r.id}">${r.role === 'field' ? '▦' : r.role === 'liner' ? '━' : r.role === 'niche' ? '▢' : '◧'} ${esc(r.name)} <span>${byId[r.item] ? esc(byId[r.item].id) : ''}</span>${r.role === 'field' ? '' : `<button class="bud__x" data-del="${r.id}" type="button" aria-label="Remove ${esc(r.name)}" title="Remove">×</button>`}</div>`).join('')}</div></div>`;
     $('left').innerHTML = h;
   }
 
@@ -263,9 +263,9 @@
     const ns = t.closest('[data-nudge]'); if (ns) { const rs = selRegion(); const [a, b] = ns.dataset.nudge.split(',').map(Number); rs.r.dx = (rs.r.dx || 0) + a; rs.r.dy = (rs.r.dy || 0) + b; redraw(); return; }
     const sw = t.closest('[data-wall]'); if (sw && !t.closest('[data-delwall]') && sw.closest('#left')) { P.wallSel = sw.dataset.wall; const w = wall(); P.sel = w.regions[0].id; redraw(); return; }
     const dw = t.closest('[data-delwall]'); if (dw) { if (P.walls.length > 1) { P.walls = P.walls.filter(w => w.id !== dw.dataset.delwall); P.wallSel = P.walls[0].id; P.sel = P.walls[0].regions[0].id; redraw(); } return; }
-    const si = t.closest('[data-sel]'); if (si && !t.closest('[data-delcut]')) { setSel(si.dataset.sel); return; }
-    const dc = t.closest('[data-delcut]'); if (dc) { const w = wall(); w.cutouts = w.cutouts.filter(c => c.id !== dc.dataset.delcut); w.regions = w.regions.filter(r => r.parent !== dc.dataset.delcut); P.sel = w.regions[0].id; redraw(); return; }
-    const dr = t.closest('[data-del]'); if (dr) { const w = wall(); w.regions = w.regions.filter(r => r.id !== dr.dataset.del); P.sel = w.regions[0].id; redraw(); return; }
+    const si = t.closest('[data-sel]'); if (si && !t.closest('[data-delcut]') && !t.closest('[data-del]')) { setSel(si.dataset.sel); return; }
+    const dc = t.closest('[data-delcut]'); if (dc) { removeObj(dc.dataset.delcut); return; }
+    const dr = t.closest('[data-del]'); if (dr) { removeObj(dr.dataset.del); return; }
     const rq = t.closest('[data-delreq]'); if (rq) { P.reqs = P.reqs.filter(q => q.id !== rq.dataset.delreq); redraw(); return; }
     const sg2 = t.closest('[data-suggest]'); if (sg2) { P.reqs.push({ id: uid(), text: sg2.dataset.suggest, done: false }); redraw(); return; }
     switch (t.id) {
@@ -295,6 +295,22 @@
     const pid = o.parent || (o.kind === 'niche' ? o.id : null); if (!pid) return;
     [...w.regions.filter(r => r.parent === pid), ...w.cutouts.filter(c => c.id === pid)].forEach(k => { k.x = o.x; k.y = o.y; k.w = o.w; k.h = o.h; });
   }
+  // remove a region or cutout; a niche and its tile go together
+  function removeObj(id) {
+    const w = P.walls.find(x => x.regions.some(r => r.id === id) || x.cutouts.some(c => c.id === id)); if (!w) return;
+    const reg = w.regions.find(r => r.id === id);
+    if (reg && reg.role === 'field') return;
+    const cutId = reg ? reg.parent : id;
+    w.regions = w.regions.filter(r => r.id !== id && !(cutId && r.parent === cutId));
+    if (cutId) w.cutouts = w.cutouts.filter(c => c.id !== cutId);
+    P.wallSel = w.id; P.sel = w.regions[0].id; redraw();
+  }
+  document.addEventListener('keydown', e => {
+    if ((e.key !== 'Delete' && e.key !== 'Backspace') || /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
+    const s = findSel(); if (!s) return;
+    const o = s.type === 'region' ? s.r : s.c; if (o.role === 'field') return;
+    e.preventDefault(); removeObj(o.id);
+  });
   function frameSelection() {
     const s = findSel(); if (!s) return;
     const o = s.type === 'region' ? s.r : s.c, w = s.w, t = 1;
