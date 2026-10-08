@@ -79,7 +79,7 @@
       let body = '';
       if (it && it.geom) {
         const cs = LE.count(r, geomFor(r, it), overlaysFor(w, r)).cells;
-        body = cs.map(c => `<rect x="${(c.x * s).toFixed(2)}" y="${Y(c.y, c.h).toFixed(2)}" width="${(c.w * s).toFixed(2)}" height="${(c.h * s).toFixed(2)}" fill="${cellFill(r, it, it2, c)}"/>`).join('');
+        body = cs.map(c => { const ov = r.over && byId[r.over[c.i + ',' + c.j]]; return `<rect x="${(c.x * s).toFixed(2)}" y="${Y(c.y, c.h).toFixed(2)}" width="${(c.w * s).toFixed(2)}" height="${(c.h * s).toFixed(2)}" fill="${ov ? artFill(ov, 0) : cellFill(r, it, it2, c)}"${ov ? ' class="lay__painted"' : ''}/>`; }).join('');
       } else body = `<rect x="${r.x * s}" y="${Y(r.y, r.h)}" width="${r.w * s}" height="${r.h * s}" fill="#d9d2c4"/>`;
       const cid = `clip-${r.id}`;
       parts.push(`<g data-r="${r.id}"><clipPath id="${cid}"><rect x="${r.x * s}" y="${Y(r.y, r.h)}" width="${r.w * s}" height="${r.h * s}"/></clipPath>
@@ -171,13 +171,19 @@
   // ---------- right panel ----------
   const flat = () => P.walls.flatMap(w => w.regions.map(r => ({ w, ...regionResult(w, r), role: r.role })).filter(x => x.it));
   function summary(scope) {
-    const rows = (scope === 'wall' ? P.walls.filter(x => x.id === wall().id) : P.walls).flatMap(w => w.regions.map(r => regionResult(w, r)).filter(Boolean).map(x => ({ ...x, w })));
-    const by = {};
-    rows.forEach(x => {
-      const b = by[x.it.id] || (by[x.it.id] = { it: x.it, area: geomFor(x.r, x.it).w * geomFor(x.r, x.it).h, total: 0, full: 0, cut1: 0, cut2: 0, cut3: 0, sqft: 0, lf: 0 });
-      b.total += x.res.total; b.full += x.res.full; b.cut1 += x.res.cut1; b.cut2 += x.res.cut2; b.cut3 += x.res.cut3; b.sqft += x.res.sqft;
-      b.lf += x.it.kind === 'liner' ? x.res.cells.reduce((a, c) => a + (c.vx1 - c.vx0 > c.vy1 - c.vy0 ? c.vx1 - c.vx0 : c.vy1 - c.vy0), 0) / 12 : 0;
-    });
+    const ws = scope === 'wall' ? [wall()] : P.walls, by = {};
+    const bucket = it => by[it.id] || (by[it.id] = { it, area: it.geom.w * it.geom.h, total: 0, full: 0, cut1: 0, cut2: 0, cut3: 0, sqft: 0, lf: 0 });
+    ws.forEach(w => w.regions.forEach(r => {
+      const rr = regionResult(w, r); if (!rr) return;
+      const g = geomFor(r, rr.it), base = bucket(rr.it); base.area = g.w * g.h; base.sqft += rr.res.sqft;
+      rr.res.cells.forEach(c => {
+        const ovId = r.over && r.over[c.i + ',' + c.j], ov = ovId && byId[ovId] && byId[ovId].geom ? byId[ovId] : null;
+        const b = ov ? bucket(ov) : base;
+        b.total++; if (c.cuts === 0) b.full++; else if (c.cuts === 1) b.cut1++; else if (c.cuts === 2) b.cut2++; else b.cut3++;
+        if (ov) { const a = (c.vx1 - c.vx0) * (c.vy1 - c.vy0) / 144; b.sqft += a; base.sqft -= a; }
+        if (b.it.kind === 'liner') b.lf += Math.max(c.vx1 - c.vx0, c.vy1 - c.vy0) / 12;
+      });
+    }));
     return Object.values(by);
   }
   let scope = 'all';
@@ -221,8 +227,8 @@
   }
   const SUGGEST = ['Waterproofing membrane behind the tile', 'Slope the niche sill so it drains', 'Edge trim or bullnose at outside corners', 'Grout color confirmed with a sample', 'Samples ordered and checked in the room', 'Grout joint width agreed with the installer', 'Where the layout starts (centered, or full tile at the floor)'];
   function requirementsHTML() {
-    const used = [...new Set(flat().map(x => x.it.id))];
-    const kinds = id => [...new Set(P.walls.filter(w => w.regions.some(r => r.item === id || r.item2 === id)).map(w => w.kind))];
+    const used = summary('all').map(b => b.it.id);
+    const kinds = id => [...new Set(P.walls.filter(w => w.regions.some(r => r.item === id || r.item2 === id || (r.over && Object.values(r.over).includes(id)))).map(w => w.kind))];
     let h = `<h3 class="lay__h">Requirements</h3><div class="lay__sec">`;
     h += `<label class="lay__lbl">Needed on site by</label><input type="date" id="neededBy" value="${esc(P.neededBy || '')}">`;
     used.forEach(id => {
@@ -241,9 +247,38 @@
   }
 
   // ---------- actions ----------
-  const redraw = (all) => { renderCanvas(); if (all !== 'canvas') { renderLeft(); renderRight(); } save(); };
+  const redraw = (all) => { renderCanvas(); if (all !== 'canvas') { renderLeft(); renderRight(); } renderTools(); save(); };
   function setSel(id) { P.sel = id; const w = P.walls.find(w => w.regions.some(r => r.id === id) || w.cutouts.some(c => c.id === id)); if (w) P.wallSel = w.id; redraw(); }
   function pickFor(cb, kind) { openPicker(cb, kind); }
+  function renderTools() {
+    const b = P.brush && byId[P.brush], t = P.tool || 'select';
+    $('tools').innerHTML = `<span class="lay__seg lay__seg--bar"><button type="button" data-tool="select" class="${t === 'select' ? 'on' : ''}" title="Select, move and resize (Esc)">Select</button><button type="button" data-tool="paint" class="${t === 'paint' ? 'on' : ''}" title="Click or drag over tiles to replace them">Paint tiles</button><button type="button" data-tool="fill" class="${t === 'fill' ? 'on' : ''}" title="Drag a rectangle to fill every tile inside it">Fill area</button><button type="button" data-tool="erase" class="${t === 'erase' ? 'on' : ''}" title="Click a painted tile, or drag a rectangle, to put tiles back">Reset tiles</button></span>`
+      + `<button class="lay__brush" type="button" id="brushBtn" title="Choose the tile to paint with">${b ? `<img src="${esc(b.local[0])}" alt=""><span>${esc(b.name)} <small>${frac(b.geom.w)}×${frac(b.geom.h)}"</small></span>` : '<span>Choose a tile to paint with</span>'}</button><span class="lay__msg" id="toolMsg">${esc(msgText)}</span>`;
+    $('canvas').classList.toggle('painting', t !== 'select');
+  }
+  const b0 = () => { const b = byId[P.brush]; return b ? `${frac(b.geom.w)}×${frac(b.geom.h)}"` : 'the brush'; };
+  let msgText = '';
+  function say(t) { msgText = t; const m = $('toolMsg'); if (m) m.textContent = t; clearTimeout(say.t); say.t = setTimeout(() => { msgText = ''; const m2 = $('toolMsg'); if (m2) m2.textContent = ''; }, 5000); }
+  // the cell of a tile region under a point on a wall, or null
+  function cellAt(w, px, py) {
+    const rs = [...w.regions.filter(r => r.role === 'niche').reverse(), ...w.regions.filter(r => r.role !== 'niche').reverse()];
+    for (const r of rs) {
+      if (px < r.x || px > r.x + r.w || py < r.y || py > r.y + r.h) continue;
+      const rr = regionResult(w, r); if (!rr) continue;
+      const c = rr.res.cells.find(c => px >= c.vx0 && px <= c.vx1 && py >= c.vy0 && py <= c.vy1);
+      if (c) return { r, it: rr.it, c, g: geomFor(r, rr.it) };
+    }
+    return null;
+  }
+  function paintAt(w, px, py, erase) {
+    const hit = cellAt(w, px, py); if (!hit) return false;
+    const key = hit.c.i + ',' + hit.c.j;
+    if (erase) { if (hit.r.over && hit.r.over[key]) { delete hit.r.over[key]; return true; } return false; }
+    const b = byId[P.brush]; if (!b) { say('Choose a tile to paint with first.'); return false; }
+    const A = [b.geom.w, b.geom.h].sort((x, y) => x - y), B = [hit.g.w, hit.g.h].sort((x, y) => x - y);
+    if (Math.abs(A[0] - B[0]) > 0.3 || Math.abs(A[1] - B[1]) > 0.3) { say(`${b.id} is ${frac(b.geom.w)}×${frac(b.geom.h)}", but this region is ${frac(hit.g.w)}×${frac(hit.g.h)}". Paint with a tile of the same size.`); return false; }
+    (hit.r.over || (hit.r.over = {}))[key] = b.id; return true;
+  }
   function addRegion(role, over) {
     const w = wall(); const r = { id: uid(), role, name: '', x: 0, y: 0, w: 12, h: 12, item: null, item2: null, mode: 'single', prints: 'alternate', orient: 'h', offset: 0, grout: role === 'liner' ? 0.125 : 0.125, groutColor: '#ece6d8', dx: 0, dy: 0, ...over };
     w.regions.push(r); return r;
@@ -252,9 +287,11 @@
 
   document.addEventListener('click', e => {
     const t = e.target;
-    if (t.closest('#zoomIn')) { P.zoom = Math.min(8, P.zoom * 1.25); redraw('canvas'); return; }
+    if (t.closest('#zoomIn')) { const c = $('canvas').getBoundingClientRect(); zoomAt(1.25, c.left + c.width / 2, c.top + c.height / 2); return; }
+    const tl = t.closest('[data-tool]'); if (tl) { P.tool = tl.dataset.tool; if ((P.tool === 'paint' || P.tool === 'fill') && !P.brush) { pickFor(id => { P.brush = id; redraw(); }, 'all'); } redraw('canvas'); renderTools(); return; }
+    if (t.closest('#brushBtn')) { pickFor(id => { P.brush = id; if (!P.tool || P.tool === 'select') P.tool = 'paint'; redraw(); }, 'all'); return; }
     if (t.closest('#zoomFit')) { fitZoom(); redraw('canvas'); return; }
-    if (t.closest('#zoomOut')) { P.zoom = Math.max(1, P.zoom / 1.25); redraw('canvas'); return; }
+    if (t.closest('#zoomOut')) { const c = $('canvas').getBoundingClientRect(); zoomAt(0.8, c.left + c.width / 2, c.top + c.height / 2); return; }
     const tileBtn = t.closest('[data-tile]');
     if (tileBtn) { const rs = selRegion(); if (!rs) return; const which = +tileBtn.dataset.tile; pickFor(id => { const r = rs.r; if (which === 2) r.item2 = id; else { r.item = id; const it = byId[id]; if (it.geom.shape === 'liner') r.role = r.role === 'field' ? 'field' : 'liner'; if (!(it.art && it.art.crops) && r.mode === 'prints') r.mode = 'single'; if (it.art && it.art.crops && r.role === 'niche') r.mode = 'prints'; } redraw(); }, rs.r.role === 'liner' ? 'liner' : 'all'); return; }
     const so = t.closest('[data-orient]'); if (so) { const rs = selRegion(); rs.r.orient = so.dataset.orient; redraw(); return; }
@@ -306,6 +343,7 @@
     P.wallSel = w.id; P.sel = w.regions[0].id; redraw();
   }
   document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && (P.tool || 'select') !== 'select') { P.tool = 'select'; redraw(); return; }
     if ((e.key !== 'Delete' && e.key !== 'Backspace') || /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
     const s = findSel(); if (!s) return;
     const o = s.type === 'region' ? s.r : s.c; if (o.role === 'field') return;
@@ -345,12 +383,26 @@
   $('projName').value = P.name; $('projName').onchange = () => { P.name = $('projName').value; save(); };
 
   // ---------- dragging on the canvas ----------
-  let drag = null;
+  let drag = null, painting = null, marq = null;
+  const cap = e => { try { $('svg').setPointerCapture(e.pointerId); } catch (err) {} };
   $('svg').addEventListener('pointerdown', e => {
     const wg = e.target.closest('[data-wall]'); if (!wg) return;
     P.wallSel = wg.dataset.wall; const w = P.walls.find(x => x.id === P.wallSel);
+    if ((P.tool || 'select') !== 'select') {
+      const fr0 = wg.querySelector('.lay__frame').getBoundingClientRect();
+      const erase = P.tool === 'erase' || e.shiftKey;
+      if ((P.tool === 'paint' || P.tool === 'fill') && !P.brush) { pickFor(id => { P.brush = id; redraw(); }, 'all'); return; }
+      if (P.tool === 'fill' || P.tool === 'erase') {
+        const x0 = (e.clientX - fr0.left - 2) / S(), y0 = w.h - (e.clientY - fr0.top - 2) / S();
+        marq = { w, fr: fr0, x0, y0, cx: e.clientX, cy: e.clientY, erase, moved: false };
+        cap(e); return;
+      }
+      painting = { w, erase, fr: fr0, changed: false };
+      painting.changed = paintAt(w, (e.clientX - fr0.left - 2) / S(), w.h - (e.clientY - fr0.top - 2) / S(), erase) || painting.changed;
+      cap(e); renderCanvas(); renderRight(); return;
+    }
     const h = e.target.closest('[data-handle]');
-    if (h) { const f = findSel(), o = f.type === 'region' ? f.r : f.c; drag = { mode: 'resize', w, sx: e.clientX, sy: e.clientY, o: { x: o.x, y: o.y, w: o.w, h: o.h } }; $('svg').setPointerCapture(e.pointerId); return; }
+    if (h) { const f = findSel(), o = f.type === 'region' ? f.r : f.c; drag = { mode: 'resize', w, sx: e.clientX, sy: e.clientY, o: { x: o.x, y: o.y, w: o.w, h: o.h } }; cap(e); return; }
     // find what is under the pointer: niche tiles first, then cutouts, then later regions, then the field
     const fr = wg.querySelector('.lay__frame').getBoundingClientRect(), s = S();
     const px = (e.clientX - fr.left - 2) / s, py = w.h - (e.clientY - fr.top - 2) / s;
@@ -358,11 +410,18 @@
       .find(o => px >= o.x && px <= o.x + o.w && py >= o.y && py <= o.y + o.h);
     if (hit) {
       P.sel = hit.id;
-      if (hit.role !== 'field') { const f = findSel(), o = f.type === 'region' ? f.r : f.c; drag = { mode: 'move', w, sx: e.clientX, sy: e.clientY, o: { x: o.x, y: o.y } }; $('svg').setPointerCapture(e.pointerId); }
+      if (hit.role !== 'field') { const f = findSel(), o = f.type === 'region' ? f.r : f.c; drag = { mode: 'move', w, sx: e.clientX, sy: e.clientY, o: { x: o.x, y: o.y } }; cap(e); }
     }
     redraw();
   });
   $('svg').addEventListener('pointermove', e => {
+    if (marq) {
+      if (Math.hypot(e.clientX - marq.cx, e.clientY - marq.cy) > 4) marq.moved = true;
+      let m = $('svg').querySelector('.lay__marquee'); if (!m) { m = document.createElementNS('http://www.w3.org/2000/svg', 'rect'); m.setAttribute('class', 'lay__marquee'); $('svg').appendChild(m); }
+      const sr = $('svg').getBoundingClientRect(), x = Math.min(marq.cx, e.clientX) - sr.left, y = Math.min(marq.cy, e.clientY) - sr.top;
+      m.setAttribute('x', x); m.setAttribute('y', y); m.setAttribute('width', Math.abs(e.clientX - marq.cx)); m.setAttribute('height', Math.abs(e.clientY - marq.cy)); marq.last = [e.clientX, e.clientY]; return;
+    }
+    if (painting) { const fr = painting.fr; if (paintAt(painting.w, (e.clientX - fr.left - 2) / S(), painting.w.h - (e.clientY - fr.top - 2) / S(), painting.erase)) { painting.changed = true; renderCanvas(); renderRight(); } return; }
     if (!drag) return;
     const s = S(), q = v => Math.round(v / 0.125) * 0.125;
     const dx = q((e.clientX - drag.sx) / s), dy = -q((e.clientY - drag.sy) / s);   // dy is up
@@ -372,8 +431,49 @@
     syncNiche(w, o);
     renderCanvas();
   });
-  const endDrag = () => { if (drag) { drag = null; redraw(); } };
+  // every tile whose middle falls inside the rectangle (wall inches), painted or reset
+  function fillRect(w, ax, ay, bx, by, erase) {
+    const x0 = Math.min(ax, bx), x1 = Math.max(ax, bx), y0 = Math.min(ay, by), y1 = Math.max(ay, by);
+    const b = byId[P.brush]; let n = 0, skipped = 0;
+    w.regions.forEach(r => {
+      const rr = regionResult(w, r); if (!rr) return;
+      const g = geomFor(r, rr.it);
+      rr.res.cells.forEach(c => {
+        const cx = (c.vx0 + c.vx1) / 2, cy = (c.vy0 + c.vy1) / 2;
+        if (cx < x0 || cx > x1 || cy < y0 || cy > y1) return;
+        const hit = cellAt(w, cx, cy); if (!hit || hit.r !== r || hit.c.i !== c.i || hit.c.j !== c.j) return;
+        const key = c.i + ',' + c.j;
+        if (erase) { if (r.over && r.over[key]) { delete r.over[key]; n++; } return; }
+        const A = [b.geom.w, b.geom.h].sort((p, q) => p - q), B = [g.w, g.h].sort((p, q) => p - q);
+        if (Math.abs(A[0] - B[0]) > 0.3 || Math.abs(A[1] - B[1]) > 0.3) { skipped++; return; }
+        (r.over || (r.over = {}))[key] = b.id; n++;
+      });
+    });
+    return { n, skipped };
+  }
+  const endDrag = (e) => {
+    if (marq) {
+      const m = marq; marq = null; const mel = $('svg').querySelector('.lay__marquee'); if (mel) mel.remove();
+      if (m.moved && m.last) {
+        const ex = (m.last[0] - m.fr.left - 2) / S(), ey = m.w.h - (m.last[1] - m.fr.top - 2) / S();
+        const { n, skipped } = fillRect(m.w, m.x0, m.y0, ex, ey, m.erase);
+        redraw(); say(m.erase ? `Reset ${n} tile${n === 1 ? '' : 's'}.` : `Filled ${n} tile${n === 1 ? '' : 's'}${skipped ? `; skipped ${skipped} that are a different size from ${b0()}` : ''}.`);
+      } else if (m.erase) { if (paintAt(m.w, m.x0, m.y0, true)) redraw(); }
+      else say('Drag a rectangle over the tiles to fill.');
+      return;
+    }
+    if (painting) { painting = null; redraw(); return; } if (drag) { drag = null; redraw(); } };
   $('svg').addEventListener('pointerup', endDrag); $('svg').addEventListener('pointercancel', endDrag);
+
+  function zoomAt(factor, clientX, clientY) {
+    const c = $('canvas'), r = c.getBoundingClientRect(), old = P.zoom;
+    const nz = Math.max(0.5, Math.min(40, old * factor)); if (nz === old) return;
+    const mx = clientX - r.left, my = clientY - r.top, wx = (c.scrollLeft + mx) / old, wy = (c.scrollTop + my) / old;
+    P.zoom = nz; renderCanvas(); c.scrollLeft = wx * nz - mx; c.scrollTop = wy * nz - my; save();
+  }
+  $('canvas').addEventListener('wheel', e => { if (e.ctrlKey || e.metaKey) { e.preventDefault(); zoomAt(Math.exp(-e.deltaY * 0.01), e.clientX, e.clientY); } }, { passive: false });
+  $('svg').addEventListener('dblclick', e => { const wg = e.target.closest('[data-wall]'); if (wg && (P.tool || 'select') === 'select') zoomAt(2, e.clientX, e.clientY); });
+  document.addEventListener('keydown', e => { if (/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return; const c = $('canvas').getBoundingClientRect(); if (e.key === '+' || e.key === '=') zoomAt(1.25, c.left + c.width / 2, c.top + c.height / 2); if (e.key === '-') zoomAt(0.8, c.left + c.width / 2, c.top + c.height / 2); });
 
   // tile from the board: ?tile=ID sets the selected region's tile
   const want = new URLSearchParams(location.search).get('tile');

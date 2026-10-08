@@ -347,3 +347,12 @@ svg [data-r],svg [data-c]{cursor:grab}
   .lay__right{overflow:visible;padding:0;background:#fff;columns:2}.lay__right .lay__sec button,.lay__right .lay__nudge,.lay__right #reqForm,.lay__right .lay__chips,.lay__right h3:first-child,.lay__right h3:first-child+.lay__sec{display:none}
   @page{size:landscape;margin:10mm}
 }
+
+.lay__tools{display:inline-flex;gap:8px;align-items:center;margin-left:8px}
+.lay__seg--bar{border-color:#4a463e}.lay__seg--bar button{background:#3a3731;color:#ece6d8;padding:7px 12px}.lay__seg--bar button.on{background:#c27b5a;color:#fff}
+.lay__brush{display:inline-flex;align-items:center;gap:8px;background:#3a3731;color:#ece6d8;border:1px solid #4a463e;border-radius:var(--r);padding:4px 10px;cursor:pointer;font:500 13px var(--body)}
+.lay__brush img{width:26px;height:26px;object-fit:cover;border-radius:3px}.lay__brush small{color:#9c968b}
+.lay__msg{font-size:13px;color:#e7b08a;max-width:420px}
+.lay__canvas.painting svg,.lay__canvas.painting svg [data-r],.lay__canvas.painting svg [data-c]{cursor:crosshair}
+.lay__painted{stroke:#c27b5a;stroke-width:.6}
+.lay__marquee{fill:rgba(194,123,90,.18);stroke:#c27b5a;stroke-width:1.5;stroke-dasharray:5 3;pointer-events:none}
