@@ -520,6 +520,35 @@
    ]
   },
   {
+   "id": "B11",
+   "room": "Bathroom",
+   "name": "Colorful Mosaic Zellige Squares",
+   "vendor": "Otto Tiles & Design",
+   "url": "https://ottotiles.com/products/colorful-mosaic-zellige-squares",
+   "material": "Handmade Moroccan zellige, glazed, on mesh",
+   "size": "12\" x 12\" x 0.43\" mesh sheet",
+   "finish": "Glazed",
+   "price_sqft": 42.0,
+   "unit": "12x12 sheet (1 sq ft)",
+   "unit_price": 42.0,
+   "sqft_per_unit": 1.0,
+   "ship": "In stock; ships in 4\u201310 business days, curbside delivery by appointment",
+   "lead_wk": 2,
+   "stock": "In stock",
+   "sample": "$10 sample; $55 full-size sheet",
+   "flags": [
+    "White basketweave with small squares in ice blue, vintage rose, dusty pink, dark green, navy, mulberry and ochre",
+    "Vendor lists walls, floors, wet areas and outdoors, but no freeze/thaw rating \u2014 don't count on it for the deck without asking",
+    "Handmade, so expect uneven edges and color variation; no sealing needed (glazed)"
+   ],
+   "outdoor": "Vendor says outdoor use; freeze/thaw not stated",
+   "kind": "tile",
+   "local": [
+    "img/B11_0.jpg",
+    "img/B11_1.jpg"
+   ]
+  },
+  {
    "id": "K1",
    "room": "Kitchen",
    "name": "Essa Deco Blue 6x6, Polished + Matte",
