@@ -4044,6 +4044,335 @@
    }
   },
   {
+   "id": "B24",
+   "room": "Bathroom",
+   "name": "Arco Set, Protea + Canyon Cement",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/arco-set-protea-canyon",
+   "material": "Handmade cement tile, unglazed (5/8\" thick)",
+   "size": "Arch-shaped set; tile size not stated on the page",
+   "finish": "Unglazed cement",
+   "price_sqft": 19.85,
+   "unit": "box (24 tiles, 4.07 sq ft)",
+   "unit_price": 80.79,
+   "sqft_per_unit": 4.07,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Dusty rose pill shapes on a deep terracotta-red ground: the blush and terracotta in your saves, in one tile",
+    "Sold as a pre-paired set, 24 tiles a box; a box covers only about 4 sq ft, so a floor needs several boxes",
+    "Radiant-heat compatible; Zia recommends 15\u201320% overage so you can curate the pattern"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B24_0.jpg",
+    "img/B24_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Shower walls",
+    "Feature wall",
+    "Bathroom floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement is porous: Zia says sealing is required, and it patinas over time",
+     "Zia's page says cement tile rates DCOF above 1; check the spec sheet for this set",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 1.0 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Finish not stated"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 1.0
+    },
+    "finish_class": "unknown",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B25",
+   "room": "Bathroom",
+   "name": "Currents Slate + Hyannis 8x8 Cement",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/currents-slate-hyannis-8x8",
+   "material": "Handmade cement tile, unglazed (5/8\" thick)",
+   "size": "8\" x 8\"",
+   "finish": "Unglazed cement",
+   "price_sqft": 15.85,
+   "unit": "box (12 tiles, 5.28 sq ft)",
+   "unit_price": 83.69,
+   "sqft_per_unit": 5.28,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Dusty blue-grey with a zebra-like wave pattern, in two tones of the same blue",
+    "Part of Zia's Second Nature line; 12 tiles a box",
+    "Radiant-heat compatible; Zia recommends 15\u201320% overage so you can curate the pattern"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B25_0.jpg",
+    "img/B25_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower walls",
+    "Feature wall"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement is porous: Zia says sealing is required, and it patinas over time",
+     "Zia's page says cement tile rates DCOF above 1; check the spec sheet for this one",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 1.0 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Finish not stated"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 1.0
+    },
+    "finish_class": "unknown",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B26",
+   "room": "Bathroom",
+   "name": "Elemental Blue 2x8 Cement",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/elemental-blue-2x8",
+   "material": "Handmade cement tile, unglazed (5/8\" thick)",
+   "size": "2\" x 8\"",
+   "finish": "Matte, unglazed cement",
+   "price_sqft": 15.85,
+   "unit": "box (48 tiles, 5.28 sq ft)",
+   "unit_price": 83.68,
+   "sqft_per_unit": 5.28,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Saturated cobalt blue, solid color, from Zia's New Collection",
+    "48 small tiles a box means plenty of grout lines",
+    "Radiant-heat compatible; Zia recommends 15\u201320% overage"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B26_0.jpg",
+    "img/B26_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Shower walls",
+    "Bathroom walls",
+    "Kitchen backsplash"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement is porous: Zia says sealing is required, and it patinas over time",
+     "Fine as a kitchen backsplash if sealed, but it will stain faster than glazed ceramic behind a range",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Unglazed cement: Zia says sealing is required, and it patinas over time"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 1.0
+    },
+    "finish_class": "matte",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold",
+    "care_flags": [
+     "Unglazed cement: Zia says sealing is required, and it patinas over time"
+    ]
+   }
+  },
+  {
    "id": "B19",
    "room": "Bathroom",
    "name": "Agave 4x4 Ceramic, Matte",
