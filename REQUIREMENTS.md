@@ -61,6 +61,22 @@ Price, `lead_wk`, `min_order_sqft` and `small_batch_fee` sit on the item itself.
 2. Run `python3 scripts/check_fit.py`.
 3. Write `fit.notes` for anything the rules can't see, like kids, color or install effort. Hand-written notes never change the rating; a judgment that should lower it goes in `care_flags`.
 
+## Geometry for the layout tool
+
+The layout page lets you pick a tile from the board and lay it on a wall, so every tile and liner carries typed dimensions instead of text. `scripts/check_fit.py` validates them.
+
+| Field | Meaning |
+| --- | --- |
+| `geom.w`, `geom.h` | One laid piece, in inches, as it sits in a horizontal layout (`w` runs left to right). A liner's `w` is its length along the run, `h` its width |
+| `geom.shape` | `rect`, `sheet` (a mesh-mounted sheet laid as one piece) or `liner` |
+| `geom.per_unit` | Pieces in one orderable unit. Leave it out when the unit is sold by area and the tool will work it out from `sqft_per_unit` |
+| `geom.paired` | The item is a pre-mixed two-color checkerboard. Needs `art.colors` with two colors |
+| `geom.variants` | Number of distinct prints, when `art.crops` has more than one |
+| `art.color`, `art.colors` | The flat color(s) the tool draws. Sampled from the product photo |
+| `art.image`, `art.crops` | Optional: real printed tiles cut from a product photo, as fractions of the image (`[x, y, w, h]`) |
+
+Set `geom` to `null` and add a `geom_note` when a tile cannot be laid out (a mixed-size pattern, or no stated size).
+
 ## Reading a rating
 
 1. **Good fit** passes every check for its uses.

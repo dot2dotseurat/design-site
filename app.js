@@ -98,7 +98,7 @@
           <p class="pair__name"><strong>${esc(p.name)}</strong> <span>${esc(p.rule)}</span></p>
           <p class="pair__names">${p.colors.map(c => esc(c[1])).join(' · ')}</p>
           <p class="pair__why">${esc(p.why)}</p></div>`).join('')}</div>` : ''}
-        <div class="card__foot"><a href="${it.url}" target="_blank" rel="noopener">View at ${esc(it.vendor)} ↗</a><span class="id">${it.id}</span></div>
+        <div class="card__foot"><a href="${it.url}" target="_blank" rel="noopener">View at ${esc(it.vendor)} ↗</a>${it.geom ? `<a href="layout.html?tile=${it.id}">Lay out</a>` : ''}<span class="id">${it.id}</span></div>
       </div>
     </article>`;
   }
