@@ -72,7 +72,7 @@
     return `<article class="card${lf ? ' card--liner' : ''}" id="card-${it.id}">
       <button class="card__media" type="button" data-id="${it.id}" aria-label="Enlarge photo of ${esc(it.name)}">
         <img src="${a}" alt="${esc(it.name)}" loading="lazy">
-        ${b ? `<img class="alt" src="${b}" alt="" loading="lazy"><span class="hint">${it.id === 'D6' ? 'Hover: second color' : it.kind === 'wallcovering' ? 'Hover: in a room' : 'Hover: installed'}</span>` : ''}
+        ${b ? `<img class="alt" src="${b}" alt="" loading="lazy"><span class="hint">${it.hover_hint || (it.id === 'D6' ? 'Hover: second color' : it.kind === 'wallcovering' ? 'Hover: in a room' : 'Hover: installed')}</span>` : ''}
         ${tag}
         ${isPoor(it) ? `<span class="tag tag--poor">${esc(isHidden(it) ? 'Hidden' : (it.fit && it.fit.tag) || 'Poor fit')}</span>` : ''}
       </button>

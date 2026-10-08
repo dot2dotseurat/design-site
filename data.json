@@ -1203,6 +1203,461 @@
    }
   },
   {
+   "id": "D10",
+   "room": "Deck",
+   "name": "Velanza Verde + Crema Beige 12x12 (marble-look checkerboard)",
+   "vendor": "Oasis Tile (Matrix Mosaics Velanza)",
+   "url": "https://oasistile.com/products/velanza-verde-green-12x12-matte-porcelain-tile",
+   "material": "Color-body porcelain, Verde Alpi and Crema Marfil marble look (two tiles laid alternately)",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 11.91,
+   "unit": "one box of each (14 tiles, 13.56 sq ft each, 27.12 sq ft together)",
+   "unit_price": 323.06,
+   "sqft_per_unit": 27.12,
+   "ship": "Crema Beige: ships in 1\u20132 business days. Verde Green: the box is out of stock right now (sample is in stock); ask Oasis for a restock date",
+   "lead_wk": null,
+   "stock": "Verde out of stock; Crema in stock",
+   "sample": "$6.95 per color",
+   "flags": [
+    "The closest look to the Avanti on the board: deep marble green with pale veining, against a warm cream with soft brown veins",
+    "Verde is $12.48/sq ft ($169.26 a box) and Crema is $11.34/sq ft ($153.80 a box); the price shown is the average for half of each",
+    "The pictures are a preview built from the vendor's two tile photos laid as a checkerboard; the tiles are sold separately",
+    "Listed for outdoor and pool use with water absorption at or under 0.5%, but the page never says \"freeze/thaw\", so get that in writing"
+   ],
+   "outdoor": "Listed \"can be used outdoor: yes\" and pool; no freeze/thaw statement",
+   "local": [
+    "img/D10_0.jpg",
+    "img/D10_1.jpg"
+   ],
+   "kind": "tile",
+   "hover_hint": "Hover: the two tiles",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Porcelain at 0.5% water absorption or less is the usual basis for frost resistance, but the vendor does not state freeze/thaw: ask for the ASTM C1026 result before the deck",
+     "DCOF 0.49 and matte: clears the wet-floor line",
+     "Veining is printed on porcelain, so it will not etch or need sealing like the Avanti marble"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "DCOF 0.49 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "Oasis lists \"can be used outdoor: yes\" and absorption of 0.5% or less, but no freeze/thaw statement"
+    },
+    "slip": {
+     "dcof": 0.49
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "D11",
+   "room": "Deck",
+   "name": "Kai 12x24 Grip Porcelain, Jade",
+   "vendor": "Edward Martin",
+   "url": "https://www.edwardmartin.com/products/kai-12x24-grip-porcelain-tile-in-jade",
+   "material": "Porcelain",
+   "size": "12\" x 24\"",
+   "finish": "Grip (textured, slip-resistant)",
+   "price_sqft": 7.44,
+   "unit": "carton (16 sq ft)",
+   "unit_price": 118.97,
+   "sqft_per_unit": 16.0,
+   "ship": "In stock; ships in 5\u20137 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3 sample",
+   "flags": [
+    "A muted olive-sage green with a soft hand-glazed look, solid rather than veined",
+    "The cheapest green here that is listed for outdoor use: $7.44 a sq ft",
+    "The page lists it for wall, floor and outdoor, but gives no freeze/thaw rating, slip number, thickness or water absorption"
+   ],
+   "outdoor": "Listed for outdoor use; no freeze/thaw statement",
+   "local": [
+    "img/D11_0.jpg",
+    "img/D11_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Grip-finish porcelain is made for outdoor floors, but the page publishes no freeze/thaw or slip numbers: ask Edward Martin for both before the deck",
+     "A 12x24 plank means fewer grout lines than the 4x4s, but it is a plain color, so it pairs with a second tile for a checkerboard"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "Edward Martin lists \"Wall, Floor, Outdoor\" but no freeze/thaw statement"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "D12",
+   "room": "Deck",
+   "name": "Palmer Checkerboard 12x12 Matte, White + Ocean Blue",
+   "vendor": "Edward Martin",
+   "url": "https://www.edwardmartin.com/products/palmer-12x12-checkerboard-matte-porcelain-tile-in-white-and-ocean-blue",
+   "material": "Concrete-look porcelain, rectified, made in the USA (pre-paired checkerboard bundle)",
+   "size": "12\" x 12\"",
+   "finish": "Matte (soft-touch)",
+   "price_sqft": 6.09,
+   "unit": "bundle (26 sq ft)",
+   "unit_price": 158.46,
+   "sqft_per_unit": 26.0,
+   "ship": "In stock; ships in 5\u20137 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$6 sample",
+   "flags": [
+    "Warm off-white against a steel slate blue, in a soft concrete-look finish: a calm blue checkerboard, the cheapest here at $6.09 a sq ft",
+    "The page lists it for wall, floor and outdoor, but gives no freeze/thaw rating, slip number or water absorption",
+    "Its description says \"walls to floors, kitchens to bathrooms\", while the Raw-finish Palmer checkerboards say \"poolsides and patios\"; ask whether this matte version is meant for outdoors"
+   ],
+   "outdoor": "Listed for outdoor use; no freeze/thaw statement, and the description does not mention patios",
+   "local": [
+    "img/D12_0.jpg",
+    "img/D12_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Matte surface \"improves slip resistance\" but no DCOF or R number is published: ask Edward Martin for it and for the freeze/thaw result before the deck",
+     "The Raw-finish Palmer checkerboards are the ones marketed for patios; ask whether Ocean Blue comes in Raw"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "Edward Martin lists \"Wall, Floor, Outdoor\" but no freeze/thaw statement, and the description omits patios"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "D13",
+   "room": "Deck",
+   "name": "RUNNEN Outdoor Decking Tiles, Acacia",
+   "vendor": "IKEA",
+   "url": "https://www.ikea.com/us/en/p/runnen-decking-outdoor-acacia-60518486/",
+   "material": "Solid acacia wood top with acrylic stain, polypropylene base (click-together tiles)",
+   "size": "11\u00be\" x 11\u00be\" x \u00be\" (9 tiles a pack)",
+   "finish": "Stained wood slats",
+   "price_sqft": 4.01,
+   "unit": "pack (9 tiles, 8.72 sq ft)",
+   "unit_price": 34.99,
+   "sqft_per_unit": 8.72,
+   "ship": "Availability and delivery depend on your zip code; IKEA's page showed \"checking availability\"",
+   "lead_wk": null,
+   "stock": "Availability depends on zip code",
+   "sample": "No samples; one $34.99 pack works as a trial",
+   "flags": [
+    "A warm honey-brown wood in a 12-inch slat pattern: the one deck option that is not tile, and the cheapest at about $4 a sq ft",
+    "Clicks together with no subfloor, but only for use on a hard, even surface",
+    "IKEA says to re-glaze it once or twice a year, and that color change, small cracks or dry-looking wood mean it is due",
+    "The page gives no slip rating or freeze/thaw statement"
+   ],
+   "outdoor": "Designated for outdoor use on hard, even surfaces; no freeze/thaw statement",
+   "local": [
+    "img/D13_0.jpg",
+    "img/D13_1.jpg"
+   ],
+   "kind": "tile",
+   "overage": 0.1,
+   "uses": [
+    "Deck",
+    "Balcony",
+    "Over an existing hard surface"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Wood needs yearly upkeep (re-glazing) where tile needs none; you can take the tiles apart and relay them",
+     "No slip or freeze/thaw numbers are published: wet acrylic-stained wood can be slick, so test one pack in the rain before covering the deck",
+     "It will not give the green or pink checkerboard look, but it could sit beside a tile inset"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Finish not stated"
+     },
+     {
+      "rule": "Care",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "caution",
+      "detail": "Only a full-size sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Wood: IKEA says to re-glaze it once or twice a year"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "IKEA says outdoor use on hard even surfaces; no freeze/thaw statement"
+    },
+    "slip": null,
+    "finish_class": "unknown",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "outdoor"
+    ],
+    "sample": "full-size-only",
+    "care_flags": [
+     "Wood: IKEA says to re-glaze it once or twice a year"
+    ]
+   }
+  },
+  {
    "id": "D1",
    "room": "Bathroom",
    "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
@@ -4035,6 +4490,449 @@
     },
     "finish_class": "matte",
     "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B24",
+   "room": "Bathroom",
+   "name": "Arco Set, Protea + Canyon Cement",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/arco-set-protea-canyon",
+   "material": "Handmade cement tile, unglazed (5/8\" thick)",
+   "size": "Arch-shaped set; tile size not stated on the page",
+   "finish": "Unglazed cement",
+   "price_sqft": 19.85,
+   "unit": "box (24 tiles, 4.07 sq ft)",
+   "unit_price": 80.79,
+   "sqft_per_unit": 4.07,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Dusty rose pill shapes on a deep terracotta-red ground: the blush and terracotta in your saves, in one tile",
+    "Sold as a pre-paired set, 24 tiles a box; a box covers only about 4 sq ft, so a floor needs several boxes",
+    "Radiant-heat compatible; Zia recommends 15\u201320% overage so you can curate the pattern"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B24_0.jpg",
+    "img/B24_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Shower walls",
+    "Feature wall",
+    "Bathroom floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement is porous: Zia says sealing is required, and it patinas over time",
+     "Zia's page says cement tile rates DCOF above 1; check the spec sheet for this set",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 1.0 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Finish not stated"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 1.0
+    },
+    "finish_class": "unknown",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B25",
+   "room": "Bathroom",
+   "name": "Currents Slate + Hyannis 8x8 Cement",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/currents-slate-hyannis-8x8",
+   "material": "Handmade cement tile, unglazed (5/8\" thick)",
+   "size": "8\" x 8\"",
+   "finish": "Unglazed cement",
+   "price_sqft": 15.85,
+   "unit": "box (12 tiles, 5.28 sq ft)",
+   "unit_price": 83.69,
+   "sqft_per_unit": 5.28,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Dusty blue-grey with a zebra-like wave pattern, in two tones of the same blue",
+    "Part of Zia's Second Nature line; 12 tiles a box",
+    "Radiant-heat compatible; Zia recommends 15\u201320% overage so you can curate the pattern"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B25_0.jpg",
+    "img/B25_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower walls",
+    "Feature wall"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement is porous: Zia says sealing is required, and it patinas over time",
+     "Zia's page says cement tile rates DCOF above 1; check the spec sheet for this one",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 1.0 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Finish not stated"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 1.0
+    },
+    "finish_class": "unknown",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B26",
+   "room": "Bathroom",
+   "name": "Elemental Blue 2x8 Cement",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/elemental-blue-2x8",
+   "material": "Handmade cement tile, unglazed (5/8\" thick)",
+   "size": "2\" x 8\"",
+   "finish": "Matte, unglazed cement",
+   "price_sqft": 15.85,
+   "unit": "box (48 tiles, 5.28 sq ft)",
+   "unit_price": 83.68,
+   "sqft_per_unit": 5.28,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Saturated cobalt blue, solid color, from Zia's New Collection",
+    "48 small tiles a box means plenty of grout lines",
+    "Radiant-heat compatible; Zia recommends 15\u201320% overage"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B26_0.jpg",
+    "img/B26_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Shower walls",
+    "Bathroom walls",
+    "Kitchen backsplash"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement is porous: Zia says sealing is required, and it patinas over time",
+     "Fine as a kitchen backsplash if sealed, but it will stain faster than glazed ceramic behind a range",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Unglazed cement: Zia says sealing is required, and it patinas over time"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 1.0
+    },
+    "finish_class": "matte",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold",
+    "care_flags": [
+     "Unglazed cement: Zia says sealing is required, and it patinas over time"
+    ]
+   }
+  },
+  {
+   "id": "B27",
+   "room": "Bathroom",
+   "name": "Draper Saguaro 12x12 Terrazzo",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/draper-saguaro-12x12",
+   "material": "Handmade cement terrazzo, unglazed (5/8\" thick)",
+   "size": "12\" x 12\"",
+   "finish": "Matte, unglazed cement terrazzo",
+   "price_sqft": 19.85,
+   "unit": "box (10 tiles, 9.68 sq ft)",
+   "unit_price": 192.15,
+   "sqft_per_unit": 9.68,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Sage green terrazzo with a cream border that curves at one corner: four tiles join into rounded green squares in a cream grid",
+    "A green and cream pair in a single tile, close to the Verde and Marfil palette",
+    "Radiant-heat compatible; Zia says color and aggregate vary from tile to tile"
+   ],
+   "outdoor": "Interior floors and walls; outdoors only where there's no snow or ice (Zia's usage panel marks freeze/thaw floors unsupported)",
+   "local": [
+    "img/B27_0.jpg",
+    "img/B27_1.jpg"
+   ],
+   "kind": "tile",
+   "hover_hint": "Hover: four tiles joined",
+   "uses": [
+    "Bathroom floor",
+    "Walls",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Unglazed cement terrazzo is porous: Zia says sealing is required, so budget for resealing",
+     "DCOF 0.51 clears the wet-floor line",
+     "Indoor only for NYC: the usage panel does not list freeze/thaw floors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 0.51 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "Zia's usage panel: exterior freeze/thaw floors not supported"
+    },
+    "slip": {
+     "dcof": 0.51
+    },
+    "finish_class": "matte",
+    "porosity": "seal-regular",
     "rated_for": [
      "floor",
      "wall",
