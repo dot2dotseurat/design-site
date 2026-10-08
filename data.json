@@ -885,6 +885,36 @@
    "outdoor": "\u2014",
    "kind": "wallcovering",
    "overage": 0.1
+  },
+  {
+   "id": "W5",
+   "room": "Wallpaper",
+   "name": "Mediterranean Patio, Green",
+   "url": "https://belartestudio.com/products/mediterranean-patio-green-wall-mural",
+   "size": "Custom to your wall, 45 cm (17\u00be\") panels",
+   "flags": [
+    "Loose green line drawing of palms, striped awnings and caf\u00e9 tables on crisp white",
+    "A green-and-white scene that echoes the deck checkerboards (D4, D6)",
+    "Also in Chestnut and Blue"
+   ],
+   "local": [
+    "img/W5_0.jpg",
+    "img/W5_1.jpg"
+   ],
+   "vendor": "BelarteSTUDIO",
+   "material": "FSC non-woven wallpaper mural, 147 g",
+   "finish": "Matte",
+   "price_sqft": 7.9,
+   "unit": "m\u00b2 (whole m\u00b2, about 10.76 sq ft)",
+   "unit_price": 85.0,
+   "sqft_per_unit": 10.764,
+   "ship": "Ships 1\u20133 days after ordering, then 2\u20133 days delivery; free worldwide shipping (US timing not stated)",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A4 sample; large sample on some designs (price not listed)",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.1
   }
  ],
  "palettes": [
