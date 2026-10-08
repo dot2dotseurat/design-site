@@ -549,6 +549,36 @@
    ]
   },
   {
+   "id": "B12",
+   "room": "Bathroom",
+   "name": "Perpetual Check 4 Zellige Mosaic",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/perpetual-check-4",
+   "material": "Handmade Moroccan zellige, glazed, on mesh",
+   "size": "8\" x 8\" mesh sheets, 3/8\" thick",
+   "finish": "Glazed",
+   "price_sqft": 38.85,
+   "unit": "box of 25 sheets (10.76 sq ft)",
+   "unit_price": 418.03,
+   "sqft_per_unit": 10.76,
+   "ship": "In stock, ready to ship (freight time extra)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free",
+   "flags": [
+    "Optical 3-D check in cobalt (Superior Blue), aqua (Portuguese Blue) and plum",
+    "Pairs with the Dusty Pink + Steel Blue and Sea + Bone palettes",
+    "Zia lists it as outdoor non-freeze/thaw \u2014 indoor only for Brooklyn",
+    "Zellige installs take 2\u20133\u00d7 longer than standard tile; Zia suggests 15\u201320% overage"
+   ],
+   "outdoor": "Not freeze/thaw rated",
+   "kind": "tile",
+   "local": [
+    "img/B12_0.jpg",
+    "img/B12_1.jpg"
+   ]
+  },
+  {
    "id": "K1",
    "room": "Kitchen",
    "name": "Essa Deco Blue 6x6, Polished + Matte",
