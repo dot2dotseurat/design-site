@@ -89,7 +89,77 @@
     "level": "caution",
     "notes": [
      "Frost resistant with a decent slip rating, but a polished face outside invites slips when kids run on it wet \u2014 ask about a honed finish"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "good",
+      "detail": "Passes freeze/thaw (TileBar: frost resistant)"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "DCOF 0.62 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "Polished finish is slick when wet"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "Porosity not stated"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "pass",
+     "source": "TileBar: frost resistant"
+    },
+    "slip": {
+     "dcof": 0.62
+    },
+    "finish_class": "polished",
+    "porosity": "unknown",
+    "rated_for": [
+     "floor",
+     "outdoor"
+    ],
+    "sample": "sold"
    }
   },
   {
@@ -181,7 +251,78 @@
     "notes": [
      "Frost resistant, matte, R10 slip \u2014 tough enough for kids",
      "Large heavy tiles need a very flat base and a curbside delivery plan in Brooklyn"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "good",
+      "detail": "Passes freeze/thaw (TileBar: frost resistant)"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "DCOF 0.42 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "pass",
+     "source": "TileBar: frost resistant"
+    },
+    "slip": {
+     "dcof": 0.42
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
    }
   },
   {
@@ -273,7 +414,78 @@
     "notes": [
      "Frost resistant, matte porcelain with DCOF \u2265 0.42 \u2014 the safest checkerboard for kids",
      "Porcelain doesn't stain or need sealing"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "good",
+      "detail": "Passes freeze/thaw (Ferguson: frost resistant and outdoor approved)"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "DCOF 0.42 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "pass",
+     "source": "Ferguson: frost resistant and outdoor approved"
+    },
+    "slip": {
+     "dcof": 0.42
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
    }
   },
   {
@@ -364,7 +576,80 @@
     "notes": [
      "Frost rating unpublished \u2014 don't use on the deck until Reno Source confirms",
      "Otherwise matte porcelain: durable and no sealing"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Rated for outdoor",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Not listed for outdoor use"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall"
+    ],
+    "sample": "sold"
    }
   },
   {
@@ -385,11 +670,11 @@
    "stock": "In stock",
    "sample": "$3; first 5 samples free",
    "flags": [
-    "Both colors rated for freeze/thaw exterior floors",
+    "Zia's description says freeze/thaw, but its usage panel does not list exterior freeze/thaw floors \u2014 confirm with Zia before using on the deck",
     "Exactly green + pink, but small tiles mean lots of grout outdoors",
     "Satin finish \u2014 test a wet sample for slip"
    ],
-   "outdoor": "Freeze/thaw exterior floors listed",
+   "outdoor": "Conflicting: Zia's description says freeze/thaw, but its usage panel does not list exterior freeze/thaw floors",
    "local": [
     "img/D6_0.jpg",
     "img/D6_1.jpg"
@@ -479,9 +764,442 @@
    "fit": {
     "level": "caution",
     "notes": [
-     "Freeze/thaw rated, but 4x4 tiles mean lots of grout outdoors \u2014 seal it or it darkens with dirt",
+     "Zia's listings conflict on freeze/thaw (description yes, usage panel no) \u2014 confirm in writing before the deck",
+     "4x4 tiles mean lots of grout outdoors \u2014 seal it or it darkens with dirt",
      "Satin finish: test a wet sample for slip before committing to a deck kids play on"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "The vendor's listings disagree on freeze/thaw (Zia's description says freeze/thaw, but its usage panel does not list it)"
+     },
+     {
+      "rule": "Rated for outdoor",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Not listed for outdoor use"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "DCOF 0.45 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Satin finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "4x4 tiles mean lots of grout outdoors: seal it or it darkens with dirt"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "conflict",
+     "source": "Zia's description says freeze/thaw, but its usage panel does not list it"
+    },
+    "slip": {
+     "dcof": 0.45
+    },
+    "finish_class": "satin",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold",
+    "care_flags": [
+     "4x4 tiles mean lots of grout outdoors: seal it or it darkens with dirt"
+    ]
+   }
+  },
+  {
+   "id": "D7",
+   "room": "Deck",
+   "name": "Fuego Checkerboard R11, Antic + Teja 9x9",
+   "vendor": "Tile Mart",
+   "url": "https://tilemart.com/products/fuego-9x9-checkerboard-r11-matte-porcelain-tile-in-antic-and-teja",
+   "material": "Porcelain, pre-paired checkerboard set (12 mm)",
+   "size": "9\" x 9\"",
+   "finish": "Matte, R11",
+   "price_sqft": 10.99,
+   "unit": "set (32 tiles, 17.44 sq ft)",
+   "unit_price": 191.67,
+   "sqft_per_unit": 17.44,
+   "ship": "In stock; ship time not stated (flat-rate shipping, curbside and liftgate included)",
+   "lead_wk": null,
+   "stock": "In stock",
+   "sample": "Not listed",
+   "flags": [
+    "Both colors are sold together as one checkerboard set, so no mixing and matching",
+    "Sand and terracotta rather than green or pink \u2014 the one frost-rated checkerboard here that leans warm",
+    "Sold as a set of 32, so order by the set"
+   ],
+   "outdoor": "Frost resistant; R11 slip rating; pool rated",
+   "local": [
+    "img/D7_0.jpg",
+    "img/D7_1.jpg"
+   ],
+   "uses": [
+    "Deck",
+    "Patio",
+    "Shower floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Frost-resistant porcelain with an R11 slip rating, the grippiest finish on this page",
+     "12 mm thick and matte, so it holds up on a deck kids run across"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "good",
+      "detail": "Passes freeze/thaw (Tile Mart: frost-resistant porcelain)"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "R11 slip rating meets R10"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "caution",
+      "detail": "Sample availability not stated"
+     }
+    ]
+   },
+   "kind": "tile",
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "pass",
+     "source": "Tile Mart: frost-resistant porcelain"
+    },
+    "slip": {
+     "r": "R11"
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "unknown"
+   }
+  },
+  {
+   "id": "D8",
+   "room": "Deck",
+   "name": "Natural Press Checkerboard 12x12, Salt Creek + Alberta Blue",
+   "vendor": "Fireclay Tile",
+   "url": "https://www.fireclaytile.com/products/natural-press-ceramic-checkerboard-matte-salt-creek-alberta-blue-tile-12x12",
+   "material": "Natural Press ceramic (recycled clay body)",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 19.0,
+   "unit": "sq ft",
+   "unit_price": 19.0,
+   "sqft_per_unit": 1,
+   "ship": "Ships in 7\u20139 weeks (rush 6\u20137 weeks at +15%, 5\u20136 weeks at +30%); $100 small-batch fee under 25 sq ft",
+   "lead_wk": 8,
+   "stock": "Made to order",
+   "sample": "$6 sample (ships same day if ordered by 1 pm)",
+   "flags": [
+    "Crisp white against a pale grey-blue \u2014 a blue checkerboard cousin to the Sea + Bone palette",
+    "12\" tiles mean far less grout outdoors than the 4x4s",
+    "Orders under 25 sq ft carry a $100 small-batch fee"
+   ],
+   "outdoor": "Passes freeze/thaw testing; listed for pool and outdoor",
+   "local": [
+    "img/D8_0.jpg",
+    "img/D8_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Passes freeze/thaw testing and a matte, slip-resistant DCOF \u2014 the same line is listed for floors, showers, pools and outdoors",
+     "Made to order, so plan around the 7\u20139 week wait (rush options cost 15\u201330% more)"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "good",
+      "detail": "Passes freeze/thaw (Fireclay: passes freeze/thaw testing)"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "listed as passing the DCOF wet-slip test (number not published)"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "About 8 weeks to ship"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "caution",
+      "detail": "$100 small-batch fee under 25 sq ft"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "small_batch_fee": {
+    "below_sqft": 25,
+    "fee": 100
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "pass",
+     "source": "Fireclay: passes freeze/thaw testing"
+    },
+    "slip": {
+     "dcof_pass": true
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "D9",
+   "room": "Deck",
+   "name": "Natural Press Checkerboard 12x12, Salt Creek + Red Iron Oxide",
+   "vendor": "Fireclay Tile",
+   "url": "https://www.fireclaytile.com/products/natural-press-ceramic-checkerboard-matte-salt-creek-red-iron-oxide-tile-12x12",
+   "material": "Natural Press ceramic (recycled clay body)",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 19.0,
+   "unit": "sq ft",
+   "unit_price": 19.0,
+   "sqft_per_unit": 1,
+   "ship": "Ships in 7\u20139 weeks (rush 6\u20137 weeks at +15%, 5\u20136 weeks at +30%); $100 small-batch fee under 25 sq ft",
+   "lead_wk": 8,
+   "stock": "Made to order",
+   "sample": "$6 sample (ships same day if ordered by 1 pm)",
+   "flags": [
+    "Crisp white against a deep red-brown: the oxblood and terracotta from your saves, in a frost-rated checkerboard",
+    "12\" tiles mean far less grout outdoors than the 4x4s",
+    "Orders under 25 sq ft carry a $100 small-batch fee"
+   ],
+   "outdoor": "Passes freeze/thaw testing; listed for pool and outdoor",
+   "local": [
+    "img/D9_0.jpg",
+    "img/D9_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Passes freeze/thaw testing and a matte, slip-resistant DCOF \u2014 the same line is listed for floors, showers, pools and outdoors",
+     "Made to order, so plan around the 7\u20139 week wait (rush options cost 15\u201330% more)"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "good",
+      "detail": "Passes freeze/thaw (Fireclay: passes freeze/thaw testing)"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "listed as passing the DCOF wet-slip test (number not published)"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "About 8 weeks to ship"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "caution",
+      "detail": "$100 small-batch fee under 25 sq ft"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "small_batch_fee": {
+    "below_sqft": 25,
+    "fee": 100
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "pass",
+     "source": "Fireclay: passes freeze/thaw testing"
+    },
+    "slip": {
+     "dcof_pass": true
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor",
+     "shower"
+    ],
+    "sample": "sold"
    }
   },
   {
@@ -581,13 +1299,92 @@
     "notes": [
      "Not frost resistant, so NYC freeze/thaw cycles can crack it on a deck",
      "Indoors: tumbled marble etches from juice, soap and cleaners, so it needs resealing every year or so"
+    ],
+    "tag": "Poor fit for deck: not frost resistant",
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "poor",
+      "detail": "Not freeze/thaw resistant (TileBar: listed as not frost resistant)",
+      "short": "not frost resistant"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Tumbled finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "Etches and stains from soap and cleaners"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Low stock"
+     }
     ]
    },
    "moved": "Moved from Deck: not frost resistant",
    "liners": [
     "L1",
     "L3"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "fail",
+     "source": "TileBar: listed as not frost resistant"
+    },
+    "slip": null,
+    "finish_class": "tumbled",
+    "porosity": "etches",
+    "rated_for": [
+     "floor",
+     "outdoor"
+    ],
+    "sample": "sold",
+    "care_flags": [
+     "Low stock"
+    ]
+   }
   },
   {
    "id": "B1",
@@ -609,7 +1406,7 @@
    "flags": [
     "Floors, walls and showers; DCOF 0.74"
    ],
-   "outdoor": "Indoor + outdoor (freeze/thaw listed)",
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
    "local": [
     "img/B1_0.jpg",
     "img/B1_1.jpg"
@@ -694,21 +1491,90 @@
    "uses": [
     "Shower floor",
     "Bathroom floor",
-    "Walls",
-    "Deck"
+    "Walls"
    ],
    "fit": {
     "level": "good",
     "notes": [
-     "DCOF 0.74 and freeze/thaw rated \u2014 the best wet-floor option for a kids' bath",
-     "Also tough enough for the deck"
+     "DCOF 0.74 \u2014 the best wet-floor option for a kids' bath",
+     "Zia's description mentions freeze/thaw, but its usage panel doesn't list it \u2014 treat as indoor"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 0.74 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L2",
     "L5",
     "L6"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "dcof": 0.74
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B2",
@@ -730,7 +1596,7 @@
    "flags": [
     "Same body as Iconic Blue, in a pink satin"
    ],
-   "outdoor": "Indoor + outdoor (freeze/thaw listed)",
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
    "local": [
     "img/B2_0.jpg",
     "img/B2_1.jpg"
@@ -814,20 +1680,90 @@
    ],
    "uses": [
     "Walls",
-    "Bathroom floor",
-    "Deck"
+    "Bathroom floor"
    ],
    "fit": {
     "level": "good",
     "notes": [
-     "Freeze/thaw rated ceramic, same body as Iconic Blue",
-     "Satin glaze: check the slip rating before using on a shower floor"
+     "Same ceramic body as Iconic Blue",
+     "Satin glaze: check the slip rating before using on a shower floor",
+     "Zia's description mentions freeze/thaw, but its usage panel doesn't list it \u2014 treat as indoor"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 0.45 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Satin finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L2",
     "L4"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "dcof": 0.45
+    },
+    "finish_class": "satin",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B3",
@@ -940,11 +1876,78 @@
     "notes": [
      "Marble etches and stains from shampoo, toothpaste and cleaners; needs sealing",
      "Fine on walls; on a kids' bath floor expect visible wear"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Honed finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Etches and stains from soap and cleaners"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L1"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "honed",
+    "porosity": "etches",
+    "rated_for": [
+     "floor",
+     "wall"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B4",
@@ -1059,6 +2062,64 @@
      "Walls: great",
      "Floors: poor \u2014 gloss with DCOF under 0.42 is slippery wet, so keep it off any floor kids use",
      "Not freeze/thaw rated"
+    ],
+    "tag": "Poor fit for floor: DCOF under 0.42",
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "poor",
+      "detail": "DCOF is listed under 0.42",
+      "short": "DCOF under 0.42"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Gloss finish is slick when wet"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Rated for floors",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Not listed for floor use"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "About 8 weeks to ship"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
@@ -1066,7 +2127,25 @@
     "L2",
     "L3",
     "L5"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "dcof_lt": 0.42
+    },
+    "finish_class": "gloss",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B5",
@@ -1156,12 +2235,72 @@
     "notes": [
      "Encaustic cement is porous: spills and bath products stain it unless resealed regularly",
      "It patinas \u2014 some people like that, but it won't stay crisp with kids"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L2",
     "L6"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B6",
@@ -1274,6 +2413,56 @@
     "notes": [
      "Slip rating and ship time aren't published \u2014 ask before using on a wet floor",
      "Terrazzo needs sealing"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Honed finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
@@ -1281,7 +2470,24 @@
     "L3",
     "L4",
     "L5"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "honed",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B7",
@@ -1367,17 +2573,78 @@
     "Deck, if freeze/thaw is confirmed"
    ],
    "fit": {
-    "level": "good",
+    "level": "caution",
     "notes": [
      "Matte porcelain: durable, no sealing, cheapest option",
      "Outdoor listed \u2014 ask TileBar about freeze/thaw before using it on the deck"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L1",
     "L3",
     "L5"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B8",
@@ -1466,13 +2733,82 @@
     "level": "caution",
     "notes": [
      "DCOF 0.51 is fine for floors, but cement terrazzo needs sealing to resist stains"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 0.51 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L3",
     "L4",
     "L5"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "dcof": 0.51
+    },
+    "finish_class": "matte",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B9",
@@ -1562,11 +2898,78 @@
     "notes": [
      "Concrete with a required sealer: spills and splashes can stain, and it needs resealing",
      "Busy patterns hide wear, but a kids' bath floor will age fast"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L6"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B10",
@@ -1657,11 +3060,78 @@
     "notes": [
      "Concrete with a required sealer: spills and splashes can stain, and it needs resealing",
      "The lighter colors show stains more than Deep Sea"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L5"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "B11",
@@ -1750,12 +3220,77 @@
      "Great on walls; on floors the uneven glaze chips and gets slippery when wet",
      "Freeze/thaw not stated \u2014 indoor only for NYC",
      "Expect higher labor cost"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Handmade zellige installs take 2\u20133\u00d7 longer, so expect higher labor cost"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Uneven glaze chips and gets slippery on floors, so walls only"
+     }
     ]
    },
    "liners": [
     "L2",
     "L4"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "unknown",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall",
+     "shower",
+     "outdoor"
+    ],
+    "sample": "sold",
+    "care_flags": [
+     "Handmade zellige installs take 2\u20133\u00d7 longer, so expect higher labor cost",
+     "Uneven glaze chips and gets slippery on floors, so walls only"
+    ]
+   }
   },
   {
    "id": "B12",
@@ -1868,11 +3403,846 @@
      "Great on walls; zellige floors chip and get slippery when wet",
      "Zia says not freeze/thaw \u2014 indoor only",
      "Install takes 2\u20133\u00d7 longer, so expect higher labor cost"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Handmade zellige installs take 2\u20133\u00d7 longer, so expect higher labor cost"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Uneven glaze chips and gets slippery on floors, so walls only"
+     }
     ]
    },
    "liners": [
     "L6"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "unknown",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall",
+     "shower"
+    ],
+    "sample": "sold",
+    "care_flags": [
+     "Handmade zellige installs take 2\u20133\u00d7 longer, so expect higher labor cost",
+     "Uneven glaze chips and gets slippery on floors, so walls only"
+    ]
+   }
+  },
+  {
+   "id": "B13",
+   "room": "Bathroom",
+   "name": "Santorini 8x8 Encaustic Cement",
+   "vendor": "Otto Tiles & Design",
+   "url": "https://ottotiles.com/products/santorini",
+   "material": "Encaustic cement, handmade",
+   "size": "8\" x 8\" x 0.47\"",
+   "finish": "Honed, R11",
+   "price_sqft": 38.25,
+   "unit": "tile (0.44 sq ft)",
+   "unit_price": 17.0,
+   "sqft_per_unit": 0.4444,
+   "ship": "In stock; ships in 4\u201310 business days",
+   "lead_wk": 2,
+   "stock": "In stock",
+   "sample": "$8 sample; 5 sq ft minimum order",
+   "flags": [
+    "Cream ground with a diagonal blue-and-white check stripe",
+    "Seal before and after grouting; vendor recommends 15% extra for cuts and breakage",
+    "Vendor says walls, floors and outdoors, but gives no freeze/thaw rating"
+   ],
+   "outdoor": "Vendor says outdoor use; freeze/thaw not stated",
+   "local": [
+    "img/B13_0.jpg",
+    "img/B13_1.jpg"
+   ],
+   "uses": [
+    "Walls",
+    "Shower walls",
+    "Floor feature"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Encaustic cement is porous: it needs sealing before and after grouting, then regular resealing",
+     "R11 slip rating is good for a wet floor, but freeze/thaw isn't stated, so keep it indoors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "R11 slip rating meets R10"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Honed finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "liners": [
+    "L2",
+    "L4"
+   ],
+   "kind": "tile",
+   "min_order_sqft": 5,
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "r": "R11"
+    },
+    "finish_class": "honed",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B14",
+   "room": "Bathroom",
+   "name": "Bodrum Beach 8x8 Encaustic Cement",
+   "vendor": "Otto Tiles & Design",
+   "url": "https://ottotiles.com/products/bodrum-beach",
+   "material": "Encaustic cement, handmade",
+   "size": "8\" x 8\" x 0.47\"",
+   "finish": "Honed, R11",
+   "price_sqft": 42.75,
+   "unit": "tile (0.44 sq ft)",
+   "unit_price": 19.0,
+   "sqft_per_unit": 0.4444,
+   "ship": "In stock; ships in 4\u201310 business days",
+   "lead_wk": 2,
+   "stock": "In stock",
+   "sample": "$8 sample; 5 sq ft minimum order",
+   "flags": [
+    "Striped block pattern in curry, beige and navy",
+    "Seal before and after installation; some color variation and rare pits are normal",
+    "Vendor says walls, floors and outdoors, but gives no freeze/thaw rating"
+   ],
+   "outdoor": "Vendor says outdoor use; freeze/thaw not stated",
+   "local": [
+    "img/B14_0.jpg",
+    "img/B14_1.jpg"
+   ],
+   "uses": [
+    "Walls",
+    "Shower walls",
+    "Floor feature"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Encaustic cement is porous: it needs sealing before and after installation, then regular resealing",
+     "R11 slip rating is good for a wet floor, but freeze/thaw isn't stated, so keep it indoors"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "R11 slip rating meets R10"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Honed finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "liners": [
+    "L2",
+    "L6"
+   ],
+   "kind": "tile",
+   "min_order_sqft": 5,
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "r": "R11"
+    },
+    "finish_class": "honed",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B15",
+   "room": "Bathroom",
+   "name": "Patara Blue 8x8 Encaustic Cement",
+   "vendor": "Otto Tiles & Design",
+   "url": "https://ottotiles.com/products/patara-blue",
+   "material": "Encaustic cement, handmade (Kismet collection)",
+   "size": "8\" x 8\" x 0.47\"",
+   "finish": "Honed, R11",
+   "price_sqft": 56.25,
+   "unit": "tile (0.44 sq ft)",
+   "unit_price": 25.0,
+   "sqft_per_unit": 0.4444,
+   "ship": "In stock; ships in 4\u201310 business days",
+   "lead_wk": 2,
+   "stock": "In stock",
+   "sample": "$8 sample; 5 sq ft minimum order",
+   "flags": [
+    "Navy and cream curved geometric shapes",
+    "The priciest cement tile here, at $25 a tile",
+    "Seal before and after installation; vendor says walls, floors and outdoors but gives no freeze/thaw rating"
+   ],
+   "outdoor": "Vendor says outdoor use; freeze/thaw not stated",
+   "kind": "tile",
+   "local": [
+    "img/B15_0.jpg",
+    "img/B15_1.jpg"
+   ],
+   "uses": [
+    "Walls",
+    "Shower walls",
+    "Floor feature"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Encaustic cement is porous: it needs sealing before and after installation, then regular resealing",
+     "R11 slip rating is good for a wet floor, but freeze/thaw isn't stated, so keep it indoors",
+     "At about $56 a sq ft, best as a small feature area"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "R11 slip rating meets R10"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Honed finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Needs regular resealing"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "liners": [
+    "L2",
+    "L6"
+   ],
+   "min_order_sqft": 5,
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "r": "R11"
+    },
+    "finish_class": "honed",
+    "porosity": "seal-regular",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B16",
+   "room": "Bathroom",
+   "name": "Half Moon Bay Green 12x12 Marble",
+   "vendor": "Otto Tiles & Design",
+   "url": "https://ottotiles.com/products/half-moon-bay-green",
+   "material": "Marble (Verde Guatemala + Bianco Carrara), epoxy-bonded",
+   "size": "12\" x 12\" x 0.67\"",
+   "finish": "Polished or honed",
+   "price_sqft": 57.0,
+   "unit": "tile (1 sq ft)",
+   "unit_price": 57.0,
+   "sqft_per_unit": 1.0,
+   "ship": "In transit; estimated to ship in 12\u201316 weeks",
+   "lead_wk": 14,
+   "stock": "In transit",
+   "sample": "$12 color sample; $150 full-size sample",
+   "flags": [
+    "Two tiles with the same half-moon pattern in inverted emerald and white",
+    "300 sq ft minimum order, far more than any one room needs",
+    "Longest lead time on the page: 12\u201316 weeks"
+   ],
+   "outdoor": "Vendor says indoor/outdoor; freeze/thaw not stated",
+   "kind": "tile",
+   "local": [
+    "img/B16_0.jpg",
+    "img/B16_1.jpg"
+   ],
+   "uses": [
+    "Floor feature"
+   ],
+   "fit": {
+    "level": "poor",
+    "tag": "Poor fit: 14-week wait",
+    "notes": [
+     "300 sq ft minimum order and a 12\u201316 week wait make it a non-starter for a single bath",
+     "Marble must be sealed before and after grouting, and it etches from shampoo and cleaners"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "caution",
+      "detail": "R9 slip rating is below R10"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Mixed polished and matte pieces: the polished ones are slick when wet"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "caution",
+      "detail": "Etches and stains from soap and cleaners"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "poor",
+      "detail": "About 14 weeks to ship",
+      "short": "14-week wait"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "poor",
+      "detail": "300 sq ft minimum order",
+      "short": "300 sq ft minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "min_order_sqft": 300,
+   "specs": {
+    "check_uses": [
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "r": "R9"
+    },
+    "finish_class": "mixed",
+    "porosity": "etches",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B17",
+   "room": "Bathroom",
+   "name": "Linen 4x4 Ceramic, Matte",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/linen-4x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "4\" x 4\" (3.8\" actual)",
+   "finish": "Matte (DCOF 0.74)",
+   "price_sqft": 15.85,
+   "unit": "box (110 tiles, 12.22 sq ft)",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Soft cream: the Marfil / chalk note from your palettes, in a tile you can floor with",
+    "Pairs with Cypress (D6), Wild Fig (B2) and Iconic Blue (B1) in the same body and size",
+    "Zia recommends a grout-release sealer to avoid haze and staining"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B17_0.jpg",
+    "img/B17_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower floor",
+    "Kitchen floor",
+    "Walls"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Matte ceramic at DCOF 0.74: the grippiest wet floor on the board with non-porous glaze",
+     "Listed for high-traffic interior floors, including kitchens and primary baths"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 0.74 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "dcof": 0.74
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B19",
+   "room": "Bathroom",
+   "name": "Agave 4x4 Ceramic, Matte",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/agave-4x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "4\" x 4\" (3.8\" actual)",
+   "finish": "Matte (DCOF 0.74)",
+   "price_sqft": 15.85,
+   "unit": "box (110 tiles, 12.22 sq ft)",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Pale sky blue, softer than Iconic Blue (B1)",
+    "Same body and size as the Zia deck and bath tiles, so they mix freely",
+    "Zia recommends a grout-release sealer to avoid haze and staining"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B19_0.jpg",
+    "img/B19_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom floor",
+    "Shower floor",
+    "Walls"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Matte ceramic at DCOF 0.74, safe on a wet floor",
+     "Light color shows soap film more than the deeper blues"
+    ],
+    "checks": [
+     {
+      "rule": "Slip",
+      "use": "floor",
+      "level": "good",
+      "detail": "DCOF 0.74 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "floor",
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "dcof": 0.74
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
+   "id": "B20",
+   "room": "Bathroom",
+   "name": "Sequoia 4x4 Ceramic, Satin",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/sequoia-4x4-ceramic-tile",
+   "material": "High-fired ceramic (Japanese-made, 3/8\")",
+   "size": "4\" x 4\" (3.8\" actual)",
+   "finish": "Satin (DCOF 0.45)",
+   "price_sqft": 15.85,
+   "unit": "box (110 tiles, 12.22 sq ft)",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock; ships by freight (curbside on a pallet), carrier estimate at checkout",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free (shipping applies)",
+   "flags": [
+    "Deep moss green, the closest to your Verde palette in a stocked tile that floors",
+    "Satin DCOF is 0.45: clears the 0.42 wet-floor line with less margin than matte"
+   ],
+   "outdoor": "Indoor floors and walls; Zia's usage panel does not list freeze/thaw floors",
+   "local": [
+    "img/B20_0.jpg",
+    "img/B20_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Bathroom walls",
+    "Shower walls",
+    "Kitchen backsplash"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Satin DCOF 0.45 passes the wet-floor line, but test a wet sample before using it on a floor kids run on",
+     "Non-porous glaze: wipes clean, no sealing of the tile itself"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": {
+     "dcof": 0.45
+    },
+    "finish_class": "satin",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall",
+     "shower"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "K1",
@@ -1986,12 +4356,62 @@
     "notes": [
      "Color-body porcelain, frost resistant and floor rated",
      "On floors, the polished pieces can be slick when wet \u2014 mostly a backsplash pick"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
    },
    "liners": [
     "L2",
     "L6"
-   ]
+   ],
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "pass",
+     "source": "TileBar: frost resistant"
+    },
+    "slip": null,
+    "finish_class": "mixed",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall",
+     "floor",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
   },
   {
    "id": "L1",
@@ -2052,6 +4472,56 @@
    "fit": {
     "level": "caution",
     "notes": [
+     "Marble pencil: seal it in the shower, and it can chip at kid height"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Marble pencil: seal it in the shower, and it can chip at kid height"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "honed",
+    "porosity": "etches",
+    "rated_for": [
+     "wall"
+    ],
+    "sample": "unknown",
+    "care_flags": [
      "Marble pencil: seal it in the shower, and it can chip at kid height"
     ]
    }
@@ -2135,7 +4605,48 @@
     "level": "good",
     "notes": [
      "Glazed ceramic: wipes clean"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "gloss",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall"
+    ],
+    "sample": "unknown"
    }
   },
   {
@@ -2193,6 +4704,56 @@
    "fit": {
     "level": "caution",
     "notes": [
+     "Polished marble: seal it in wet areas; edges can chip"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Polished marble: seal it in wet areas; edges can chip"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "polished",
+    "porosity": "etches",
+    "rated_for": [
+     "wall"
+    ],
+    "sample": "unknown",
+    "care_flags": [
      "Polished marble: seal it in wet areas; edges can chip"
     ]
    }
@@ -2256,7 +4817,48 @@
     "level": "good",
     "notes": [
      "Glazed ceramic: wipes clean; the rounded edge is kinder to bumps"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall"
+    ],
+    "sample": "unknown"
    }
   },
   {
@@ -2336,7 +4938,48 @@
     "level": "good",
     "notes": [
      "Glazed ceramic: wipes clean"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall"
+    ],
+    "sample": "unknown"
    }
   },
   {
@@ -2398,12 +5041,53 @@
     "level": "good",
     "notes": [
      "Basalt is very hard, but honed stone still needs sealing in a shower"
+    ],
+    "checks": [
+     {
+      "rule": "Rated for walls",
+      "use": "wall",
+      "level": "good",
+      "detail": "Listed for walls"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "wall"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "honed",
+    "porosity": "non-porous",
+    "rated_for": [
+     "wall"
+    ],
+    "sample": "unknown"
    }
   },
   {
    "id": "C1",
-   "room": "Closets",
+   "room": "Wallpaper",
    "name": "Vibrant Veneer, Cherry Wood",
    "url": "https://belartestudio.com/products/vibrant-veneer-cherry-wall-mural",
    "size": "Custom to your wall, 45 cm (17\u00be\") panels",
@@ -2510,6 +5194,61 @@
     "notes": [
      "Paper wallpaper only wipes with a damp sponge \u2014 on closet doors kids' hands will wear it",
      "Better inside closets or on upper panels"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Wipes with a damp sponge only"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Better inside closets or upper panels: kids' hands will wear it"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "damp-sponge",
+    "care_flags": [
+     "Better inside closets or upper panels: kids' hands will wear it"
     ]
    }
   },
@@ -2599,6 +5338,68 @@
     "notes": [
      "Off-white ground shows fingerprints and crayon",
      "Only damp-sponge washable \u2014 keep it out of bathrooms and below kid height"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Wipes with a damp sponge only"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Off-white ground shows fingerprints and crayon"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Keep it below kid height only with a wipeable alternative"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "damp-sponge",
+    "care_flags": [
+     "Off-white ground shows fingerprints and crayon",
+     "Keep it below kid height only with a wipeable alternative"
     ]
    }
   },
@@ -2708,11 +5509,57 @@
     "Hallways"
    ],
    "fit": {
-    "level": "good",
+    "level": "caution",
     "notes": [
      "Dark busy pattern hides scuffs well",
      "Still paper: not for bathrooms"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Wipes with a damp sponge only"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "damp-sponge"
    }
   },
   {
@@ -2802,6 +5649,61 @@
     "notes": [
      "Paper below grade needs dry, sealed walls \u2014 check for damp first",
      "Mid-tones hide marks reasonably well"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Wipes with a damp sponge only"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Paper below grade needs dry, sealed walls: check for damp first"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "damp-sponge",
+    "care_flags": [
+     "Paper below grade needs dry, sealed walls: check for damp first"
     ]
    }
   },
@@ -2911,11 +5813,57 @@
     "Hallways"
    ],
    "fit": {
-    "level": "good",
+    "level": "caution",
     "notes": [
      "Mid-tone, patterned olive hides marks well",
      "Not for bathrooms"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Wipes with a damp sponge only"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
     ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "damp-sponge"
    }
   },
   {
@@ -3004,6 +5952,796 @@
     "notes": [
      "White ground shows smudges at kid height",
      "Not for bathrooms"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Wipes with a damp sponge only"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "White ground shows smudges at kid height"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "damp-sponge",
+    "care_flags": [
+     "White ground shows smudges at kid height"
+    ]
+   }
+  },
+  {
+   "id": "W6",
+   "room": "Wallpaper",
+   "name": "Tutti Frutti, Vitamin (by C\u00e9cile Figuette)",
+   "url": "https://bien-fait-paris.com/products/tutti-frutti-vitamin",
+   "size": "Made to measure; 19.7\" (0.5 m) wide panels",
+   "flags": [
+    "Patchwork of 19th-century fruit illustrations: apples, pears, grapes, cherries, lemons and plums",
+    "Also comes in a Vintage colorway",
+    "Peel & stick and scrubbable Commercial Grade versions available"
+   ],
+   "local": [
+    "img/W6_0.jpg",
+    "img/W6_1.jpg"
+   ],
+   "vendor": "Bien Fait Paris",
+   "material": "Non-woven wallpaper, 150 g, PVC-free (paste-the-wall or peel & stick)",
+   "finish": "Matte, spongeable",
+   "price_sqft": 7.1,
+   "unit": "m\u00b2 (about 10.76 sq ft)",
+   "unit_price": 76.4,
+   "sqft_per_unit": 10.764,
+   "ship": "Dispatched the next business day; US delivery 2\u201310 business days; free worldwide shipping",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A3 sample available",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Kitchen",
+    "Dining room",
+    "Pantry"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Standard paper is spongeable; a Commercial Grade version (207 g) is EN259 scrubbable if it needs to survive kids",
+     "Not for bathrooms"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "good",
+      "detail": "Spongeable"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "spongeable"
+   }
+  },
+  {
+   "id": "W7",
+   "room": "Wallpaper",
+   "name": "Hortus, Naturel (by C\u00e9cile Figuette)",
+   "url": "https://bien-fait-paris.com/products/hortus-naturel",
+   "size": "Made to measure; 19.7\" (0.5 m) wide panels",
+   "flags": [
+    "Hand-drawn green botanical line drawing on a soft cream ground",
+    "Also in Myosotis (blue) and Verde",
+    "Echoes the green-and-white deck checkerboards (D4, D6)"
+   ],
+   "local": [
+    "img/W7_0.jpg",
+    "img/W7_1.jpg"
+   ],
+   "vendor": "Bien Fait Paris",
+   "material": "Non-woven wallpaper, 150 g, PVC-free (paste-the-wall or peel & stick)",
+   "finish": "Matte, spongeable",
+   "price_sqft": 7.1,
+   "unit": "m\u00b2 (about 10.76 sq ft)",
+   "unit_price": 76.4,
+   "sqft_per_unit": 10.764,
+   "ship": "Dispatched the next business day; US delivery 2\u201310 business days; free worldwide shipping",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A3 sample available",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Dining room",
+    "Bedroom",
+    "Hallway"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Cream ground shows fingerprints at kid height",
+     "Standard paper is spongeable; a Commercial Grade version (207 g) is EN259 scrubbable if it needs to survive kids"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "good",
+      "detail": "Spongeable"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Cream ground shows fingerprints at kid height"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "spongeable",
+    "care_flags": [
+     "Cream ground shows fingerprints at kid height"
+    ]
+   }
+  },
+  {
+   "id": "W8",
+   "room": "Wallpaper",
+   "name": "Hortus, Myosotis (by C\u00e9cile Figuette)",
+   "url": "https://bien-fait-paris.com/products/hortus-myosotis",
+   "size": "Made to measure; 19.7\" (0.5 m) wide panels",
+   "flags": [
+    "White line drawing of wildflowers on a soft blue ground",
+    "Same pattern as Hortus Naturel (W7) in a blue colorway",
+    "Pairs with Iconic Blue (B1) and Essa Deco Blue (K1)"
+   ],
+   "local": [
+    "img/W8_0.jpg",
+    "img/W8_1.jpg"
+   ],
+   "vendor": "Bien Fait Paris",
+   "material": "Non-woven wallpaper, 150 g, PVC-free (paste-the-wall or peel & stick)",
+   "finish": "Matte, spongeable",
+   "price_sqft": 7.1,
+   "unit": "m\u00b2 (about 10.76 sq ft)",
+   "unit_price": 76.4,
+   "sqft_per_unit": 10.764,
+   "ship": "Dispatched the next business day; US delivery 2\u201310 business days; free worldwide shipping",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A3 sample available",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Bedroom",
+    "Nursery",
+    "Hallway"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Blue mid-tone ground hides marks better than cream",
+     "Standard paper is spongeable; a Commercial Grade version (207 g) is EN259 scrubbable if it needs to survive kids"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "good",
+      "detail": "Spongeable"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "spongeable"
+   }
+  },
+  {
+   "id": "W9",
+   "room": "Wallpaper",
+   "name": "Beach, Misty (by Louise Lockhart)",
+   "url": "https://bien-fait-paris.com/products/beach-misty",
+   "size": "Made to measure; 19.7\" (0.5 m) wide panels",
+   "flags": [
+    "Playful seaside figures, boats, seagulls and shells in pink, teal and cream on soft blue",
+    "Kid-friendly illustration, so it suits a kids' room more than a living area"
+   ],
+   "local": [
+    "img/W9_0.jpg",
+    "img/W9_1.jpg"
+   ],
+   "vendor": "Bien Fait Paris",
+   "material": "Non-woven wallpaper, 150 g, PVC-free (paste-the-wall or peel & stick)",
+   "finish": "Matte, spongeable",
+   "price_sqft": 7.1,
+   "unit": "m\u00b2 (about 10.76 sq ft)",
+   "unit_price": 76.4,
+   "sqft_per_unit": 10.764,
+   "ship": "Dispatched the next business day; US delivery 2\u201310 business days; free worldwide shipping",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A3 sample available",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Kids' room",
+    "Playroom",
+    "Laundry"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Busy multi-color pattern hides smudges",
+     "Standard paper is spongeable; a Commercial Grade version (207 g) is EN259 scrubbable if it needs to survive kids"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "good",
+      "detail": "Spongeable"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "spongeable"
+   }
+  },
+  {
+   "id": "W10",
+   "room": "Wallpaper",
+   "name": "Francis Hall\u00e9, Sepia",
+   "url": "https://bien-fait-paris.com/products/francis-halle-sepia",
+   "size": "Made to measure; 19.7\" (0.5 m) wide panels",
+   "flags": [
+    "Oxblood-red forest-canopy line drawing on a warm cream ground",
+    "Echoes the deep reds in your saves (burgundy, oxblood)"
+   ],
+   "local": [
+    "img/W10_0.jpg",
+    "img/W10_1.jpg"
+   ],
+   "vendor": "Bien Fait Paris",
+   "material": "Non-woven wallpaper, 150 g, PVC-free (paste-the-wall or peel & stick)",
+   "finish": "Matte, spongeable",
+   "price_sqft": 7.1,
+   "unit": "m\u00b2 (about 10.76 sq ft)",
+   "unit_price": 76.4,
+   "sqft_per_unit": 10.764,
+   "ship": "Dispatched the next business day; US delivery 2\u201310 business days; free worldwide shipping",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A3 sample available",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Bedroom",
+    "Office",
+    "Hallway"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Cream ground shows fingerprints at kid height",
+     "Standard paper is spongeable; a Commercial Grade version (207 g) is EN259 scrubbable if it needs to survive kids"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "good",
+      "detail": "Spongeable"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Cream ground shows fingerprints at kid height"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "spongeable",
+    "care_flags": [
+     "Cream ground shows fingerprints at kid height"
+    ]
+   }
+  },
+  {
+   "id": "W11",
+   "room": "Wallpaper",
+   "name": "The Bee, Pear (by C\u00e9cile Figuette)",
+   "url": "https://bien-fait-paris.com/products/the-bee-pear",
+   "size": "Made to measure; 19.7\" (0.5 m) wide panels",
+   "flags": [
+    "Watercolor bees, pears, butterflies and botanicals in a whimsical pattern"
+   ],
+   "local": [
+    "img/W11_0.jpg",
+    "img/W11_1.jpg"
+   ],
+   "vendor": "Bien Fait Paris",
+   "material": "Non-woven wallpaper, 150 g, PVC-free (paste-the-wall or peel & stick)",
+   "finish": "Matte, spongeable",
+   "price_sqft": 7.1,
+   "unit": "m\u00b2 (about 10.76 sq ft)",
+   "unit_price": 76.4,
+   "sqft_per_unit": 10.764,
+   "ship": "Dispatched the next business day; US delivery 2\u201310 business days; free worldwide shipping",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A3 sample available",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Dining room",
+    "Bedroom"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Light watercolor ground shows fingerprints at kid height",
+     "Standard paper is spongeable; a Commercial Grade version (207 g) is EN259 scrubbable if it needs to survive kids"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "good",
+      "detail": "Spongeable"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Light watercolor ground shows fingerprints at kid height"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "spongeable",
+    "care_flags": [
+     "Light watercolor ground shows fingerprints at kid height"
+    ]
+   }
+  },
+  {
+   "id": "W12",
+   "room": "Wallpaper",
+   "name": "Tiss\u00e9, Wheat (by C\u00e9cile Figuette)",
+   "url": "https://bien-fait-paris.com/products/tisse-wheat",
+   "size": "Made to measure; 19.7\" (0.5 m) wide panels",
+   "flags": [
+    "Woven-cloth texture in mustard yellow with navy and blue stitch marks",
+    "Matches the butter and ochre accents in your palettes"
+   ],
+   "local": [
+    "img/W12_0.jpg",
+    "img/W12_1.jpg"
+   ],
+   "vendor": "Bien Fait Paris",
+   "material": "Non-woven wallpaper, 150 g, PVC-free (paste-the-wall or peel & stick)",
+   "finish": "Matte, spongeable",
+   "price_sqft": 7.1,
+   "unit": "m\u00b2 (about 10.76 sq ft)",
+   "unit_price": 76.4,
+   "sqft_per_unit": 10.764,
+   "ship": "Dispatched the next business day; US delivery 2\u201310 business days; free worldwide shipping",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A3 sample available",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Dining room",
+    "Office",
+    "Hallway"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Textured, flecked pattern hides marks well",
+     "Standard paper is spongeable; a Commercial Grade version (207 g) is EN259 scrubbable if it needs to survive kids"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "good",
+      "detail": "Spongeable"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "spongeable"
+   }
+  },
+  {
+   "id": "W13",
+   "room": "Wallpaper",
+   "name": "Puntini Sisal, Tanlines (Backdrop x Schumacher)",
+   "url": "https://www.backdrophome.com/products/puntini-sisal-tanlines/",
+   "size": "34\" x 8 yd single roll (about 68 sq ft)",
+   "flags": [
+    "Ochre and cream gridded dots, hand screen-printed on Haruki sisal grasscloth",
+    "Inspired by Italian candies; a warm yellow that sits with the butter and ochre in your palettes",
+    "Color variation and small irregularities are part of the natural fiber",
+    "The roll shows as unavailable online right now; the $5 sample is in stock"
+   ],
+   "local": [
+    "img/W13_0.jpg",
+    "img/W13_1.jpg"
+   ],
+   "vendor": "Backdrop (a division of Schumacher)",
+   "material": "Hand screen-printed sisal grasscloth (Haruki Sisal)",
+   "finish": "Natural woven texture",
+   "price_sqft": 18.94,
+   "unit": "roll (34\" x 8 yd, about 68 sq ft)",
+   "unit_price": 1288.0,
+   "sqft_per_unit": 68.0,
+   "ship": "Not stated; the roll is listed as unavailable online",
+   "lead_wk": null,
+   "stock": "Roll unavailable online",
+   "sample": "$5 sample (8\" x 10\"); 10\" x 17\" also $5",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Dining room",
+    "Office",
+    "Above a chair rail"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "The page gives no cleaning rating, and grasscloth generally can't be scrubbed: keep it above kid height and out of kitchens and baths",
+     "At about $19 a sq ft it is the priciest wallcovering here, so it suits one feature wall"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Cleanability not stated"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Natural sisal grasscloth: the page gives no cleaning rating, and grasscloth generally can't be scrubbed"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "unknown",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "unknown",
+    "care_flags": [
+     "Natural sisal grasscloth: the page gives no cleaning rating, and grasscloth generally can't be scrubbed"
     ]
    }
   }
@@ -3849,5 +7587,47 @@
   "Handmade tile with a visible glaze: zellige, relief tile, mosaics, colored grout.",
   "Brass hardware and warm wood (oak, walnut, cherry) in almost every room.",
   "A soft cream or chalk background rather than stark white or grey."
+ ],
+ "paint": [
+  {
+   "name": "Blue Nova",
+   "code": "825",
+   "brand": "Benjamin Moore",
+   "hex": "#5B6D92",
+   "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/825/blue-nova",
+   "note": "2024 Color of the Year: a mid-tone blue-violet."
+  },
+  {
+   "name": "Topaz",
+   "code": "070",
+   "brand": "Benjamin Moore",
+   "hex": "#C06A46",
+   "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/070/topaz",
+   "note": "Warm terracotta, close to the terracotta in your fish-blue bath save."
+  },
+  {
+   "name": "Cloud White",
+   "code": "967",
+   "brand": "Benjamin Moore",
+   "hex": "#F2F1E6",
+   "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/967/cloud-white",
+   "note": "Soft cream white, the chalky background your saves lean toward."
+  },
+  {
+   "name": "Cactus Green",
+   "code": "2035-20",
+   "brand": "Benjamin Moore",
+   "hex": "#227442",
+   "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2035-20/cactus-green",
+   "note": "A saturated green that sits well beside pink or terracotta."
+  },
+  {
+   "name": "York Harbor Yellow",
+   "code": "2154-40",
+   "brand": "Benjamin Moore",
+   "hex": "#EAC17C",
+   "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2154-40/york-harbor-yellow",
+   "note": "A warm, buttery gold that sits with the butter and ochre accents in your palettes."
+  }
  ]
 }

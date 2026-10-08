@@ -22,7 +22,7 @@
       <span>Reno <em>materials</em></span>
     </a>
     <div class="masthead__nav">
-      <nav class="pages" aria-label="Pages"><a href="index.html" aria-current="page">Materials</a><a href="palettes.html">Palettes</a></nav>
+      <nav class="pages" aria-label="Pages"><a href="index.html" aria-current="page">Materials</a><a href="budget.html">Budget</a><a href="palettes.html">Palettes</a></nav>
       <nav class="filters" aria-label="Filter by room" id="filters"></nav>
     </div>
   </div>
@@ -32,7 +32,7 @@
   <section class="intro wrap">
     <p class="eyebrow">Mood board · renovation materials</p>
     <h1>Materials, side by side.</h1>
-    <p class="lede">Each card shows the material, what it costs, and how long it takes to arrive. Hover or tap a photo to see it installed. Prices and ship times were checked on <span id="checked"></span>; the budget lives in the spreadsheet.</p>
+    <p class="lede">Each card shows the material, what it costs, and how long it takes to arrive. Hover or tap a photo to see it installed. Prices and ship times were checked on <span id="checked"></span>; use the Budget page to turn square footage into boxes and cost.</p>
     <div class="toolbar">
       <label>Sort
         <select id="sort">
@@ -41,8 +41,34 @@
           <option value="default">As added</option>
         </select>
       </label>
+      <label class="poor"><input type="checkbox" id="showPoor"><span>Show hidden and poor fits (<span id="poorN"></span>)</span></label>
       <span class="count" id="count"></span>
     </div>
+  </section>
+
+  <section class="wrap rubric" id="rubric">
+    <details>
+      <summary>How we rate fit</summary>
+      <div class="rubric__body">
+        <p>Every card is checked against the same rules, for a NYC renovation with kids. A rating counts only if it appears on the vendor's own product page; vendor tags and marketing copy have contradicted the page before. Each rating is computed by a script from typed facts, and “checks passed” on every card shows which ones it used.</p>
+        <div class="rubric__grid">
+          <div><h3>By use</h3>
+            <ul>
+              <li><strong>Deck:</strong> freeze/thaw stated as passing; DCOF 0.42 or higher wet (or R10+); matte, satin or honed, never polished or gloss.</li>
+              <li><strong>Bath or kitchen floor:</strong> DCOF 0.42 or higher stated (matte 0.50+ preferred); not polished or gloss; non-porous, or a one-time seal.</li>
+              <li><strong>Walls and backsplash:</strong> glazed or sealed and wipeable. No frost or slip rating needed.</li>
+              <li><strong>Wallpaper:</strong> at least spongeable, scrubbable for kid height; not in bathrooms; below grade only after any damp is fixed.</li>
+            </ul></div>
+          <div><h3>For every item</h3>
+            <ul>
+              <li><strong>Good fit:</strong> passes every gate for its use. In stock or ships in under 4 weeks; no minimum, or under 25 sq ft; a sample is sold.</li>
+              <li><strong>Use with care:</strong> misses one gate, or has a missing or conflicting rating a vendor email could settle. Ships in 4–12 weeks, carries a small-batch fee, or needs regular resealing.</li>
+              <li><strong>Poor fit (hidden by default):</strong> fails a hard gate: freeze/thaw fails on a deck, DCOF under 0.42 on a floor, over 12 weeks to ship, or a 100 sq ft or larger minimum.</li>
+            </ul></div>
+        </div>
+        <p class="rubric__note">The shipping and minimum-order limits are working assumptions and can change. The full rules are in REQUIREMENTS.md and the numbers in fit-rules.json.</p>
+      </div>
+    </details>
   </section>
 
   <div id="rooms"></div>

@@ -20,6 +20,10 @@
     </div>
   </article>`).join('');
 
+  document.getElementById('paintList').innerHTML = (data.paint || []).map(p => `<article class="paint">
+    <button class="pal__sw paint__sw${lum(p.hex) > 0.45 ? ' light' : ''}" style="background:${p.hex}" data-hex="${p.hex}" title="Copy ${p.hex}"><span>${p.hex}</span></button>
+    <div class="paint__body"><h3>${esc(p.name)} <small>${esc(p.code)}</small></h3><p>${esc(p.note)}</p><a href="${p.url}" target="_blank" rel="noopener">${esc(p.brand)} ↗</a></div>
+  </article>`).join('');
   document.getElementById('taste-list').innerHTML = (data.taste || []).map(t => `<li>${esc(t)}</li>`).join('');
   document.getElementById('savedPals').innerHTML = (data.saved || []).map(p => `<article class="pal pal--inspo">
     <a class="inspo__img" href="${p.post}" target="_blank" rel="noopener"><img src="${p.img}" alt="${esc(p.name)}" loading="lazy"></a>
