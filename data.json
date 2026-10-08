@@ -794,6 +794,36 @@
    "outdoor": "\u2014",
    "kind": "wallcovering",
    "overage": 0.1
+  },
+  {
+   "id": "W2",
+   "room": "Wallpaper",
+   "name": "Lino Printed Fauna, Rust Red (by Sonia Dubois)",
+   "url": "https://belartestudio.com/products/lino-printed-fauna-rust-red-mural",
+   "size": "Custom to your wall, 45 cm (17\u00be\") panels",
+   "flags": [
+    "Tiny black linocut woodland animals on a deep rust-red ground",
+    "Same artist and series as Art Fleuri (W1); pairs with Oxblood + Caramel and Burnt Orange + Mustard palettes",
+    "Also in Bright Green, Cream and Blue"
+   ],
+   "local": [
+    "img/W2_0.jpg",
+    "img/W2_1.jpg"
+   ],
+   "vendor": "BelarteSTUDIO",
+   "material": "FSC non-woven wallpaper mural, 147 g",
+   "finish": "Matte",
+   "price_sqft": 7.9,
+   "unit": "m\u00b2 (whole m\u00b2, about 10.76 sq ft)",
+   "unit_price": 85.0,
+   "sqft_per_unit": 10.764,
+   "ship": "Ships 1\u20133 days after ordering, then 2\u20133 days delivery; free worldwide shipping (US timing not stated)",
+   "lead_wk": 1,
+   "stock": "Printed to order",
+   "sample": "A4 sample; large sample on some designs (price not listed)",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.1
   }
  ],
  "palettes": [
