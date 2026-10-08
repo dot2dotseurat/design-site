@@ -8,6 +8,7 @@
     Wallpaper: 'Murals and wallpaper, priced per square meter',
     Bathroom: 'Floor and wall options',
     Kitchen: 'Backsplash',
+    Inserts: 'Figural accent tiles to set into a field of plain tile — priced per piece',
     Liners: 'Pencil liners and trim to run with the bathroom tile'
   };
   const byId = Object.fromEntries(items.map(i => [i.id, i]));
@@ -15,6 +16,11 @@
   const palettes = data.palettes || [];
   let active = 'All';
   let sort = 'lead';
+  let showPoor = false;
+  const isPoor = i => !!(i.fit && i.fit.level === 'poor');
+  const visible = () => items.filter(i => showPoor || !isPoor(i));
+  const perPiece = i => i.kind === 'insert';
+  const priceOf = i => perPiece(i) ? i.unit_price : i.price_sqft;
 
   const lum = h => { const [r, g, b] = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
   const fmt = n => '$' + n.toFixed(2);
@@ -30,37 +36,44 @@
     const b = document.createElement('button');
     b.className = 'chip';
     b.type = 'button';
-    const n = r === 'All' ? items.filter(i => i.kind !== 'liner').length : items.filter(i => i.room === r).length;
-    b.innerHTML = `${esc(r)}<small>${n}</small>`;
+    b.dataset.room = r;
+    b.innerHTML = `${esc(r)}<small></small>`;
     b.setAttribute('aria-pressed', r === active);
     b.onclick = () => { active = r; [...filters.children].forEach(c => c.setAttribute('aria-pressed', c === b)); render(); };
     filters.appendChild(b);
   });
+  const updateChipCounts = () => [...filters.children].forEach(b => {
+    const r = b.dataset.room;
+    b.querySelector('small').textContent = visible().filter(i => r === 'All' ? i.kind !== 'liner' : i.room === r).length;
+  });
   document.getElementById('sort').onchange = e => { sort = e.target.value; render(); };
+  const poorBox = document.getElementById('showPoor');
+  const setShowPoor = on => { showPoor = on; poorBox.checked = on; render(); };
+  poorBox.onchange = () => setShowPoor(poorBox.checked);
 
   function card(it) {
     const [a, b] = it.local;
     const slow = it.lead_wk == null ? 'Ship time unknown' : it.lead_wk >= 4 ? `~${it.lead_wk} wks` : null;
     const tag = slow ? `<span class="tag tag--slow">${esc(slow)}</span>` : `<span class="tag">${esc(it.stock)}</span>`;
     const flags = (it.flags || []).map(f => `<li class="${isBad(f) ? 'bad' : ''}">${esc(f)}</li>`).join('');
-    const lf = it.kind === 'liner';
-    return `<article class="card${lf ? ' card--liner' : ''}" id="card-${it.id}">
+    const lf = it.kind === 'liner', pp = perPiece(it);
+    return `<article class="card${lf ? ' card--liner' : ''}${pp ? ' card--insert' : ''}" id="card-${it.id}">
       <button class="card__media" type="button" data-id="${it.id}" aria-label="Enlarge photo of ${esc(it.name)}">
         <img src="${a}" alt="${esc(it.name)}" loading="lazy">
         ${b ? `<img class="alt" src="${b}" alt="" loading="lazy"><span class="hint">${it.id === 'D6' ? 'Hover: second color' : it.kind === 'wallcovering' ? 'Hover: in a room' : 'Hover: installed'}</span>` : ''}
         ${tag}
-        ${it.fit && it.fit.level === 'poor' ? `<span class="tag tag--poor">Poor fit for ${it.id === 'B4' ? 'floors' : 'NYC deck'}</span>` : ''}
+        ${isPoor(it) ? `<span class="tag tag--poor">${esc(it.fit.tag || 'Poor fit')}</span>` : ''}
       </button>
       <div class="card__body">
         <p class="vendor">${esc(it.vendor)}</p>
         <h3>${esc(it.name)}</h3>
         <p class="spec">${esc(it.material)} · ${esc(it.size)} · ${esc(it.finish)}</p>
-        <p class="price"><strong>${fmt(it.price_sqft)}</strong><span>/ ${lf ? 'linear ft' : 'sq ft'} · ${fmt(it.unit_price)} per ${esc(it.unit)}</span></p>
-        <p class="spec">${it.sqft_needed ? `Estimate: <strong>${fmt(Math.ceil(it.sqft_needed * (1 + (it.overage ?? 0.15)) / it.sqft_per_unit) * it.unit_price)}</strong> for ${it.sqft_needed} sq ft + ${Math.round((it.overage ?? 0.15) * 100)}% overage` : (lf ? 'Estimate: add linear ft in the budget sheet' : 'Estimate: add sq ft in the budget sheet')}</p>
+        <p class="price">${pp ? `<strong>${fmt(it.unit_price)}</strong><span>each · sold by the ${esc(it.unit)}</span>` : `<strong>${fmt(it.price_sqft)}</strong><span>/ ${lf ? 'linear ft' : 'sq ft'} · ${fmt(it.unit_price)} per ${esc(it.unit)}</span>`}</p>
+        <p class="spec">${pp ? 'Estimate: a few pieces is enough — one per 4–8 sq ft of field tile reads as an accent' : it.sqft_needed ? `Estimate: <strong>${fmt(Math.ceil(it.sqft_needed * (1 + (it.overage ?? 0.15)) / it.sqft_per_unit) * it.unit_price)}</strong> for ${it.sqft_needed} sq ft + ${Math.round((it.overage ?? 0.15) * 100)}% overage` : (lf ? 'Estimate: add linear ft in the budget sheet' : 'Estimate: add sq ft in the budget sheet')}</p>
         <dl>
           <dt>Ships</dt><dd>${esc(it.ship)}</dd>
           <dt>Sample</dt><dd>${esc(it.sample)}</dd>
-          ${it.kind === 'tile' ? `<dt>Outdoor</dt><dd>${esc(it.outdoor)}</dd>` : ''}
+          ${it.kind === 'tile' || pp ? `<dt>Outdoor</dt><dd>${esc(it.outdoor)}</dd>` : ''}
         </dl>
         ${it.moved ? `<p class="moved">${esc(it.moved)}</p>` : ''}
         ${(it.uses || []).length ? `<div class="uses"><span>Best for</span>${it.uses.map(u => `<em>${esc(u)}</em>`).join('')}</div>` : ''}
@@ -79,8 +92,8 @@
 
   function sorted(list) {
     const l = [...list];
-    if (sort === 'price') l.sort((a, b) => (a.price_sqft - b.price_sqft) || ((a.lead_wk ?? 99) - (b.lead_wk ?? 99)));
-    else if (sort === 'lead') l.sort((a, b) => ((a.lead_wk ?? 99) - (b.lead_wk ?? 99)) || (a.price_sqft - b.price_sqft));
+    if (sort === 'price') l.sort((a, b) => (priceOf(a) - priceOf(b)) || ((a.lead_wk ?? 99) - (b.lead_wk ?? 99)));
+    else if (sort === 'lead') l.sort((a, b) => ((a.lead_wk ?? 99) - (b.lead_wk ?? 99)) || (priceOf(a) - priceOf(b)));
     else l.sort((a, b) => a.order - b.order);
     return l;
   }
@@ -98,19 +111,23 @@
   }
 
   function render() {
-    const show = active === 'All' ? rooms : [active];
+    const pool = visible();
+    const show = (active === 'All' ? rooms : [active]).filter(r => pool.some(i => i.room === r));
     let total = 0;
     document.getElementById('rooms').innerHTML = show.map(r => {
-      const list = sorted(items.filter(i => i.room === r));
+      const list = sorted(pool.filter(i => i.room === r));
       total += list.length;
-      const p = list.map(i => i.price_sqft);
-      const range = `${fmt(Math.min(...p))}–${fmt(Math.max(...p))} / sq ft`;
+      const p = list.map(priceOf);
+      const range = `${fmt(Math.min(...p))}–${fmt(Math.max(...p))} ${list.every(perPiece) ? 'each' : '/ sq ft'}`;
       return `<section class="room" id="room-${r.toLowerCase()}"><div class="wrap">
         <div class="room__head"><h2>${esc(r)}</h2><span class="room__meta">${esc(ROOM_NOTES[r] || '')} · ${list.length} option${list.length > 1 ? 's' : ''} · ${range}</span></div>
         <div class="grid">${list.map(card).join('')}</div>
       </div></section>`;
     }).join('');
-    document.getElementById('count').textContent = `${total} options shown`;
+    const hidden = items.length - pool.length;
+    document.getElementById('poorN').textContent = items.filter(isPoor).length;
+    document.getElementById('count').textContent = `${total} options shown${hidden ? ` · ${hidden} poor fit${hidden > 1 ? 's' : ''} hidden` : ''}`;
+    updateChipCounts();
   }
   render();
 
@@ -119,11 +136,14 @@
     const a = e.target.closest('[data-jump]'); if (!a) return;
     e.preventDefault();
     const id = a.dataset.jump;
+    if (isPoor(byId[id]) && !showPoor) setShowPoor(true);
     if (active !== 'All') { active = 'All'; [...filters.children].forEach(c => c.setAttribute('aria-pressed', c.textContent.startsWith('All'))); render(); }
     const el = document.getElementById('card-' + id);
     if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1600); }
   });
   if (location.hash.startsWith('#card-')) {
+    const hashItem = byId[location.hash.slice(6)];
+    if (hashItem && isPoor(hashItem) && !showPoor) setShowPoor(true);
     const el = document.querySelector(location.hash);
     if (el) setTimeout(() => { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1800); }, 300);
   }

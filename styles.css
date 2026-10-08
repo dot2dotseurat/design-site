@@ -71,6 +71,9 @@ dt{color:var(--muted)} dd{margin:0}
 
 .card--liner .card__media{background:#f7f5f0}
 .card--liner .card__media img{object-fit:contain;padding:18px}
+.card--insert .card__media{background:#fff}
+.card--insert .card__media img{object-fit:contain;padding:22px}
+.toolbar .poor{cursor:pointer}
 .card.flash{outline:3px solid var(--accent);outline-offset:3px}
 .card{scroll-margin-top:90px}
 .palettes{display:grid;grid-template-columns:repeat(auto-fill,minmax(520px,1fr));gap:24px}
@@ -150,3 +153,13 @@ dt{color:var(--muted)} dd{margin:0}
 .liner span{font-size:12px;line-height:1.35;color:var(--muted)}
 .liner strong{display:block;font-size:13px;color:var(--ink);font-weight:600}
 .liner i{font-style:normal;color:var(--warn)}
+
+.paints{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.paint{display:flex;flex-direction:column;background:#faf8f3;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.paint__sw{flex:none;height:120px;width:100%;border:0;border-radius:0;cursor:pointer;display:flex;align-items:flex-end;justify-content:flex-start;padding:10px 12px;font-size:12px;color:#fff}
+.paint__sw.light{color:#222}
+.paint__body{padding:14px 16px 16px}
+.paint__body h3{margin:0 0 6px;font-size:18px}
+.paint__body h3 small{font-size:13px;color:var(--muted);font-weight:400}
+.paint__body p{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.paint__body a{font-size:14px}
