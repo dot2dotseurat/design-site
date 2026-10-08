@@ -71,8 +71,6 @@ dt{color:var(--muted)} dd{margin:0}
 
 .card--liner .card__media{background:#f7f5f0}
 .card--liner .card__media img{object-fit:contain;padding:18px}
-.card--insert .card__media{background:#fff}
-.card--insert .card__media img{object-fit:contain;padding:22px}
 .toolbar .poor{cursor:pointer}
 .card.flash{outline:3px solid var(--accent);outline-offset:3px}
 .card{scroll-margin-top:90px}
