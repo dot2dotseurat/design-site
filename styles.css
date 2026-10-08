@@ -123,3 +123,10 @@ dt{color:var(--muted)} dd{margin:0}
 .pair__name span{color:var(--muted);font-size:12px;margin-left:4px}
 .pair__names{margin:2px 0 0;font-size:12px;color:var(--muted)}
 .pair__why{margin:4px 0 0;font-size:13px;line-height:1.4}
+
+.taste{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px 28px}
+.taste li{padding-left:18px;position:relative;font-size:15px;line-height:1.5}
+.taste li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:2px;background:var(--accent)}
+.inspo--saved .inspo__img{display:block;cursor:pointer}
+.inspo--saved .pal--inspo{grid-template-columns:170px 1fr}
+.inspo--saved .inspo__img{min-height:200px}

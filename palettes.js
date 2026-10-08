@@ -20,6 +20,14 @@
     </div>
   </article>`).join('');
 
+  document.getElementById('taste-list').innerHTML = (data.taste || []).map(t => `<li>${esc(t)}</li>`).join('');
+  document.getElementById('savedPals').innerHTML = (data.saved || []).map(p => `<article class="pal pal--inspo">
+    <a class="inspo__img" href="${p.post}" target="_blank" rel="noopener"><img src="${p.img}" alt="${esc(p.name)}" loading="lazy"></a>
+    <div class="inspo__side">
+      <div class="pal__body"><h3>${esc(p.name)}</h3><p>${esc(p.note)}</p></div>
+      ${strip(p.colors)}
+    </div>
+  </article>`).join('');
   document.addEventListener('click', e => {
     const sw = e.target.closest('.pal__sw');
     if (sw) { navigator.clipboard?.writeText(sw.dataset.hex); sw.classList.add('copied'); setTimeout(() => sw.classList.remove('copied'), 900); }

@@ -491,6 +491,29 @@
        "Butter"
       ]
      ]
+    },
+    {
+     "name": "Fig + bottle green",
+     "rule": "From your saves",
+     "why": "Deeper greens around the checkerboard, from the pink relief tile.",
+     "colors": [
+      [
+       "#a9ab8a",
+       "Cypress"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#3f5b3a",
+       "Bottle green"
+      ],
+      [
+       "#f6d3dd",
+       "Pale pink"
+      ]
+     ]
     }
    ]
   },
@@ -569,6 +592,29 @@
       [
        "#6b4128",
        "Walnut"
+      ]
+     ]
+    },
+    {
+     "name": "Ink, burgundy + brass",
+     "rule": "From your saves",
+     "why": "The bathroom palette you saved \u2014 blue tile makes the 'ink'.",
+     "colors": [
+      [
+       "#3f6491",
+       "Iconic blue"
+      ],
+      [
+       "#7a3a44",
+       "Dusty burgundy"
+      ],
+      [
+       "#a88a4f",
+       "Antique brass"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
       ]
      ]
     }
@@ -651,6 +697,29 @@
        "Unlacquered brass"
       ]
      ]
+    },
+    {
+     "name": "Fig + olive",
+     "rule": "From your saves",
+     "why": "Pink-clay with olive, from the Cavern Clay house you saved.",
+     "colors": [
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#7b7a4b",
+       "Tansy green"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
     }
    ]
   },
@@ -729,6 +798,29 @@
       [
        "#c4908f",
        "Dusty pink"
+      ]
+     ]
+    },
+    {
+     "name": "Verde + midnight",
+     "rule": "From your saves",
+     "why": "Darker and moodier, like Otto's midnight hex floor.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#1f4b4f",
+       "Midnight teal"
+      ],
+      [
+       "#a77a4a",
+       "Oak"
+      ],
+      [
+       "#e8dfcf",
+       "Cream"
       ]
      ]
     }
@@ -810,6 +902,29 @@
       [
        "#1e1e1e",
        "Ink"
+      ]
+     ]
+    },
+    {
+     "name": "Calcite + ochre trim",
+     "rule": "From your saves",
+     "why": "White tile with painted ochre trim \u2014 you saved four trim posts.",
+     "colors": [
+      [
+       "#ededeb",
+       "Calcite"
+      ],
+      [
+       "#c49a45",
+       "Ochre trim"
+      ],
+      [
+       "#5b3b26",
+       "Walnut"
+      ],
+      [
+       "#2f3b33",
+       "Chalkboard"
       ]
      ]
     }
@@ -970,6 +1085,29 @@
       [
        "#6b4128",
        "Walnut"
+      ]
+     ]
+    },
+    {
+     "name": "Cream + lavender",
+     "rule": "From your saves",
+     "why": "Lavender walls and brass over a calm terrazzo floor.",
+     "colors": [
+      [
+       "#f0ece3",
+       "Levanzo cream"
+      ],
+      [
+       "#b9a6c2",
+       "Lavender"
+      ],
+      [
+       "#b89a5a",
+       "Brass"
+      ],
+      [
+       "#c9a272",
+       "Oak"
       ]
      ]
     }
@@ -1447,6 +1585,29 @@
        "Walnut"
       ]
      ]
+    },
+    {
+     "name": "Check + oxblood",
+     "rule": "From your saves",
+     "why": "Oxblood and gold, like the pink-dot tile you saved.",
+     "colors": [
+      [
+       "#3f5891",
+       "Cobalt"
+      ],
+      [
+       "#8fc3c4",
+       "Aqua"
+      ],
+      [
+       "#6e1a2b",
+       "Oxblood"
+      ],
+      [
+       "#b8954c",
+       "Gold"
+      ]
+     ]
     }
    ]
   },
@@ -1525,6 +1686,29 @@
       [
        "#6b4128",
        "Walnut"
+      ]
+     ]
+    },
+    {
+     "name": "Essa + tomato",
+     "rule": "From your saves",
+     "why": "The loud azure-and-red bath you saved, tamed by a deeper blue.",
+     "colors": [
+      [
+       "#28497d",
+       "Essa blue"
+      ],
+      [
+       "#d63a2b",
+       "Tomato red"
+      ],
+      [
+       "#8a4f2a",
+       "Walnut"
+      ],
+      [
+       "#f4f1ea",
+       "White"
       ]
      ]
     }
@@ -1953,6 +2137,29 @@
        "Oxblood"
       ]
      ]
+    },
+    {
+     "name": "Cherry + burgundy brass",
+     "rule": "From your saves",
+     "why": "Burgundy millwork and long brass pulls, from your hardware saves.",
+     "colors": [
+      [
+       "#7a4630",
+       "Cherry wood"
+      ],
+      [
+       "#4f1f20",
+       "Burgundy"
+      ],
+      [
+       "#c2a35a",
+       "Brass"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
     }
    ]
   },
@@ -2107,6 +2314,29 @@
       [
        "#ebe5d6",
        "Bone"
+      ]
+     ]
+    },
+    {
+     "name": "Fauna + plum",
+     "rule": "From your saves",
+     "why": "Plum and ochre trim deepen the red room.",
+     "colors": [
+      [
+       "#a5502d",
+       "Rust"
+      ],
+      [
+       "#1e1e1e",
+       "Ink"
+      ],
+      [
+       "#7a4a5c",
+       "Dusty plum"
+      ],
+      [
+       "#c49a45",
+       "Ochre trim"
       ]
      ]
     }
@@ -2264,6 +2494,29 @@
       [
        "#ece4d4",
        "Cream"
+      ]
+     ]
+    },
+    {
+     "name": "Moss + mustard trim",
+     "rule": "From your saves",
+     "why": "Painted sage trim with a mustard sofa and terracotta rug.",
+     "colors": [
+      [
+       "#6c7a5e",
+       "Moss"
+      ],
+      [
+       "#9fb29a",
+       "Sage trim"
+      ],
+      [
+       "#c99a3a",
+       "Mustard"
+      ],
+      [
+       "#b0583a",
+       "Terracotta"
       ]
      ]
     }
@@ -2815,5 +3068,379 @@
    ],
    "note": "White walls with mustard-painted trim, a plum chair and rose stripes."
   }
+ ],
+ "saved": [
+  {
+   "name": "Terracotta + fish blue",
+   "note": "A whole bath in glossy terracotta tile with a framed blue fish panel.",
+   "post": "https://www.instagram.com/p/DeHo5AdgMCX/",
+   "img": "img/ig/007.jpg",
+   "colors": [
+    [
+     "#b0532f",
+     "Terracotta tile"
+    ],
+    [
+     "#8e3b22",
+     "Rust"
+    ],
+    [
+     "#efe9df",
+     "Chalk"
+    ],
+    [
+     "#6f8fa8",
+     "Fish blue"
+    ],
+    [
+     "#c99a62",
+     "Oak"
+    ]
+   ]
+  },
+  {
+   "name": "Midnight teal + oak",
+   "note": "Otto's deep teal hex floor with old wood doors.",
+   "post": "https://www.instagram.com/p/DdXObhJMngR/",
+   "img": "img/ig/008.jpg",
+   "colors": [
+    [
+     "#1f4b4f",
+     "Midnight teal"
+    ],
+    [
+     "#e8dfcf",
+     "Cream"
+    ],
+    [
+     "#a77a4a",
+     "Oak"
+    ],
+    [
+     "#5b3b26",
+     "Walnut"
+    ],
+    [
+     "#d9cbb0",
+     "Plaster"
+    ]
+   ]
+  },
+  {
+   "name": "Ink, burgundy + brass",
+   "note": "A bathroom palette you saved as-is: Deep Ink Blue, Dusty Burgundy, Antique Brass.",
+   "post": "https://www.instagram.com/p/Dbqrlj2MJCN/",
+   "img": "img/ig/022.jpg",
+   "colors": [
+    [
+     "#23324f",
+     "Deep ink blue"
+    ],
+    [
+     "#7a3a44",
+     "Dusty burgundy"
+    ],
+    [
+     "#a88a4f",
+     "Antique brass"
+    ],
+    [
+     "#ece4d4",
+     "Cream"
+    ]
+   ]
+  },
+  {
+   "name": "Olive + rose",
+   "note": "A warm, yellow-based green sofa with dusty rose and walnut.",
+   "post": "https://www.instagram.com/p/DeJMzRTAYXp/",
+   "img": "img/ig/014.jpg",
+   "colors": [
+    [
+     "#7d7a46",
+     "Olive"
+    ],
+    [
+     "#c98d84",
+     "Dusty rose"
+    ],
+    [
+     "#6b4128",
+     "Walnut"
+    ],
+    [
+     "#e9dcc5",
+     "Linen"
+    ],
+    [
+     "#b8703a",
+     "Cognac"
+    ]
+   ]
+  },
+  {
+   "name": "Lavender + brass",
+   "note": "Stacked lavender tile, brushed brass fixtures and warm oak.",
+   "post": "https://www.instagram.com/p/DeCJLxezaQb/",
+   "img": "img/ig/018.jpg",
+   "colors": [
+    [
+     "#b9a6c2",
+     "Lavender"
+    ],
+    [
+     "#8e7a9a",
+     "Deep lilac"
+    ],
+    [
+     "#b89a5a",
+     "Brass"
+    ],
+    [
+     "#c9a272",
+     "Oak"
+    ],
+    [
+     "#f1eeea",
+     "White"
+    ]
+   ]
+  },
+  {
+   "name": "Azure + tomato",
+   "note": "Loud: bright blue tile, a red pendant, a wood vanity and a checker floor.",
+   "post": "https://www.instagram.com/p/DeIPIuqy-KB/",
+   "img": "img/ig/019.jpg",
+   "colors": [
+    [
+     "#1a8fd0",
+     "Azure"
+    ],
+    [
+     "#d63a2b",
+     "Tomato red"
+    ],
+    [
+     "#8a4f2a",
+     "Walnut"
+    ],
+    [
+     "#111111",
+     "Black"
+    ],
+    [
+     "#f4f1ea",
+     "White"
+    ]
+   ]
+  },
+  {
+   "name": "Burgundy millwork + brass",
+   "note": "Deep burgundy cabinets with long brass pulls.",
+   "post": "https://www.instagram.com/p/DayGc6jvW3N/",
+   "img": "img/ig/030.jpg",
+   "colors": [
+    [
+     "#4f1f20",
+     "Burgundy"
+    ],
+    [
+     "#6e2c2c",
+     "Wine"
+    ],
+    [
+     "#c2a35a",
+     "Brass"
+    ],
+    [
+     "#ece4d4",
+     "Cream"
+    ]
+   ]
+  },
+  {
+   "name": "Ochre trim",
+   "note": "Behr Cellini Gold on the trim only, white walls and dark wood.",
+   "post": "https://www.instagram.com/p/DcjvAl1yb95/",
+   "img": "img/ig/032.jpg",
+   "colors": [
+    [
+     "#c49a45",
+     "Ochre trim"
+    ],
+    [
+     "#f2efe8",
+     "White wall"
+    ],
+    [
+     "#5b3b26",
+     "Walnut"
+    ],
+    [
+     "#2f3b33",
+     "Chalkboard"
+    ]
+   ]
+  },
+  {
+   "name": "Oxblood + pink dots",
+   "note": "Glossy oxblood tile with pink ceramic circles and gold edges.",
+   "post": "https://www.instagram.com/p/DdtOdV3smtk/",
+   "img": "img/ig/043.jpg",
+   "colors": [
+    [
+     "#6e1a2b",
+     "Oxblood"
+    ],
+    [
+     "#d98a8f",
+     "Pink"
+    ],
+    [
+     "#b8954c",
+     "Gold"
+    ],
+    [
+     "#3a0f18",
+     "Deep wine"
+    ]
+   ]
+  },
+  {
+   "name": "Cavern Clay house",
+   "note": "A designer's whole-house list: Sun Dried Tomato, Tansy Green, Cavern Clay, Blustery Sky, Merlot (hex approximate).",
+   "post": "https://www.instagram.com/p/DdqqM7JKKP-/",
+   "img": "img/ig/056.jpg",
+   "colors": [
+    [
+     "#7b2f2b",
+     "Sun Dried Tomato"
+    ],
+    [
+     "#7b7a4b",
+     "Tansy Green"
+    ],
+    [
+     "#ad6a50",
+     "Cavern Clay"
+    ],
+    [
+     "#8d9aa6",
+     "Blustery Sky"
+    ],
+    [
+     "#5a2a3a",
+     "Merlot"
+    ]
+   ]
+  },
+  {
+   "name": "Pink relief + bottle green",
+   "note": "Glossy pink relief tile with deep green flowers.",
+   "post": "https://www.instagram.com/p/DdYSvKuCHHl/",
+   "img": "img/ig/057.jpg",
+   "colors": [
+    [
+     "#e98fae",
+     "Candy pink"
+    ],
+    [
+     "#3f5b3a",
+     "Bottle green"
+    ],
+    [
+     "#f6d3dd",
+     "Pale pink"
+    ],
+    [
+     "#ece4d4",
+     "Cream"
+    ]
+   ]
+  },
+  {
+   "name": "Mosaic entry",
+   "note": "A colorful hall mosaic: brick red, mustard, navy and pale blue on white.",
+   "post": "https://www.instagram.com/p/DdyI8X-iImz/",
+   "img": "img/ig/062.jpg",
+   "colors": [
+    [
+     "#b0322a",
+     "Brick red"
+    ],
+    [
+     "#c9a23a",
+     "Mustard"
+    ],
+    [
+     "#253761",
+     "Navy"
+    ],
+    [
+     "#a9c6d8",
+     "Pale blue"
+    ],
+    [
+     "#f3efe6",
+     "White"
+    ]
+   ]
+  },
+  {
+   "name": "Painted trim, sage + mustard",
+   "note": "Sage trim and doors with a mustard sofa and a terracotta rug.",
+   "post": "https://www.instagram.com/p/DbdhZhMItfE/",
+   "img": "img/ig/053.jpg",
+   "colors": [
+    [
+     "#9fb29a",
+     "Sage trim"
+    ],
+    [
+     "#c99a3a",
+     "Mustard"
+    ],
+    [
+     "#b0583a",
+     "Terracotta"
+    ],
+    [
+     "#efe7d8",
+     "Cream"
+    ]
+   ]
+  },
+  {
+   "name": "Dimwit plum",
+   "note": "A dusty plum wall with a matching plum switch plate.",
+   "post": "https://www.instagram.com/p/DeAJ1hSgfl5/",
+   "img": "img/ig/054.jpg",
+   "colors": [
+    [
+     "#7a4a5c",
+     "Dusty plum"
+    ],
+    [
+     "#5a3344",
+     "Deep plum"
+    ],
+    [
+     "#d9c4c8",
+     "Mauve"
+    ],
+    [
+     "#ece4d4",
+     "Cream"
+    ]
+   ]
+  }
+ ],
+ "taste": [
+  "Warm against cool: blue or green set against pink, red or terracotta shows up in most saves.",
+  "Deep, aged colors \u2014 oxblood, burgundy, plum, olive, midnight teal \u2014 rather than bright primaries (with an occasional loud exception).",
+  "Painted trim and door frames: four separate saves on trim in a contrasting color.",
+  "Handmade tile with a visible glaze: zellige, relief tile, mosaics, colored grout.",
+  "Brass hardware and warm wood (oak, walnut, cherry) in almost every room.",
+  "A soft cream or chalk background rather than stark white or grey."
  ]
 }
