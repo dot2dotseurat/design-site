@@ -23,11 +23,11 @@
 
   // filters
   const filters = document.getElementById('filters');
-  ['All', ...rooms, ...(palettes.length ? ['Palettes'] : [])].forEach(r => {
+  ['All', ...rooms].forEach(r => {
     const b = document.createElement('button');
     b.className = 'chip';
     b.type = 'button';
-    const n = r === 'All' ? items.length : r === 'Palettes' ? palettes.length : items.filter(i => i.room === r).length;
+    const n = r === 'All' ? items.length : items.filter(i => i.room === r).length;
     b.innerHTML = `${esc(r)}<small>${n}</small>`;
     b.setAttribute('aria-pressed', r === active);
     b.onclick = () => { active = r; [...filters.children].forEach(c => c.setAttribute('aria-pressed', c === b)); render(); };
@@ -85,7 +85,6 @@
   }
 
   function render() {
-    if (active === 'Palettes') { document.getElementById('rooms').innerHTML = paletteHTML(); document.getElementById('count').textContent = `${palettes.length} palettes`; return; }
     const show = active === 'All' ? rooms : [active];
     let total = 0;
     document.getElementById('rooms').innerHTML = show.map(r => {
@@ -97,7 +96,7 @@
         <div class="room__head"><h2>${esc(r)}</h2><span class="room__meta">${esc(ROOM_NOTES[r] || '')} · ${list.length} option${list.length > 1 ? 's' : ''} · ${range}</span></div>
         <div class="grid">${list.map(card).join('')}</div>
       </div></section>`;
-    }).join('') + (active === 'All' && palettes.length ? paletteHTML() : '');
+    }).join('');
     document.getElementById('count').textContent = `${total} options shown`;
   }
   render();
@@ -111,6 +110,10 @@
     const el = document.getElementById('card-' + id);
     if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1600); }
   });
+  if (location.hash.startsWith('#card-')) {
+    const el = document.querySelector(location.hash);
+    if (el) setTimeout(() => { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1800); }, 300);
+  }
   const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
   document.getElementById('rooms').addEventListener('click', e => {
     const m = e.target.closest('.card__media'); if (!m) return;

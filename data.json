@@ -921,5 +921,287 @@
     ]
    ]
   }
+ ],
+ "inspiration": [
+  {
+   "slug": "dusty-pink-steel-blue",
+   "name": "Dusty Pink + Steel Blue",
+   "img": "img/inspo/dusty-pink-steel-blue.jpg",
+   "colors": [
+    [
+     "#3f5891",
+     "Steel blue tile"
+    ],
+    [
+     "#a0606a",
+     "Dusty pink"
+    ],
+    [
+     "#7e3a44",
+     "Berry"
+    ],
+    [
+     "#ece8e4",
+     "Arabescato white"
+    ],
+    [
+     "#8a7e78",
+     "Grey vein"
+    ]
+   ],
+   "note": "Blue tile walls, pink accents, a dramatic white marble. Ties to Iconic Blue (B1) with a pink liner."
+  },
+  {
+   "slug": "cobalt-butter",
+   "name": "Cobalt Blue + Butter Yellow",
+   "img": "img/inspo/cobalt-butter.jpg",
+   "colors": [
+    [
+     "#1f3fa8",
+     "Cobalt"
+    ],
+    [
+     "#e9df98",
+     "Butter"
+    ],
+    [
+     "#4a1e1a",
+     "Mahogany"
+    ],
+    [
+     "#c9b48e",
+     "Jute"
+    ],
+    [
+     "#2a2826",
+     "Charcoal"
+    ]
+   ],
+   "note": "Saturated cobalt against soft butter yellow, grounded by dark wood."
+  },
+  {
+   "slug": "burgundy-powder-blue",
+   "name": "Burgundy + Powder Blue",
+   "img": "img/inspo/burgundy-powder-blue.jpg",
+   "colors": [
+    [
+     "#6b2a2c",
+     "Burgundy"
+    ],
+    [
+     "#a7b4cf",
+     "Powder blue"
+    ],
+    [
+     "#2f4a33",
+     "Bottle green"
+    ],
+    [
+     "#e8e1d4",
+     "Cream"
+    ],
+    [
+     "#8a1e24",
+     "Lacquer red"
+    ]
+   ],
+   "note": "Deep wine walls with chalky blue upholstery and a green doorway."
+  },
+  {
+   "slug": "oxblood-caramel",
+   "name": "Oxblood + Caramel",
+   "img": "img/inspo/oxblood-caramel.jpg",
+   "colors": [
+    [
+     "#6e1712",
+     "Oxblood"
+    ],
+    [
+     "#c9a274",
+     "Caramel oak"
+    ],
+    [
+     "#8a5a32",
+     "Chestnut"
+    ],
+    [
+     "#ebe5da",
+     "Cream"
+    ],
+    [
+     "#2a1210",
+     "Near black"
+    ]
+   ],
+   "note": "Glossy red tile and lacquer warmed by honey-colored wood."
+  },
+  {
+   "slug": "burnt-orange-mustard",
+   "name": "Burnt Orange + Mustard",
+   "img": "img/inspo/burnt-orange-mustard.jpg",
+   "colors": [
+    [
+     "#9b3d1f",
+     "Burnt orange"
+    ],
+    [
+     "#b89a3c",
+     "Mustard brass"
+    ],
+    [
+     "#c9d0dc",
+     "Sky ceiling"
+    ],
+    [
+     "#8a5634",
+     "Walnut"
+    ],
+    [
+     "#e2cfae",
+     "Stone"
+    ]
+   ],
+   "note": "Rust cabinetry, a brass-mustard backsplash and a pale blue ceiling."
+  },
+  {
+   "slug": "light-blue-brick",
+   "name": "Light Blue + Brick",
+   "img": "img/inspo/light-blue-brick.jpg",
+   "colors": [
+    [
+     "#b8c6e0",
+     "Light blue"
+    ],
+    [
+     "#ece4da",
+     "Warm white"
+    ],
+    [
+     "#9a3a22",
+     "Brick"
+    ],
+    [
+     "#e8ded0",
+     "Bone tile"
+    ],
+    [
+     "#7c7a52",
+     "Olive"
+    ]
+   ],
+   "note": "Pale blue with brick red on a cream floor with small red dots."
+  },
+  {
+   "slug": "burgundy-sky-oak",
+   "name": "Burgundy, Sky + Oak",
+   "img": "img/inspo/burgundy-sky-oak.jpg",
+   "colors": [
+    [
+     "#7a2230",
+     "Burgundy tile"
+    ],
+    [
+     "#bccbdc",
+     "Sky blue"
+    ],
+    [
+     "#c99a62",
+     "Oak"
+    ],
+    [
+     "#253761",
+     "Navy"
+    ],
+    [
+     "#a6492f",
+     "Terracotta"
+    ],
+    [
+     "#a9c4b8",
+     "Sage"
+    ]
+   ],
+   "note": "Burgundy stacked tile, sky walls, oak cabinets and a geometric navy-rust-sage floor."
+  },
+  {
+   "slug": "pebble-lilac-cognac",
+   "name": "Pebble, Lilac + Cognac",
+   "img": "img/inspo/pebble-lilac-cognac.jpg",
+   "colors": [
+    [
+     "#e4e1e0",
+     "Pebble"
+    ],
+    [
+     "#b3c7e2",
+     "Powder blue"
+    ],
+    [
+     "#c9b3c4",
+     "Lilac"
+    ],
+    [
+     "#ba7038",
+     "Cognac"
+    ]
+   ],
+   "note": "Soft pebble, powder blue and lilac with one cognac leather accent."
+  },
+  {
+   "slug": "periwinkle-walnut-rust",
+   "name": "Periwinkle, Walnut + Rust",
+   "img": "img/inspo/periwinkle-walnut-rust.jpg",
+   "colors": [
+    [
+     "#8f99b8",
+     "Periwinkle"
+    ],
+    [
+     "#6b4128",
+     "Walnut"
+    ],
+    [
+     "#a5502d",
+     "Rust"
+    ],
+    [
+     "#efe7e2",
+     "Calacatta Viola"
+    ],
+    [
+     "#1e1e1e",
+     "Ink"
+    ]
+   ],
+   "note": "Periwinkle walls with walnut, rust ceramics and a red-veined marble."
+  },
+  {
+   "slug": "plum-mustard-trim",
+   "name": "Plum + Mustard Trim",
+   "img": "img/inspo/plum-mustard-trim.jpg",
+   "colors": [
+    [
+     "#4c1a22",
+     "Plum"
+    ],
+    [
+     "#c29a3e",
+     "Mustard trim"
+    ],
+    [
+     "#ecebe6",
+     "Soft white"
+    ],
+    [
+     "#b98a86",
+     "Rose stripe"
+    ],
+    [
+     "#9c6a3c",
+     "Old oak"
+    ]
+   ],
+   "note": "White walls with mustard-painted trim, a plum chair and rose stripes."
+  }
  ]
 }
