@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Materials Mood Board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='13' height='13' fill='%232f5d4e'/%3E%3Crect x='17' y='17' width='13' height='13' fill='%232f5d4e'/%3E%3Crect x='17' y='2' width='13' height='13' fill='none' stroke='%232f5d4e' stroke-width='2'/%3E%3Crect x='2' y='17' width='13' height='13' fill='none' stroke='%232f5d4e' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=gambetta@400,500,600&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="#top" aria-label="Materials mood board">
+      <svg viewBox="0 0 40 40" width="34" height="34" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="16" height="16" fill="currentColor"/>
+        <rect x="21" y="21" width="16" height="16" fill="currentColor"/>
+        <rect x="22" y="4" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+        <rect x="4" y="22" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span>Reno <em>materials</em></span>
+    </a>
+    <nav class="filters" aria-label="Filter by room" id="filters"></nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="intro wrap">
+    <p class="eyebrow">Mood board · renovation tile</p>
+    <h1>Tile options, side by side.</h1>
+    <p class="lede">Each card shows the tile, what it costs, and how long it takes to arrive. Hover or tap a photo to see it installed. Prices and ship times were checked on <span id="checked"></span>; the budget lives in the spreadsheet.</p>
+    <div class="toolbar">
+      <label>Sort
+        <select id="sort">
+          <option value="default">As added</option>
+          <option value="price">Price per sq ft, low → high</option>
+          <option value="lead">Ship time, fastest first</option>
+        </select>
+      </label>
+      <span class="count" id="count"></span>
+    </div>
+  </section>
+
+  <div id="rooms"></div>
+</main>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</div>
+
+<footer class="wrap foot">
+  <p>Prices, stock and ship times come from each vendor's product page and change often. Confirm before ordering. Suitability notes (frost, slip) are the vendor's own listings, not an installer's review.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+{
+ "checked": "2026-10-08",
+ "items": [
+  {
+   "id": "D1",
+   "room": "Deck",
+   "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/avanti-checkerboard-verde-green-and-crema-marfil-beige-12x12-tumbled-marble-tile.html",
+   "material": "Tumbled marble",
+   "size": "12\" x 12\"",
+   "finish": "Tumbled",
+   "price_sqft": 21.0,
+   "unit": "kit (20 sq ft)",
+   "unit_price": 420.0,
+   "sqft_per_unit": 20.0,
+   "ship": "Ships in 2\u20135 business days, but listed Low Stock with 0 at all three warehouses",
+   "lead_wk": 1,
+   "stock": "Low stock",
+   "sample": "Samples $1 (5 for $5)",
+   "flags": [
+    "Listed as NOT frost resistant \u2014 risky for an outdoor Brooklyn deck",
+    "Natural marble needs sealing"
+   ],
+   "outdoor": "Outdoor listed; not frost resistant",
+   "local": [
+    "img/D1_0.jpg",
+    "img/D1_1.jpg"
+   ]
+  },
+  {
+   "id": "D2",
+   "room": "Deck",
+   "name": "True Terrazzo Lisbon Green 16x16, Polished",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/true-terrazzo-lisbon-green-16x16-polished-terrazzo-tile.html",
+   "material": "Through-body terrazzo",
+   "size": "16\" x 16\"",
+   "finish": "Polished",
+   "price_sqft": 13.95,
+   "unit": "box",
+   "unit_price": 50.36,
+   "sqft_per_unit": 3.61,
+   "ship": "Ships in 2\u20135 business days; in stock (9,925 at Burlington NJ)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "Samples $1 (5 for $5)",
+   "flags": [
+    "Frost resistant; slip rating DCOF 0.62",
+    "Polished finish \u2014 check it isn't slick when wet outside"
+   ],
+   "outdoor": "Indoor + outdoor; frost resistant",
+   "local": [
+    "img/D2_0.jpg",
+    "img/D2_1.jpg"
+   ]
+  },
+  {
+   "id": "D3",
+   "room": "Deck",
+   "name": "Kobe Cement Ocean Blue 24x48, Matte",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/kobe-cement-ocean-blue-24x48-terrazzo-look-matte-porcelain-tile.html",
+   "material": "Color-body porcelain (terrazzo look)",
+   "size": "24\" x 48\"",
+   "finish": "Matte",
+   "price_sqft": 9.95,
+   "unit": "box",
+   "unit_price": 154.13,
+   "sqft_per_unit": 15.49,
+   "ship": "Ships in 2\u20135 business days; in stock (24,598 at Burlington NJ)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "Samples $1 (5 for $5)",
+   "flags": [
+    "Frost resistant; R10 slip rating, DCOF >0.42",
+    "Large, heavy format \u2014 needs a flat, rigid base"
+   ],
+   "outdoor": "Indoor + outdoor; frost resistant",
+   "local": [
+    "img/D3_0.jpg",
+    "img/D3_1.jpg"
+   ]
+  },
+  {
+   "id": "B1",
+   "room": "Bathroom",
+   "name": "Iconic Blue 4x4 Ceramic",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/iconic-blue-4x4-ceramic-tile",
+   "material": "Ceramic",
+   "size": "4\" x 4\"",
+   "finish": "Matte",
+   "price_sqft": 15.85,
+   "unit": "box",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock, ready to ship (freight time extra)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free",
+   "flags": [
+    "Floors, walls and showers; DCOF 0.74"
+   ],
+   "outdoor": "Indoor + outdoor (freeze/thaw listed)",
+   "local": [
+    "img/B1_0.jpg",
+    "img/B1_1.jpg"
+   ]
+  },
+  {
+   "id": "B2",
+   "room": "Bathroom",
+   "name": "Wild Fig 4x4 Ceramic",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/wild-fig-4x4-ceramic-tile",
+   "material": "Ceramic",
+   "size": "4\" x 4\"",
+   "finish": "Satin",
+   "price_sqft": 15.85,
+   "unit": "box",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "In stock, ready to ship (freight time extra)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free",
+   "flags": [
+    "Same body as Iconic Blue, in a pink satin"
+   ],
+   "outdoor": "Indoor + outdoor (freeze/thaw listed)",
+   "local": [
+    "img/B2_0.jpg",
+    "img/B2_1.jpg"
+   ]
+  },
+  {
+   "id": "B3",
+   "room": "Bathroom",
+   "name": "Verona in Carrara + Verde Alpi, Honed",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/carrara-verde-alpi-2x6-6x12-honed",
+   "material": "Marble",
+   "size": "2x6 + 6x12 pattern",
+   "finish": "Honed",
+   "price_sqft": 25.85,
+   "unit": "box",
+   "unit_price": 240.66,
+   "sqft_per_unit": 9.31,
+   "ship": "In stock, ready to ship (freight time extra)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free",
+   "flags": [
+    "Marble needs sealing"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/B3_0.jpg",
+    "img/B3_1.jpg"
+   ]
+  },
+  {
+   "id": "B4",
+   "room": "Bathroom",
+   "name": "2x8 Original Ceramic, Calcite Gloss",
+   "vendor": "Fireclay Tile",
+   "url": "https://www.fireclaytile.com/products/original-ceramic-gloss-calcite-tile-2x8",
+   "material": "Ceramic (recycled clay)",
+   "size": "2\" x 8\"",
+   "finish": "Gloss",
+   "price_sqft": 34.0,
+   "unit": "sq ft",
+   "unit_price": 34.0,
+   "sqft_per_unit": 1.0,
+   "ship": "Made to order: 5\u20137 weeks production, plus shipping (rush 1\u20134 wks for +15\u201350%)",
+   "lead_wk": 8,
+   "stock": "Made to order",
+   "sample": "$3",
+   "flags": [
+    "Longest lead time \u2014 order early",
+    "Gloss, DCOF under 0.42: better for walls than floors"
+   ],
+   "outdoor": "Not freeze/thaw resistant",
+   "local": [
+    "img/B4_0.jpg",
+    "img/B4_1.jpg"
+   ]
+  },
+  {
+   "id": "B5",
+   "room": "Bathroom",
+   "name": "Flora 8x8 Set, Black + Bone",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/flora-8x8-set-black-bone",
+   "material": "Encaustic cement",
+   "size": "8\" x 8\"",
+   "finish": "Matte, unglazed",
+   "price_sqft": 15.85,
+   "unit": "box",
+   "unit_price": 83.68,
+   "sqft_per_unit": 5.28,
+   "ship": "In stock, ready to ship (freight time extra)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free",
+   "flags": [
+    "Handmade cement \u2014 sealing required and it patinas over time"
+   ],
+   "outdoor": "Outdoor only where no freeze/thaw",
+   "local": [
+    "img/B5_0.jpg",
+    "img/B5_1.jpg"
+   ]
+  },
+  {
+   "id": "B6",
+   "room": "Bathroom",
+   "name": "Levanzo Cream 16x16 Terrazzo",
+   "vendor": "Cemento Collection",
+   "url": "https://www.cementocollection.com/products/levanzo-cream-16x16-terrazzo-tile-1",
+   "material": "Terrazzo",
+   "size": "16\" x 16\"",
+   "finish": "Honed / matte",
+   "price_sqft": 22.47,
+   "unit": "box",
+   "unit_price": 240.0,
+   "sqft_per_unit": 10.68,
+   "ship": "In stock; shipping time not listed (pickup in Englewood NJ in 2\u20134 days) \u2014 ask vendor",
+   "lead_wk": null,
+   "stock": "In stock",
+   "sample": "$3 (4x4 sample)",
+   "flags": [
+    "Ship time not published"
+   ],
+   "outdoor": "Not stated",
+   "local": [
+    "img/B6_0.jpg",
+    "img/B6_1.jpg"
+   ]
+  },
+  {
+   "id": "B7",
+   "room": "Bathroom",
+   "name": "Leona 12x12 Checkerboard, Marfil + Amani Grey",
+   "vendor": "Edward Martin",
+   "url": "https://www.edwardmartin.com/products/leona-12x12-checkerboard-matte-porcelain-tile-in-marfil-and-amani-grey",
+   "material": "Porcelain",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 9.25,
+   "unit": "bundle",
+   "unit_price": 278.29,
+   "sqft_per_unit": 30.08,
+   "ship": "In stock; ships in 5\u20137 business days",
+   "lead_wk": 1.5,
+   "stock": "In stock",
+   "sample": "$6",
+   "flags": [
+    "Lowest price per sq ft of the bathroom options"
+   ],
+   "outdoor": "Outdoor listed",
+   "local": [
+    "img/B7_0.jpg"
+   ]
+  },
+  {
+   "id": "B8",
+   "room": "Bathroom",
+   "name": "Tamarisk 12x12 Terrazzo",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/tamarisk-12x12",
+   "material": "Terrazzo",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 19.85,
+   "unit": "box",
+   "unit_price": 192.15,
+   "sqft_per_unit": 9.68,
+   "ship": "In stock, ready to ship (freight time extra)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3 (ships as 6x6); first 5 free",
+   "flags": [
+    "Terrazzo DCOF 0.51"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/B8_0.jpg",
+    "img/B8_1.jpg"
+   ]
+  },
+  {
+   "id": "B9",
+   "room": "Bathroom",
+   "name": "Strands x Caroline Z Hurley, Mixed Shapes \u2014 Deep Sea",
+   "vendor": "Concrete Collaborative",
+   "url": "https://www.concrete-collaborative.com/in-stock-strands-czh",
+   "material": "Encaustic concrete",
+   "size": "8\" x 8\"",
+   "finish": "Matte",
+   "price_sqft": 28.55,
+   "unit": "box of 13",
+   "unit_price": 165.0,
+   "sqft_per_unit": 5.78,
+   "ship": "In stock collection; allow 2\u20133 weeks lead time",
+   "lead_wk": 3,
+   "stock": "In stock",
+   "sample": "$15 per single 8x8 sample",
+   "flags": [
+    "Sealer required",
+    "Each box mixes 11 shapes; vendor suggests 20% overage"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/B9_0.jpg"
+   ]
+  },
+  {
+   "id": "B10",
+   "room": "Bathroom",
+   "name": "Strands x Caroline Z Hurley, Mixed Shapes \u2014 Fun in the Sun",
+   "vendor": "Concrete Collaborative",
+   "url": "https://www.concrete-collaborative.com/in-stock-strands-czh",
+   "material": "Encaustic concrete",
+   "size": "8\" x 8\"",
+   "finish": "Matte",
+   "price_sqft": 28.55,
+   "unit": "box of 13",
+   "unit_price": 165.0,
+   "sqft_per_unit": 5.78,
+   "ship": "In stock collection; allow 2\u20133 weeks lead time",
+   "lead_wk": 3,
+   "stock": "In stock",
+   "sample": "$15 per single 8x8 sample",
+   "flags": [
+    "Sealer required",
+    "Each box mixes 11 shapes; vendor suggests 20% overage"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/B10_0.jpg",
+    "img/B10_1.jpg"
+   ]
+  },
+  {
+   "id": "K1",
+   "room": "Kitchen",
+   "name": "Essa Deco Blue 6x6, Polished + Matte",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/essa-deco-blue-6x6-terracotta-look-polished-and-matte-porcelain-tile.html",
+   "material": "Color-body porcelain (terracotta look)",
+   "size": "6\" x 6\"",
+   "finish": "Polished + matte",
+   "price_sqft": 12.95,
+   "unit": "box",
+   "unit_price": 69.67,
+   "sqft_per_unit": 5.38,
+   "ship": "Ships in 2\u20135 business days; in stock (4,984 at Burlington NJ)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "Samples $1 (5 for $5)",
+   "flags": [
+    "Rated for backsplash, walls and residential floors"
+   ],
+   "outdoor": "Frost resistant",
+   "local": [
+    "img/K1_0.jpg",
+    "img/K1_1.jpg"
+   ]
+  }
+ ]
+}
