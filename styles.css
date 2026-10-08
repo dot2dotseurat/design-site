@@ -109,3 +109,5 @@ dt{color:var(--muted)} dd{margin:0}
 .inspo__side{display:flex;flex-direction:column;justify-content:space-between}
 .pal--inspo .pal__strip{height:110px}
 @media (max-width:640px){.inspo{grid-template-columns:1fr}.pal--inspo{grid-template-columns:120px 1fr}.pages{border-right:0;padding-right:0}}
+.pal__sw{text-align:left}
+.pages:only-child{border-right:0;padding-right:0}
