@@ -1203,6 +1203,121 @@
    }
   },
   {
+   "id": "D10",
+   "room": "Deck",
+   "name": "Velanza Verde + Crema Beige 12x12 (marble-look checkerboard)",
+   "vendor": "Oasis Tile (Matrix Mosaics Velanza)",
+   "url": "https://oasistile.com/products/velanza-verde-green-12x12-matte-porcelain-tile",
+   "material": "Color-body porcelain, Verde Alpi and Crema Marfil marble look (two tiles laid alternately)",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 11.91,
+   "unit": "one box of each (14 tiles, 13.56 sq ft each, 27.12 sq ft together)",
+   "unit_price": 323.06,
+   "sqft_per_unit": 27.12,
+   "ship": "Crema Beige: ships in 1\u20132 business days. Verde Green: the box is out of stock right now (sample is in stock); ask Oasis for a restock date",
+   "lead_wk": null,
+   "stock": "Verde out of stock; Crema in stock",
+   "sample": "$6.95 per color",
+   "flags": [
+    "The closest look to the Avanti on the board: deep marble green with pale veining, against a warm cream with soft brown veins",
+    "Verde is $12.48/sq ft ($169.26 a box) and Crema is $11.34/sq ft ($153.80 a box); the price shown is the average for half of each",
+    "The pictures are a preview built from the vendor's two tile photos laid as a checkerboard; the tiles are sold separately",
+    "Listed for outdoor and pool use with water absorption at or under 0.5%, but the page never says \"freeze/thaw\", so get that in writing"
+   ],
+   "outdoor": "Listed \"can be used outdoor: yes\" and pool; no freeze/thaw statement",
+   "local": [
+    "img/D10_0.jpg",
+    "img/D10_1.jpg"
+   ],
+   "kind": "tile",
+   "hover_hint": "Hover: the two tiles",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Porcelain at 0.5% water absorption or less is the usual basis for frost resistance, but the vendor does not state freeze/thaw: ask for the ASTM C1026 result before the deck",
+     "DCOF 0.49 and matte: clears the wet-floor line",
+     "Veining is printed on porcelain, so it will not etch or need sealing like the Avanti marble"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "DCOF 0.49 clears the 0.42 line"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "Oasis lists \"can be used outdoor: yes\" and absorption of 0.5% or less, but no freeze/thaw statement"
+    },
+    "slip": {
+     "dcof": 0.49
+    },
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
    "id": "D1",
    "room": "Bathroom",
    "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
