@@ -26,6 +26,12 @@
    "local": [
     "img/D1_0.jpg",
     "img/D1_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#2a3636",
+    "#c6b6a6",
+    "#cbbcab"
    ]
   },
   {
@@ -53,6 +59,12 @@
    "local": [
     "img/D2_0.jpg",
     "img/D2_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#a1a48f",
+    "#696a5a",
+    "#b9b4a7"
    ]
   },
   {
@@ -80,6 +92,110 @@
    "local": [
     "img/D3_0.jpg",
     "img/D3_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#505b68",
+    "#4e5966",
+    "#48525e"
+   ]
+  },
+  {
+   "id": "D4",
+   "room": "Deck",
+   "name": "Marbilia Chess, Jungle (green + white)",
+   "vendor": "Merola Tile via Ferguson",
+   "url": "https://www.fergusonhome.com/merola-tile-frl18mc/s2081418?uid=5071876",
+   "material": "Porcelain (marble look)",
+   "size": "17\" x 17\" (4 squares per tile)",
+   "finish": "Matte",
+   "price_sqft": 8.89,
+   "unit": "carton",
+   "unit_price": 131.32,
+   "sqft_per_unit": 14.77,
+   "ship": "In stock (206); leaves warehouse in 1\u20132 business days, free shipping",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "Sample available",
+   "flags": [
+    "Frost resistant and outdoor approved; DCOF \u2265 0.42 wet",
+    "Green + white rather than green + cream"
+   ],
+   "outdoor": "Indoor + outdoor; frost resistant",
+   "local": [
+    "img/D4_0.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#bbc8b3",
+    "#94a992",
+    "#eef2f1"
+   ]
+  },
+  {
+   "id": "D5",
+   "room": "Deck",
+   "name": "Classico Checkerboard, Carrara + Verde Alpi 12x12",
+   "vendor": "Reno Source",
+   "url": "https://therenosource.com/products/classico-matte-marble-look-porcelain-checkerboard?variant=52373994864940",
+   "material": "Italian porcelain (marble look)",
+   "size": "12\" x 12\"",
+   "finish": "Matte",
+   "price_sqft": 6.45,
+   "unit": "box",
+   "unit_price": 69.4,
+   "sqft_per_unit": 10.76,
+   "ship": "In stock; leaves warehouse in 2\u20135 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$1 samples",
+   "flags": [
+    "Frost rating not published \u2014 ask Reno Source before using outdoors",
+    "Closest look to the Avanti; also sold as Verde Alpi + Fior di Pesco, which the vendor describes as misty grey, not pink"
+   ],
+   "outdoor": "Not stated \u2014 ask vendor",
+   "local": [
+    "img/D5_0.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#45524e",
+    "#687570",
+    "#a5aeab"
+   ]
+  },
+  {
+   "id": "D6",
+   "room": "Deck",
+   "name": "Custom checkerboard: Cypress + Wild Fig 4x4",
+   "vendor": "Zia Tile",
+   "url": "https://ziatile.com/products/cypress-4x4",
+   "material": "Ceramic (two colors laid alternately)",
+   "size": "4\" x 4\"",
+   "finish": "Satin",
+   "price_sqft": 15.85,
+   "unit": "box",
+   "unit_price": 193.69,
+   "sqft_per_unit": 12.22,
+   "ship": "Both in stock, ready to ship (freight time extra)",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3; first 5 samples free",
+   "flags": [
+    "Both colors rated for freeze/thaw exterior floors",
+    "Exactly green + pink, but small tiles mean lots of grout outdoors",
+    "Satin finish \u2014 test a wet sample for slip"
+   ],
+   "outdoor": "Freeze/thaw exterior floors listed",
+   "local": [
+    "img/D6_0.jpg",
+    "img/D6_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#b7b79b",
+    "#b2b194",
+    "#aeae91"
    ]
   },
   {
@@ -106,6 +222,12 @@
    "local": [
     "img/B1_0.jpg",
     "img/B1_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#406389",
+    "#3b5878",
+    "#476c94"
    ]
   },
   {
@@ -132,6 +254,12 @@
    "local": [
     "img/B2_0.jpg",
     "img/B2_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#a55b58",
+    "#be6e6a",
+    "#c27e7c"
    ]
   },
   {
@@ -158,6 +286,12 @@
    "local": [
     "img/B3_0.jpg",
     "img/B3_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#3b423d",
+    "#ebeae8",
+    "#545c54"
    ]
   },
   {
@@ -185,6 +319,12 @@
    "local": [
     "img/B4_0.jpg",
     "img/B4_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#ededeb",
+    "#dcdbd6",
+    "#ededea"
    ]
   },
   {
@@ -211,6 +351,12 @@
    "local": [
     "img/B5_0.jpg",
     "img/B5_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#424242",
+    "#ebe5d6",
+    "#83817c"
    ]
   },
   {
@@ -237,6 +383,12 @@
    "local": [
     "img/B6_0.jpg",
     "img/B6_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#f2eee6",
+    "#eae6db",
+    "#f0ece3"
    ]
   },
   {
@@ -262,6 +414,12 @@
    "outdoor": "Outdoor listed",
    "local": [
     "img/B7_0.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#999994",
+    "#959690",
+    "#ccc0b0"
    ]
   },
   {
@@ -288,6 +446,12 @@
    "local": [
     "img/B8_0.jpg",
     "img/B8_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#ede7e1",
+    "#efebe7",
+    "#e4caa2"
    ]
   },
   {
@@ -314,6 +478,12 @@
    "outdoor": "\u2014",
    "local": [
     "img/B9_0.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#33302d",
+    "#e9e1cc",
+    "#4a5e6e"
    ]
   },
   {
@@ -341,6 +511,12 @@
    "local": [
     "img/B10_0.jpg",
     "img/B10_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#d2ab7b",
+    "#ddb681",
+    "#b18a5e"
    ]
   },
   {
@@ -367,6 +543,382 @@
    "local": [
     "img/K1_0.jpg",
     "img/K1_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#28497d",
+    "#2c4f84",
+    "#234075"
+   ]
+  },
+  {
+   "id": "L1",
+   "room": "Liners",
+   "name": "Calacatta Verde 1x12 Honed Marble Pencil",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/calacatta-verde-1x12-honed-marble-square-pencil-trim.html",
+   "material": "Marble",
+   "size": "1\" x 12\"",
+   "finish": "Honed",
+   "price_sqft": 34.95,
+   "unit": "piece (1 ft)",
+   "unit_price": 34.95,
+   "sqft_per_unit": 1.0,
+   "ship": "Ships in 10\u201314 business days",
+   "lead_wk": 3,
+   "stock": "Ships in 10\u201314 days",
+   "sample": "\u2014",
+   "flags": [
+    "Pairs with Verona Carrara + Verde Alpi (B3)",
+    "Marble needs sealing"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/L1_0.jpg"
+   ],
+   "kind": "liner",
+   "swatches": [
+    "#cbc4b5",
+    "#e3dfd6",
+    "#bfb19b"
+   ]
+  },
+  {
+   "id": "L2",
+   "room": "Liners",
+   "name": "Dunmore Green 1x8 Ceramic Pencil, by Angela Harris",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/angela-harris-dunmore-green-1x8-ceramic-pencil-liner.html",
+   "material": "Ceramic",
+   "size": "1\" x 8\"",
+   "finish": "Glossy",
+   "price_sqft": 11.93,
+   "unit": "piece (8 in)",
+   "unit_price": 7.95,
+   "sqft_per_unit": 0.667,
+   "ship": "Ships in 2\u20135 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "\u2014",
+   "flags": [
+    "Glossy green line against Iconic Blue, Wild Fig or Calcite"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/L2_0.jpg"
+   ],
+   "kind": "liner",
+   "swatches": [
+    "#9fa68e",
+    "#6c7a5e",
+    "#828e77"
+   ]
+  },
+  {
+   "id": "L3",
+   "room": "Liners",
+   "name": "Crema Marfil 1x12 Marble Pencil",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/pencil-crema-marfil-3-4x12-marble.html",
+   "material": "Marble",
+   "size": "1\" x 12\"",
+   "finish": "Polished",
+   "price_sqft": 12.99,
+   "unit": "piece (1 ft)",
+   "unit_price": 12.99,
+   "sqft_per_unit": 1.0,
+   "ship": "Ships in 2\u20135 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "\u2014",
+   "flags": [
+    "Same cream as the Avanti and Leona Marfil"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/L3_0.jpg"
+   ],
+   "kind": "liner",
+   "swatches": [
+    "#dfd4c4"
+   ]
+  },
+  {
+   "id": "L4",
+   "room": "Liners",
+   "name": "Born Sage Green .5x5 Quarter Round, Matte",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/born-sage-green-5x5-l-shape-quarter-round-matte-ceramic-pencil.html",
+   "material": "Ceramic",
+   "size": "0.5\" x 5\" L-shape",
+   "finish": "Matte",
+   "price_sqft": 34.69,
+   "unit": "piece (5 in)",
+   "unit_price": 13.99,
+   "sqft_per_unit": 0.403,
+   "ship": "Ships in 2\u20135 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "\u2014",
+   "flags": [
+    "L-shape finishes an outside edge, like a niche or window"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/L4_0.jpg"
+   ],
+   "kind": "liner",
+   "swatches": [
+    "#818276",
+    "#8d8f84",
+    "#e9e9e8"
+   ]
+  },
+  {
+   "id": "L5",
+   "room": "Liners",
+   "name": "Arte Pink 1x8 Matte Ceramic Pencil (10-pack)",
+   "vendor": "Apollo Tile via Lowe's",
+   "url": "https://www.lowes.com/pd/Apollo-Tile-Arte-10-Pack-Pink-1-in-x-8-in-Ceramic-Pencil-Liner-Tile-0-3-sq-ft-Carton/5014914629",
+   "material": "Ceramic",
+   "size": "1\" x 8\" (0.47\" x 7.87\")",
+   "finish": "Matte",
+   "price_sqft": 11.74,
+   "unit": "10-pack",
+   "unit_price": 76.98,
+   "sqft_per_unit": 6.56,
+   "ship": "29 available; delivery estimated Oct 20",
+   "lead_wk": 2,
+   "stock": "In stock",
+   "sample": "\u2014",
+   "flags": [
+    "Soft pink line for Leona, Levanzo or Calcite"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/L5_0.jpg"
+   ],
+   "kind": "liner",
+   "swatches": [
+    "#dfc6bb",
+    "#f3e9e4"
+   ]
+  },
+  {
+   "id": "L6",
+   "room": "Liners",
+   "name": "Pietra Basalt Black 1x12 Honed Pencil",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/pietra-basalt-black-1x12-honed-basalt-pencil-liner.html",
+   "material": "Basalt stone",
+   "size": "1\" x 12\"",
+   "finish": "Honed",
+   "price_sqft": 12.95,
+   "unit": "piece (1 ft)",
+   "unit_price": 12.95,
+   "sqft_per_unit": 1.0,
+   "ship": "Ships in 10\u201314 business days",
+   "lead_wk": 3,
+   "stock": "Ships in 10\u201314 days",
+   "sample": "\u2014",
+   "flags": [
+    "Graphic edge for Flora Black + Bone (B5)"
+   ],
+   "outdoor": "\u2014",
+   "local": [
+    "img/L6_0.jpg"
+   ],
+   "kind": "liner",
+   "swatches": [
+    "#3f3f3f",
+    "#3c3c3c",
+    "#6a6a6a"
+   ]
+  }
+ ],
+ "palettes": [
+  {
+   "name": "Verde + Marfil",
+   "note": "Closest to the Avanti you love: deep marble green against warm cream, with crisp white walls.",
+   "colors": [
+    [
+     "#2f463d",
+     "Verde"
+    ],
+    [
+     "#687570",
+     "Verde vein"
+    ],
+    [
+     "#d8cbb5",
+     "Marfil"
+    ],
+    [
+     "#ededeb",
+     "Calcite"
+    ],
+    [
+     "#9a8f7e",
+     "Grout: warm taupe"
+    ]
+   ],
+   "picks": [
+    [
+     "B3",
+     "Floor or feature"
+    ],
+    [
+     "B7",
+     "Floor, cheaper"
+    ],
+    [
+     "B4",
+     "Walls"
+    ],
+    [
+     "L1",
+     "Liner"
+    ],
+    [
+     "L3",
+     "Liner, softer"
+    ]
+   ]
+  },
+  {
+   "name": "Fig + Sage",
+   "note": "The green-and-pink pairing: pink walls, sage lines and a cream terrazzo floor to calm it down.",
+   "colors": [
+    [
+     "#be6e6a",
+     "Wild Fig"
+    ],
+    [
+     "#a55b58",
+     "Fig shadow"
+    ],
+    [
+     "#8d8f84",
+     "Sage"
+    ],
+    [
+     "#6c7a5e",
+     "Moss"
+    ],
+    [
+     "#f0ece3",
+     "Cream"
+    ]
+   ],
+   "picks": [
+    [
+     "B2",
+     "Walls"
+    ],
+    [
+     "B6",
+     "Floor"
+    ],
+    [
+     "B8",
+     "Floor, alternate"
+    ],
+    [
+     "L4",
+     "Liner / edges"
+    ],
+    [
+     "L2",
+     "Liner, glossy"
+    ]
+   ]
+  },
+  {
+   "name": "Blush + Calcite",
+   "note": "Quiet and bright: white gloss walls with a thin pink line and a warm, sunny floor.",
+   "colors": [
+    [
+     "#ededeb",
+     "Calcite"
+    ],
+    [
+     "#dfc6bb",
+     "Blush"
+    ],
+    [
+     "#d2ab7b",
+     "Sun"
+    ],
+    [
+     "#b18a5e",
+     "Ochre"
+    ],
+    [
+     "#cfc8bd",
+     "Grout: putty"
+    ]
+   ],
+   "picks": [
+    [
+     "B4",
+     "Walls"
+    ],
+    [
+     "L5",
+     "Liner"
+    ],
+    [
+     "B10",
+     "Floor"
+    ],
+    [
+     "B7",
+     "Floor, alternate"
+    ]
+   ]
+  },
+  {
+   "name": "Sea + Bone",
+   "note": "Graphic and a little Parisian: blue walls, a patterned black-and-bone floor, a dark line to frame it.",
+   "colors": [
+    [
+     "#406389",
+     "Iconic Blue"
+    ],
+    [
+     "#2d4766",
+     "Deep blue"
+    ],
+    [
+     "#ebe5d6",
+     "Bone"
+    ],
+    [
+     "#424242",
+     "Black"
+    ],
+    [
+     "#6c7a5e",
+     "Moss accent"
+    ]
+   ],
+   "picks": [
+    [
+     "B1",
+     "Walls"
+    ],
+    [
+     "B5",
+     "Floor"
+    ],
+    [
+     "L6",
+     "Liner"
+    ],
+    [
+     "L2",
+     "Liner, green accent"
+    ]
    ]
   }
  ]
