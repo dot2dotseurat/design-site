@@ -195,3 +195,16 @@ dt{color:var(--muted)} dd{margin:0}
 .bud-areas li{display:flex;justify-content:space-between;padding:12px 16px;border-top:1px solid var(--line)}
 .bud-areas li:first-child{border-top:0}
 @media (max-width:900px){.bud__row{grid-template-columns:1fr 1fr}.bud__row--head{display:none}.bud-totals{grid-template-columns:1fr}.bud__row--cmp{grid-template-columns:1fr 60px 100px 100px}}
+
+/* Fit rubric */
+.rubric{padding-top:8px;padding-bottom:8px;scroll-margin-top:90px}
+.rubric details{border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.rubric summary{cursor:pointer;padding:12px 16px;font:600 14px var(--body)}
+.rubric__body{padding:0 16px 16px;font-size:14px;color:var(--muted)}
+.rubric__body p{margin:0 0 12px;max-width:80ch}
+.rubric__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.rubric__grid h3{margin:0 0 6px;font:600 13px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+.rubric__grid ul{margin:0;padding-left:18px}.rubric__grid li{margin-bottom:6px}
+.rubric__note{margin:12px 0 0;font-size:13px}
+.fit__how{font-weight:400;font-size:12px;margin-left:6px}
+@media (max-width:800px){.rubric__grid{grid-template-columns:1fr}}

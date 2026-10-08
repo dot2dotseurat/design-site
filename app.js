@@ -73,7 +73,7 @@
         </dl>
         ${it.moved ? `<p class="moved">${esc(it.moved)}</p>` : ''}
         ${(it.uses || []).length ? `<div class="uses"><span>Best for</span>${it.uses.map(u => `<em>${esc(u)}</em>`).join('')}</div>` : ''}
-        ${it.fit ? `<div class="fit fit--${it.fit.level}"><p class="fit__h">NYC + kids: <strong>${{ good: 'Good fit', caution: 'Use with care', poor: 'Poor fit' }[it.fit.level]}</strong></p><ul>${it.fit.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></div>` : ''}
+        ${it.fit ? `<div class="fit fit--${it.fit.level}"><p class="fit__h">NYC + kids: <strong>${{ good: 'Good fit', caution: 'Use with care', poor: 'Poor fit' }[it.fit.level]}</strong> <a class="fit__how" href="#rubric" data-rubric>How we rate</a></p><ul>${it.fit.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></div>` : ''}
         ${flags ? `<ul class="flags">${flags}</ul>` : ''}
         ${(it.liners || []).length ? `<div class="liners"><p class="pairs__h">Liners that match</p>${it.liners.map(id => { const l = byId[id]; return l ? `<a class="liner" href="${l.url}" target="_blank" rel="noopener"><img src="${l.local[0]}" alt=""><span><strong>${esc(l.name)}</strong>${fmt(l.price_sqft)} / linear ft · ${esc(l.ship)}${l.fit && l.fit.level !== 'good' ? ` · <i>${esc(l.fit.notes[0])}</i>` : ''}</span></a>` : ''; }).join('')}</div>` : ''}
         ${(it.pairings || []).length ? `<div class="pairs"><p class="pairs__h">Palettes to try</p>${it.pairings.map(p => `<div class="pair">
@@ -143,6 +143,9 @@
     const el = document.querySelector(location.hash);
     if (el) setTimeout(() => { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1800); }, 300);
   }
+  document.addEventListener('click', e => {
+    if (e.target.closest('[data-rubric]')) document.querySelector('#rubric details').open = true;
+  });
   document.addEventListener('click', e => {
     const sw = e.target.closest('.pair__sw'); if (!sw) return;
     navigator.clipboard?.writeText(sw.dataset.hex); sw.classList.add('copied'); setTimeout(() => sw.classList.remove('copied'), 900);
