@@ -4,8 +4,7 @@
   const items = data.items.map((it, i) => ({ ...it, order: i }));
   const ROOM_NOTES = {
     Deck: 'Outdoor floor — needs to survive freeze/thaw',
-    Closets: 'Closet doors, interiors and wardrobe panels',
-    Wallpaper: 'Murals and wallpaper, priced per square meter',
+    Wallpaper: 'Murals, wallpaper and closet veneer, priced per square meter',
     Bathroom: 'Floor and wall options',
     Kitchen: 'Backsplash',
     Liners: 'Pencil liners and trim to run with the bathroom tile'
