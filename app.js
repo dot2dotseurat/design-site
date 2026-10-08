@@ -10,10 +10,11 @@
     Kitchen: 'Backsplash',
     Liners: 'Pencil liners and trim to run with the bathroom tile'
   };
-  const rooms = [...new Set(items.map(i => i.room))];
+  const byId = Object.fromEntries(items.map(i => [i.id, i]));
+  const rooms = [...new Set(items.filter(i => i.kind !== 'liner').map(i => i.room))];
   const palettes = data.palettes || [];
   let active = 'All';
-  let sort = 'default';
+  let sort = 'lead';
 
   const lum = h => { const [r, g, b] = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
   const fmt = n => '$' + n.toFixed(2);
@@ -29,7 +30,7 @@
     const b = document.createElement('button');
     b.className = 'chip';
     b.type = 'button';
-    const n = r === 'All' ? items.length : items.filter(i => i.room === r).length;
+    const n = r === 'All' ? items.filter(i => i.kind !== 'liner').length : items.filter(i => i.room === r).length;
     b.innerHTML = `${esc(r)}<small>${n}</small>`;
     b.setAttribute('aria-pressed', r === active);
     b.onclick = () => { active = r; [...filters.children].forEach(c => c.setAttribute('aria-pressed', c === b)); render(); };
@@ -48,6 +49,7 @@
         <img src="${a}" alt="${esc(it.name)}" loading="lazy">
         ${b ? `<img class="alt" src="${b}" alt="" loading="lazy"><span class="hint">${it.id === 'D6' ? 'Hover: second color' : it.kind === 'wallcovering' ? 'Hover: in a room' : 'Hover: installed'}</span>` : ''}
         ${tag}
+        ${it.fit && it.fit.level === 'poor' ? `<span class="tag tag--poor">Poor fit for ${it.id === 'B4' ? 'floors' : 'NYC deck'}</span>` : ''}
       </button>
       <div class="card__body">
         <p class="vendor">${esc(it.vendor)}</p>
@@ -60,7 +62,11 @@
           <dt>Sample</dt><dd>${esc(it.sample)}</dd>
           ${it.kind === 'tile' ? `<dt>Outdoor</dt><dd>${esc(it.outdoor)}</dd>` : ''}
         </dl>
+        ${it.moved ? `<p class="moved">${esc(it.moved)}</p>` : ''}
+        ${(it.uses || []).length ? `<div class="uses"><span>Best for</span>${it.uses.map(u => `<em>${esc(u)}</em>`).join('')}</div>` : ''}
+        ${it.fit ? `<div class="fit fit--${it.fit.level}"><p class="fit__h">NYC + kids: <strong>${{ good: 'Good fit', caution: 'Use with care', poor: 'Poor fit' }[it.fit.level]}</strong></p><ul>${it.fit.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></div>` : ''}
         ${flags ? `<ul class="flags">${flags}</ul>` : ''}
+        ${(it.liners || []).length ? `<div class="liners"><p class="pairs__h">Liners that match</p>${it.liners.map(id => { const l = byId[id]; return l ? `<a class="liner" href="${l.url}" target="_blank" rel="noopener"><img src="${l.local[0]}" alt=""><span><strong>${esc(l.name)}</strong>${fmt(l.price_sqft)} / linear ft · ${esc(l.ship)}${l.fit && l.fit.level !== 'good' ? ` · <i>${esc(l.fit.notes[0])}</i>` : ''}</span></a>` : ''; }).join('')}</div>` : ''}
         ${(it.pairings || []).length ? `<div class="pairs"><p class="pairs__h">Palettes to try</p>${it.pairings.map(p => `<div class="pair">
           <div class="pair__strip">${p.colors.map(([hex, label]) => `<button class="pair__sw" style="background:${hex}" data-hex="${hex}" title="${esc(label)} ${hex} — click to copy" aria-label="${esc(label)} ${hex}"></button>`).join('')}</div>
           <p class="pair__name"><strong>${esc(p.name)}</strong> <span>${esc(p.rule)}</span></p>
@@ -73,8 +79,8 @@
 
   function sorted(list) {
     const l = [...list];
-    if (sort === 'price') l.sort((a, b) => a.price_sqft - b.price_sqft);
-    else if (sort === 'lead') l.sort((a, b) => (a.lead_wk ?? 99) - (b.lead_wk ?? 99));
+    if (sort === 'price') l.sort((a, b) => (a.price_sqft - b.price_sqft) || ((a.lead_wk ?? 99) - (b.lead_wk ?? 99)));
+    else if (sort === 'lead') l.sort((a, b) => ((a.lead_wk ?? 99) - (b.lead_wk ?? 99)) || (a.price_sqft - b.price_sqft));
     else l.sort((a, b) => a.order - b.order);
     return l;
   }

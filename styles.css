@@ -130,3 +130,23 @@ dt{color:var(--muted)} dd{margin:0}
 .inspo--saved .inspo__img{display:block;cursor:pointer}
 .inspo--saved .pal--inspo{grid-template-columns:170px 1fr}
 .inspo--saved .inspo__img{min-height:200px}
+
+/* Uses, NYC+kids fit, nested liners */
+.moved{margin:12px 0 0;font-size:13px;font-weight:600;color:var(--warn)}
+.uses{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:14px}
+.uses span{font:600 12px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.uses em{font-style:normal;font-size:12px;padding:3px 8px;border-radius:999px;background:#e9e4d8;color:var(--ink)}
+.fit{margin-top:12px;padding:10px 12px;border-radius:6px;border-left:4px solid}
+.fit__h{margin:0 0 4px;font-size:13px}
+.fit ul{margin:0;padding-left:18px;font-size:13px;line-height:1.45}
+.fit--good{background:#e8efe9;border-color:#2f5d4e}
+.fit--caution{background:#f5ecdc;border-color:#a8741a}
+.fit--poor{background:#f6e3df;border-color:#a3392b}
+.tag--poor{top:auto;bottom:12px;left:12px;background:#a3392b;color:#fff}
+.liners{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:8px}
+.liner{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--ink);padding:4px;border-radius:6px}
+.liner:hover{background:#efeae0}
+.liner img{width:56px;height:40px;object-fit:contain;background:#f7f5f0;border-radius:3px;flex:none}
+.liner span{font-size:12px;line-height:1.35;color:var(--muted)}
+.liner strong{display:block;font-size:13px;color:var(--ink);font-weight:600}
+.liner i{font-style:normal;color:var(--warn)}

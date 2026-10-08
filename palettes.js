@@ -9,7 +9,7 @@
   document.getElementById('tilePals').innerHTML = (data.palettes || []).map(p => `<article class="pal">
     ${strip(p.colors)}
     <div class="pal__body"><h3>${esc(p.name)}</h3><p>${esc(p.note)}</p>
-    <ul class="pal__picks">${p.picks.map(([id, role]) => { const it = byId[id]; return it ? `<li><a href="index.html#card-${id}"><img src="${it.local[0]}" alt=""><span><strong>${esc(role)}</strong>${esc(it.name)} · ${money(it.price_sqft)}/${it.kind === 'liner' ? 'lf' : 'sf'}</span></a></li>` : ''; }).join('')}</ul></div>
+    <ul class="pal__picks">${p.picks.map(([id, role]) => { const it = byId[id]; return it ? `<li><a href="${it.kind === 'liner' ? it.url : 'index.html#card-' + id}"${it.kind === 'liner' ? ' target="_blank" rel="noopener"' : ''}><img src="${it.local[0]}" alt=""><span><strong>${esc(role)}</strong>${esc(it.name)} · ${money(it.price_sqft)}/${it.kind === 'liner' ? 'lf' : 'sf'}</span></a></li>` : ''; }).join('')}</ul></div>
   </article>`).join('');
 
   document.getElementById('inspoPals').innerHTML = (data.inspiration || []).map(p => `<article class="pal pal--inspo">

@@ -2,95 +2,6 @@
  "checked": "2026-10-08",
  "items": [
   {
-   "id": "D1",
-   "room": "Deck",
-   "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
-   "vendor": "TileBar",
-   "url": "https://www.tilebar.com/product/avanti-checkerboard-verde-green-and-crema-marfil-beige-12x12-tumbled-marble-tile.html",
-   "material": "Tumbled marble",
-   "size": "12\" x 12\"",
-   "finish": "Tumbled",
-   "price_sqft": 21.0,
-   "unit": "kit (20 sq ft)",
-   "unit_price": 420.0,
-   "sqft_per_unit": 20.0,
-   "ship": "Ships in 2\u20135 business days, but listed Low Stock with 0 at all three warehouses",
-   "lead_wk": 1,
-   "stock": "Low stock",
-   "sample": "Samples $1 (5 for $5)",
-   "flags": [
-    "Listed as NOT frost resistant \u2014 risky for an outdoor Brooklyn deck",
-    "Natural marble needs sealing"
-   ],
-   "outdoor": "Outdoor listed; not frost resistant",
-   "local": [
-    "img/D1_0.jpg",
-    "img/D1_1.jpg"
-   ],
-   "kind": "tile",
-   "swatches": [
-    "#2a3636",
-    "#c6b6a6",
-    "#cbbcab"
-   ],
-   "pairings": [
-    {
-     "name": "Garden room",
-     "rule": "Complement",
-     "why": "Green's complement is pink-red \u2014 a fig pot or cushion makes the verde glow.",
-     "colors": [
-      [
-       "#2f463d",
-       "Verde"
-      ],
-      [
-       "#d8cbb5",
-       "Marfil"
-      ],
-      [
-       "#be6e6a",
-       "Wild fig"
-      ],
-      [
-       "#b89a5a",
-       "Unlacquered brass"
-      ],
-      [
-       "#c99a62",
-       "Oak"
-      ]
-     ]
-    },
-    {
-     "name": "Oxblood porch",
-     "rule": "Warm contrast",
-     "why": "Deep red furniture against dark green is the Avanti's richest pairing.",
-     "colors": [
-      [
-       "#2f463d",
-       "Verde"
-      ],
-      [
-       "#d8cbb5",
-       "Marfil"
-      ],
-      [
-       "#6e1712",
-       "Oxblood"
-      ],
-      [
-       "#6b4128",
-       "Walnut"
-      ],
-      [
-       "#ece4d4",
-       "Cream"
-      ]
-     ]
-    }
-   ]
-  },
-  {
    "id": "D2",
    "room": "Deck",
    "name": "True Terrazzo Lisbon Green 16x16, Polished",
@@ -169,7 +80,17 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Deck",
+    "Bathroom floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Frost resistant with a decent slip rating, but a polished face outside invites slips when kids run on it wet \u2014 ask about a honed finish"
+    ]
+   }
   },
   {
    "id": "D3",
@@ -250,7 +171,18 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Deck",
+    "Cellar / sauna floor"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Frost resistant, matte, R10 slip \u2014 tough enough for kids",
+     "Large heavy tiles need a very flat base and a curbside delivery plan in Brooklyn"
+    ]
+   }
   },
   {
    "id": "D4",
@@ -330,7 +262,19 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Deck",
+    "Cellar / sauna floor",
+    "Bathroom floor"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Frost resistant, matte porcelain with DCOF \u2265 0.42 \u2014 the safest checkerboard for kids",
+     "Porcelain doesn't stain or need sealing"
+    ]
+   }
   },
   {
    "id": "D5",
@@ -410,7 +354,18 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Deck, once frost is confirmed",
+    "Bathroom floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Frost rating unpublished \u2014 don't use on the deck until Reno Source confirms",
+     "Otherwise matte porcelain: durable and no sealing"
+    ]
+   }
   },
   {
    "id": "D6",
@@ -515,6 +470,123 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Shower floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Freeze/thaw rated, but 4x4 tiles mean lots of grout outdoors \u2014 seal it or it darkens with dirt",
+     "Satin finish: test a wet sample for slip before committing to a deck kids play on"
+    ]
+   }
+  },
+  {
+   "id": "D1",
+   "room": "Bathroom",
+   "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
+   "vendor": "TileBar",
+   "url": "https://www.tilebar.com/product/avanti-checkerboard-verde-green-and-crema-marfil-beige-12x12-tumbled-marble-tile.html",
+   "material": "Tumbled marble",
+   "size": "12\" x 12\"",
+   "finish": "Tumbled",
+   "price_sqft": 21.0,
+   "unit": "kit (20 sq ft)",
+   "unit_price": 420.0,
+   "sqft_per_unit": 20.0,
+   "ship": "Ships in 2\u20135 business days, but listed Low Stock with 0 at all three warehouses",
+   "lead_wk": 1,
+   "stock": "Low stock",
+   "sample": "Samples $1 (5 for $5)",
+   "flags": [
+    "Listed as NOT frost resistant \u2014 risky for an outdoor Brooklyn deck",
+    "Natural marble needs sealing"
+   ],
+   "outdoor": "Outdoor listed; not frost resistant",
+   "local": [
+    "img/D1_0.jpg",
+    "img/D1_1.jpg"
+   ],
+   "kind": "tile",
+   "swatches": [
+    "#2a3636",
+    "#c6b6a6",
+    "#cbbcab"
+   ],
+   "pairings": [
+    {
+     "name": "Garden room",
+     "rule": "Complement",
+     "why": "Green's complement is pink-red \u2014 a fig pot or cushion makes the verde glow.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#be6e6a",
+       "Wild fig"
+      ],
+      [
+       "#b89a5a",
+       "Unlacquered brass"
+      ],
+      [
+       "#c99a62",
+       "Oak"
+      ]
+     ]
+    },
+    {
+     "name": "Oxblood porch",
+     "rule": "Warm contrast",
+     "why": "Deep red furniture against dark green is the Avanti's richest pairing.",
+     "colors": [
+      [
+       "#2f463d",
+       "Verde"
+      ],
+      [
+       "#d8cbb5",
+       "Marfil"
+      ],
+      [
+       "#6e1712",
+       "Oxblood"
+      ],
+      [
+       "#6b4128",
+       "Walnut"
+      ],
+      [
+       "#ece4d4",
+       "Cream"
+      ]
+     ]
+    }
+   ],
+   "uses": [
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "poor",
+    "notes": [
+     "Not frost resistant, so NYC freeze/thaw cycles can crack it on a deck",
+     "Indoors: tumbled marble etches from juice, soap and cleaners, so it needs resealing every year or so"
+    ]
+   },
+   "moved": "Moved from Deck: not frost resistant",
+   "liners": [
+    "L1",
+    "L3"
    ]
   },
   {
@@ -618,6 +690,24 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Shower floor",
+    "Bathroom floor",
+    "Walls",
+    "Deck"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "DCOF 0.74 and freeze/thaw rated \u2014 the best wet-floor option for a kids' bath",
+     "Also tough enough for the deck"
+    ]
+   },
+   "liners": [
+    "L2",
+    "L5",
+    "L6"
    ]
   },
   {
@@ -721,6 +811,22 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Walls",
+    "Bathroom floor",
+    "Deck"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Freeze/thaw rated ceramic, same body as Iconic Blue",
+     "Satin glaze: check the slip rating before using on a shower floor"
+    ]
+   },
+   "liners": [
+    "L2",
+    "L4"
    ]
   },
   {
@@ -824,6 +930,20 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Walls",
+    "Adult bath floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Marble etches and stains from shampoo, toothpaste and cleaners; needs sealing",
+     "Fine on walls; on a kids' bath floor expect visible wear"
+    ]
+   },
+   "liners": [
+    "L1"
    ]
   },
   {
@@ -928,6 +1048,24 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Walls only",
+    "Backsplash"
+   ],
+   "fit": {
+    "level": "poor",
+    "notes": [
+     "Walls: great",
+     "Floors: poor \u2014 gloss with DCOF under 0.42 is slippery wet, so keep it off any floor kids use",
+     "Not freeze/thaw rated"
+    ]
+   },
+   "liners": [
+    "L1",
+    "L2",
+    "L3",
+    "L5"
    ]
   },
   {
@@ -1008,6 +1146,21 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Bathroom floor (outside the shower)",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Encaustic cement is porous: spills and bath products stain it unless resealed regularly",
+     "It patinas \u2014 some people like that, but it won't stay crisp with kids"
+    ]
+   },
+   "liners": [
+    "L2",
+    "L6"
    ]
   },
   {
@@ -1111,6 +1264,23 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Bathroom floor",
+    "Walls"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Slip rating and ship time aren't published \u2014 ask before using on a wet floor",
+     "Terrazzo needs sealing"
+    ]
+   },
+   "liners": [
+    "L1",
+    "L3",
+    "L4",
+    "L5"
    ]
   },
   {
@@ -1190,6 +1360,23 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Bathroom floor",
+    "Cellar / sauna floor",
+    "Deck, if freeze/thaw is confirmed"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Matte porcelain: durable, no sealing, cheapest option",
+     "Outdoor listed \u2014 ask TileBar about freeze/thaw before using it on the deck"
+    ]
+   },
+   "liners": [
+    "L1",
+    "L3",
+    "L5"
    ]
   },
   {
@@ -1270,6 +1457,21 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Bathroom floor",
+    "Walls"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "DCOF 0.51 is fine for floors, but cement terrazzo needs sealing to resist stains"
+    ]
+   },
+   "liners": [
+    "L3",
+    "L4",
+    "L5"
    ]
   },
   {
@@ -1350,6 +1552,20 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Walls",
+    "Low-traffic powder room floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Concrete with a required sealer: spills and splashes can stain, and it needs resealing",
+     "Busy patterns hide wear, but a kids' bath floor will age fast"
+    ]
+   },
+   "liners": [
+    "L6"
    ]
   },
   {
@@ -1431,6 +1647,20 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Walls",
+    "Low-traffic powder room floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Concrete with a required sealer: spills and splashes can stain, and it needs resealing",
+     "The lighter colors show stains more than Deep Sea"
+    ]
+   },
+   "liners": [
+    "L5"
    ]
   },
   {
@@ -1508,6 +1738,23 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Walls",
+    "Shower walls",
+    "Backsplash"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Great on walls; on floors the uneven glaze chips and gets slippery when wet",
+     "Freeze/thaw not stated \u2014 indoor only for NYC",
+     "Expect higher labor cost"
+    ]
+   },
+   "liners": [
+    "L2",
+    "L4"
    ]
   },
   {
@@ -1609,6 +1856,22 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Walls",
+    "Shower walls",
+    "Backsplash"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Great on walls; zellige floors chip and get slippery when wet",
+     "Zia says not freeze/thaw \u2014 indoor only",
+     "Install takes 2\u20133\u00d7 longer, so expect higher labor cost"
+    ]
+   },
+   "liners": [
+    "L6"
    ]
   },
   {
@@ -1712,6 +1975,22 @@
       ]
      ]
     }
+   ],
+   "uses": [
+    "Backsplash",
+    "Kitchen floor",
+    "Bathroom floor"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Color-body porcelain, frost resistant and floor rated",
+     "On floors, the polished pieces can be slick when wet \u2014 mostly a backsplash pick"
+    ]
+   },
+   "liners": [
+    "L2",
+    "L6"
    ]
   },
   {
@@ -1765,7 +2044,17 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bath walls",
+    "Shower trim"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Marble pencil: seal it in the shower, and it can chip at kid height"
+    ]
+   }
   },
   {
    "id": "L2",
@@ -1836,7 +2125,18 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bath walls",
+    "Shower trim",
+    "Backsplash"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Glazed ceramic: wipes clean"
+    ]
+   }
   },
   {
    "id": "L3",
@@ -1886,7 +2186,16 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bath walls"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Polished marble: seal it in wet areas; edges can chip"
+    ]
+   }
   },
   {
    "id": "L4",
@@ -1938,7 +2247,17 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Niches",
+    "Window and outside edges"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Glazed ceramic: wipes clean; the rounded edge is kinder to bumps"
+    ]
+   }
   },
   {
    "id": "L5",
@@ -2008,7 +2327,17 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bath walls",
+    "Backsplash"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Glazed ceramic: wipes clean"
+    ]
+   }
   },
   {
    "id": "L6",
@@ -2060,7 +2389,17 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bath walls",
+    "Shower trim"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Basalt is very hard, but honed stone still needs sealing in a shower"
+    ]
+   }
   },
   {
    "id": "C1",
@@ -2161,7 +2500,18 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Closet interiors",
+    "Wardrobe panels"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Paper wallpaper only wipes with a damp sponge \u2014 on closet doors kids' hands will wear it",
+     "Better inside closets or on upper panels"
+    ]
+   }
   },
   {
    "id": "W1",
@@ -2239,7 +2589,18 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bedrooms",
+    "Hallways above a chair rail"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Off-white ground shows fingerprints and crayon",
+     "Only damp-sponge washable \u2014 keep it out of bathrooms and below kid height"
+    ]
+   }
   },
   {
    "id": "W2",
@@ -2340,7 +2701,19 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bedrooms",
+    "Living room",
+    "Hallways"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Dark busy pattern hides scuffs well",
+     "Still paper: not for bathrooms"
+    ]
+   }
   },
   {
    "id": "W3",
@@ -2419,7 +2792,18 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Basement",
+    "Living room"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Paper below grade needs dry, sealed walls \u2014 check for damp first",
+     "Mid-tones hide marks reasonably well"
+    ]
+   }
   },
   {
    "id": "W4",
@@ -2520,7 +2904,19 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Bedrooms",
+    "Living room",
+    "Hallways"
+   ],
+   "fit": {
+    "level": "good",
+    "notes": [
+     "Mid-tone, patterned olive hides marks well",
+     "Not for bathrooms"
+    ]
+   }
   },
   {
    "id": "W5",
@@ -2598,7 +2994,18 @@
       ]
      ]
     }
-   ]
+   ],
+   "uses": [
+    "Dining room",
+    "Hallways above a chair rail"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "White ground shows smudges at kid height",
+     "Not for bathrooms"
+    ]
+   }
   }
  ],
  "palettes": [
