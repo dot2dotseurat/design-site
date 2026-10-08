@@ -6646,6 +6646,104 @@
     "sample": "sold",
     "cleanable": "spongeable"
    }
+  },
+  {
+   "id": "W13",
+   "room": "Wallpaper",
+   "name": "Puntini Sisal, Tanlines (Backdrop x Schumacher)",
+   "url": "https://www.backdrophome.com/products/puntini-sisal-tanlines/",
+   "size": "34\" x 8 yd single roll (about 68 sq ft)",
+   "flags": [
+    "Ochre and cream gridded dots, hand screen-printed on Haruki sisal grasscloth",
+    "Inspired by Italian candies; a warm yellow that sits with the butter and ochre in your palettes",
+    "Color variation and small irregularities are part of the natural fiber",
+    "The roll shows as unavailable online right now; the $5 sample is in stock"
+   ],
+   "local": [
+    "img/W13_0.jpg",
+    "img/W13_1.jpg"
+   ],
+   "vendor": "Backdrop (a division of Schumacher)",
+   "material": "Hand screen-printed sisal grasscloth (Haruki Sisal)",
+   "finish": "Natural woven texture",
+   "price_sqft": 18.94,
+   "unit": "roll (34\" x 8 yd, about 68 sq ft)",
+   "unit_price": 1288.0,
+   "sqft_per_unit": 68.0,
+   "ship": "Not stated; the roll is listed as unavailable online",
+   "lead_wk": null,
+   "stock": "Roll unavailable online",
+   "sample": "$5 sample (8\" x 10\"); 10\" x 17\" also $5",
+   "outdoor": "\u2014",
+   "kind": "wallcovering",
+   "overage": 0.15,
+   "uses": [
+    "Dining room",
+    "Office",
+    "Above a chair rail"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "The page gives no cleaning rating, and grasscloth generally can't be scrubbed: keep it above kid height and out of kitchens and baths",
+     "At about $19 a sq ft it is the priciest wallcovering here, so it suits one feature wall"
+    ],
+    "checks": [
+     {
+      "rule": "Cleanable",
+      "use": "wallpaper",
+      "level": "caution",
+      "detail": "Cleanability not stated"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "caution",
+      "detail": "Ship time not published"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     },
+     {
+      "rule": "Judgment",
+      "use": null,
+      "level": "caution",
+      "detail": "Natural sisal grasscloth: the page gives no cleaning rating, and grasscloth generally can't be scrubbed"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "wallpaper"
+    ],
+    "freeze_thaw": {
+     "status": "unknown"
+    },
+    "slip": null,
+    "finish_class": "unknown",
+    "porosity": "unknown",
+    "rated_for": [],
+    "sample": "sold",
+    "cleanable": "unknown",
+    "care_flags": [
+     "Natural sisal grasscloth: the page gives no cleaning rating, and grasscloth generally can't be scrubbed"
+    ]
+   }
   }
  ],
  "palettes": [
