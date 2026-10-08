@@ -1318,6 +1318,116 @@
    }
   },
   {
+   "id": "D11",
+   "room": "Deck",
+   "name": "Kai 12x24 Grip Porcelain, Jade",
+   "vendor": "Edward Martin",
+   "url": "https://www.edwardmartin.com/products/kai-12x24-grip-porcelain-tile-in-jade",
+   "material": "Porcelain",
+   "size": "12\" x 24\"",
+   "finish": "Grip (textured, slip-resistant)",
+   "price_sqft": 7.44,
+   "unit": "carton (16 sq ft)",
+   "unit_price": 118.97,
+   "sqft_per_unit": 16.0,
+   "ship": "In stock; ships in 5\u20137 business days",
+   "lead_wk": 1,
+   "stock": "In stock",
+   "sample": "$3 sample",
+   "flags": [
+    "A muted olive-sage green with a soft hand-glazed look, solid rather than veined",
+    "The cheapest green here that is listed for outdoor use: $7.44 a sq ft",
+    "The page lists it for wall, floor and outdoor, but gives no freeze/thaw rating, slip number, thickness or water absorption"
+   ],
+   "outdoor": "Listed for outdoor use; no freeze/thaw statement",
+   "local": [
+    "img/D11_0.jpg",
+    "img/D11_1.jpg"
+   ],
+   "kind": "tile",
+   "uses": [
+    "Deck",
+    "Bathroom floor",
+    "Kitchen floor"
+   ],
+   "fit": {
+    "level": "caution",
+    "notes": [
+     "Grip-finish porcelain is made for outdoor floors, but the page publishes no freeze/thaw or slip numbers: ask Edward Martin for both before the deck",
+     "A 12x24 plank means fewer grout lines than the 4x4s, but it is a plain color, so it pairs with a second tile for a checkerboard"
+    ],
+    "checks": [
+     {
+      "rule": "Freeze/thaw",
+      "use": "deck",
+      "level": "caution",
+      "detail": "Freeze/thaw rating not published"
+     },
+     {
+      "rule": "Slip",
+      "use": "deck, floor",
+      "level": "caution",
+      "detail": "no slip rating published"
+     },
+     {
+      "rule": "Finish",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Matte finish"
+     },
+     {
+      "rule": "Care",
+      "use": "deck, floor",
+      "level": "good",
+      "detail": "Non-porous"
+     },
+     {
+      "rule": "Price",
+      "use": null,
+      "level": "good",
+      "detail": "Price published"
+     },
+     {
+      "rule": "Ship time",
+      "use": null,
+      "level": "good",
+      "detail": "Ships in under 4 weeks"
+     },
+     {
+      "rule": "Minimum order",
+      "use": null,
+      "level": "good",
+      "detail": "No meaningful minimum"
+     },
+     {
+      "rule": "Sample",
+      "use": null,
+      "level": "good",
+      "detail": "A sample is sold"
+     }
+    ]
+   },
+   "specs": {
+    "check_uses": [
+     "deck",
+     "floor"
+    ],
+    "freeze_thaw": {
+     "status": "unknown",
+     "source": "Edward Martin lists \"Wall, Floor, Outdoor\" but no freeze/thaw statement"
+    },
+    "slip": null,
+    "finish_class": "matte",
+    "porosity": "non-porous",
+    "rated_for": [
+     "floor",
+     "wall",
+     "outdoor"
+    ],
+    "sample": "sold"
+   }
+  },
+  {
    "id": "D1",
    "room": "Bathroom",
    "name": "Avanti Checkerboard, Verde Green + Crema Marfil",
