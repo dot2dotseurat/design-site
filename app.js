@@ -15,7 +15,16 @@
   let active = 'All';
   let sort = 'lead';
   let showPoor = false;
-  const isPoor = i => !!(i.fit && i.fit.level === 'poor');
+  const isHidden = i => i.hidden === true;
+  const isPoor = i => !!(i.fit && i.fit.level === 'poor') || isHidden(i);
+  // The Hide button only exists when scripts/serve.py is running, because hiding writes into data.json.
+  const canEdit = await fetch('api/ping').then(r => r.ok).catch(() => false);
+  const setHidden = async (id, hidden) => {
+    const r = await fetch('api/hide', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id, hidden }) });
+    if (!r.ok) { alert('Could not save to data.json'); return; }
+    byId[id].hidden = hidden || undefined;
+    render();
+  };
   const visible = () => items.filter(i => showPoor || !isPoor(i));
 
   const lum = h => { const [r, g, b] = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
@@ -65,8 +74,9 @@
         <img src="${a}" alt="${esc(it.name)}" loading="lazy">
         ${b ? `<img class="alt" src="${b}" alt="" loading="lazy"><span class="hint">${it.id === 'D6' ? 'Hover: second color' : it.kind === 'wallcovering' ? 'Hover: in a room' : 'Hover: installed'}</span>` : ''}
         ${tag}
-        ${isPoor(it) ? `<span class="tag tag--poor">${esc(it.fit.tag || 'Poor fit')}</span>` : ''}
+        ${isPoor(it) ? `<span class="tag tag--poor">${esc(isHidden(it) ? 'Hidden' : (it.fit && it.fit.tag) || 'Poor fit')}</span>` : ''}
       </button>
+      ${canEdit ? `<button class="xout${isHidden(it) ? ' on' : ''}" type="button" data-hide="${it.id}" aria-label="${isHidden(it) ? 'Unhide' : 'Hide'} ${esc(it.name)}">${isHidden(it) ? 'Unhide' : 'Hide'}</button>` : ''}
       <div class="card__body">
         <p class="vendor">${esc(it.vendor)}</p>
         <h3>${esc(it.name)}</h3>
@@ -158,6 +168,10 @@
     navigator.clipboard?.writeText(sw.dataset.hex); sw.classList.add('copied'); setTimeout(() => sw.classList.remove('copied'), 900);
   });
   const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  document.getElementById('rooms').addEventListener('click', e => {
+    const h = e.target.closest('[data-hide]'); if (!h) return;
+    setHidden(h.dataset.hide, !isHidden(byId[h.dataset.hide]));
+  });
   document.getElementById('rooms').addEventListener('click', e => {
     const m = e.target.closest('.card__media'); if (!m) return;
     const it = items.find(i => i.id === m.dataset.id);

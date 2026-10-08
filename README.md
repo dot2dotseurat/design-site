@@ -6,7 +6,7 @@ Materials mood board for the renovation. Static site: `index.html` + `app.js` re
 - `img/` — product and install photos from each vendor's product page (resized).
 - Prices, stock and ship times were checked on the date in `data.json` (`checked`). Confirm before ordering.
 
-Run locally: `python3 -m http.server` and open http://localhost:8000.
+Run locally: `python3 scripts/serve.py` and open http://localhost:8000. This adds a Hide / Unhide button to each card that saves `hidden: true` into `data.json`; hidden items stay out of the board unless "Show hidden and poor fits" is ticked. A plain `python3 -m http.server`, or the published site, shows no Hide buttons.
 
 Pages: Materials (`index.html`), Budget (`budget.html`: square footage in, boxes and cost out, with saved scenarios and a CSV download), Palettes (`palettes.html`).
 

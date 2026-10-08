@@ -54,7 +54,7 @@
   function materialOptions(selected) {
     const rooms = [...new Set(items.map(i => i.room))];
     return '<option value="">Choose a material…</option>' + rooms.map(r => {
-      const list = items.filter(i => i.room === r && (showPoor || !isPoor(i) || i.id === selected));
+      const list = items.filter(i => i.room === r && (showPoor || !(isPoor(i) || i.hidden) || i.id === selected));
       return list.length ? `<optgroup label="${esc(r)}">${list.map(i => `<option value="${i.id}"${i.id === selected ? ' selected' : ''}>${esc(i.id)} · ${esc(i.name)} (${money2(i.price_sqft)}/${i.kind === 'liner' ? 'lf' : 'sf'})</option>`).join('')}</optgroup>` : '';
     }).join('');
   }
