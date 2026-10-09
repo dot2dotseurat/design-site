@@ -17,6 +17,7 @@
 
   function planHTML(r) {
     const pl = RC.planStyle(rooms.unit, r, 380, 0.3), full = rooms.unit.plans[r.plan];
+    if (!r.box) return '<p class="room__hint">This room is not on the plan yet. Once you choose where it goes, its place can be marked here.</p>';
     if (!pl) return '<p class="room__hint">The floor plan images stay on the machine that has the offering plan. They are not in the repository.</p>';
     const fb = r.box, fz = 300 / full.w;
     return `<div class="rooms__crop room__crop" style="${pl.css}"><span class="rooms__hl" style="left:${pl.box.l}%;top:${pl.box.t}%;width:${pl.box.w}%;height:${pl.box.h}%"></span></div>
@@ -38,7 +39,7 @@
       <p class="lede">${esc(r.note || '')}</p>
       <div class="room__top"><section class="room__card"><h2>Floor plan</h2>${planHTML(r)}</section>
       <section class="room__card"><h2>Size</h2><label class="lay__lbl">Where these sizes come from</label><select id="sizeSource">${rooms.sizeSources.map(x => `<option value="${x.id}"${x.id === r.sizeSource ? ' selected' : ''}>${esc(x.label)}</option>`).join('')}</select>
-        ${r.sizeSource === 'offering' ? '<p class="room__warn">These are read by eye from the offering plan, not the official plans. Quantities below are estimates: don\'t order from them yet.</p>' : ''}
+        ${r.sizeSource === 'offering' ? '<p class="room__warn">These are read by eye from the existing plan in the offering plan, not from official plans. Quantities below are estimates: don\'t order from them yet.</p>' : r.sizeSource === 'placeholder' ? '<p class="room__warn">This room has not been designed yet, so the size is a placeholder. Quantities below are only a rough starting point.</p>' : ''}
         <p class="room__hint">Change the sizes once you have better ones; they set the starting quantities below.</p>
         <div class="lay__row"><label>Width (in)<span><input id="dW" type="number" step="0.5" value="${r.dims.w}"></span></label><label>Depth (in)<span><input id="dD" type="number" step="0.5" value="${r.dims.d}"></span></label></div>
         ${r.h ? `<div class="lay__row"><label>Ceiling (in)<span><input id="dH" type="number" step="0.5" value="${r.dims.h}"></span></label><label>Floor area<span><input value="${area} sq ft" disabled></span></label></div>` : ''}
@@ -100,7 +101,7 @@
     const sg = t.closest('[data-suggest]'); if (sg) { (mine().reqs = mine().reqs || []).push({ id: RC.uid(), text: sg.dataset.suggest, done: false }); persist(); render(); return; }
     if (t.closest('#toBudget')) {
       const r = room();
-      const out = r.materials.filter(l => byId[l.item] && parseFloat(l.qty) > 0).map(l => ({ area: r.name, item: l.item, qty: l.qty, over: l.over, orderer: 'TBD', note: l.surface + (r.sizeSource === 'offering' ? ' (size is an estimate from the offering plan)' : '') }));
+      const out = r.materials.filter(l => byId[l.item] && parseFloat(l.qty) > 0).map(l => ({ area: r.name, item: l.item, qty: l.qty, over: l.over, orderer: 'TBD', note: l.surface + (r.sizeSource === 'offering' ? ' (size is an estimate from the existing plan)' : r.sizeSource === 'placeholder' ? ' (size is a placeholder)' : '') }));
       location.href = 'budget.html?lines=' + encodeURIComponent(btoa(unescape(encodeURIComponent(JSON.stringify(out)))));
     }
   });

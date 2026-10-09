@@ -402,7 +402,7 @@
   document.addEventListener('submit', e => { if (e.target.id === 'reqForm') { e.preventDefault(); const v = $('reqText').value.trim(); if (v) { P.reqs.push({ id: uid(), text: v, done: false }); redraw(); } } });
   if (ROOMDEF) { const a = document.createElement('a'); a.className = 'btn'; a.href = 'room.html?room=' + ROOM; a.textContent = '← ' + ROOMDEF.name; $('projName').parentNode.insertBefore(a, $('projName'));
     let src = 'offering'; try { src = ((JSON.parse(localStorage.getItem('reno.rooms')) || {})[ROOM] || {}).sizeSource || 'offering'; } catch (e) {}
-    if (src === 'offering') { const b = document.createElement('span'); b.className = 'lay__msg'; b.textContent = 'Room sizes are estimates from the offering plan'; $('projName').after(b); } }
+    if (src === 'offering') { const b = document.createElement('span'); b.className = 'lay__msg'; b.textContent = 'Room sizes are estimates from the existing plan'; $('projName').after(b); } }
   $('projName').value = P.name; $('projName').onchange = () => { P.name = $('projName').value; save(); };
 
   // ---------- dragging on the canvas ----------

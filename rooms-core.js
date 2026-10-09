@@ -8,7 +8,7 @@ window.RoomsCore = (function () {
   // a room from rooms.json with this browser's edits laid over it
   function merge(state, r) {
     const u = state[r.id] || {};
-    return { ...r, dims: { w: u.dims?.w ?? r.w, d: u.dims?.d ?? r.d, h: u.dims?.h ?? r.h }, materials: u.materials || [], reqs: u.reqs || [], neededBy: u.neededBy || '', notes: u.notes || '', sizeSource: u.sizeSource || 'offering' };
+    return { ...r, dims: { w: u.dims?.w ?? r.w, d: u.dims?.d ?? r.d, h: u.dims?.h ?? r.h }, materials: u.materials || [], reqs: u.reqs || [], neededBy: u.neededBy || '', notes: u.notes || '', sizeSource: u.sizeSource || r.defaultSource || 'offering' };
   }
   const frac = n => { const w = Math.floor(n + 1e-9), r = n - w; const f = [[0, ''], [.25, '1/4'], [.5, '1/2'], [.75, '3/4']].find(([v]) => Math.abs(r - v) < .13); return f ? `${w}${f[1] ? ' ' + f[1] : ''}` : n.toFixed(1); };
   const ftin = inches => `${Math.floor(inches / 12)}'-${frac(inches % 12)}"`;
@@ -42,7 +42,7 @@ window.RoomsCore = (function () {
   }
   // a CSS background that shows just this room from the floor plan image, with a little margin
   function planStyle(unit, r, width, pad) {
-    const p = unit.plans[r.plan]; if (!p) return null;
+    const p = unit.plans[r.plan]; if (!p || !r.box) return null;
     const [x, y, bw, bh] = r.box, px = (pad ?? 0.2) * Math.max(bw, bh);
     const cx = Math.max(0, x - px), cy = Math.max(0, y - px), cw = Math.min(p.w - cx, bw + 2 * px), ch = Math.min(p.h - cy, bh + 2 * px);
     const k = width / cw;

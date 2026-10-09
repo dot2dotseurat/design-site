@@ -1,20 +1,20 @@
 {
   "unit": {
     "name": "Unit 1",
-    "summary": "Cellar and first floor, with a rear deck and yard. One bedroom, one full bath, one half bath, and cellar rooms the plan marks as accessory use.",
-    "source": "Sizes are read by eye from the floor plans in the sponsor's offering plan, which are not the official plans, and the offering plan says all dimensions are approximate. Treat every size as an estimate until you have the official plans or have measured on site.",
+    "summary": "Cellar and first floor, with a rear deck and yard. One bedroom, one full bath, one half bath in the cellar, and cellar rooms the plan marks as accessory use. A new half bath is planned upstairs.",
+    "source": "Sizes are read by eye from the existing cellar and first-floor plans in the sponsor's offering plan (pages 246 and 247, scale 1/8\"=1'-0\"). They are not the proposed or official plans, and the plan says all dimensions are approximate. Treat every size as an estimate until you have official plans or have measured on site.",
     "plans": {
       "first": {
         "image": "img/plan/unit1-first.jpg",
-        "w": 850,
-        "h": 2000,
-        "title": "First floor, deck and rear yard"
+        "w": 660,
+        "h": 2400,
+        "title": "Existing first floor, deck and rear yard"
       },
       "cellar": {
         "image": "img/plan/unit1-cellar.jpg",
-        "w": 1100,
-        "h": 1492,
-        "title": "Cellar"
+        "w": 800,
+        "h": 1700,
+        "title": "Existing cellar"
       }
     }
   },
@@ -68,10 +68,10 @@
       "h": 105,
       "plan": "first",
       "box": [
-        295,
-        815,
-        145,
-        230
+        98,
+        982,
+        184,
+        266
       ],
       "note": "Counters run along the left wall with an island and sink.",
       "surfaces": [
@@ -106,10 +106,10 @@
       "h": 105,
       "plan": "first",
       "box": [
-        440,
-        815,
-        170,
-        265
+        282,
+        984,
+        212,
+        312
       ],
       "note": "Next to the kitchen and the doors to the deck. Plan notes 8'-9\" ceiling.",
       "surfaces": [
@@ -138,10 +138,10 @@
       "h": 105,
       "plan": "first",
       "box": [
-        395,
-        1085,
-        215,
-        170
+        228,
+        1308,
+        266,
+        228
       ],
       "note": "Open to the dining area. Plan notes 8'-9\" ceiling.",
       "surfaces": [
@@ -170,10 +170,10 @@
       "h": 105,
       "plan": "first",
       "box": [
-        505,
-        1260,
-        105,
-        230
+        360,
+        1550,
+        134,
+        286
       ],
       "note": "Full bath: vanity at the rear end, a shower stall, then the toilet by the door. The shower walls below are estimated from the drawing.",
       "surfaces": [
@@ -213,6 +213,41 @@
       ]
     },
     {
+      "id": "half-bath",
+      "name": "Half bath (new)",
+      "floor": "First floor",
+      "type": "wet",
+      "w": 60,
+      "d": 60,
+      "h": 105,
+      "plan": "first",
+      "box": null,
+      "new": true,
+      "defaultSource": "placeholder",
+      "note": "A half bath planned for upstairs. Where it goes and how big it is has not been decided, so the size below is a placeholder (5'-0\" by 5'-0\"). Once you choose a spot, set its size here and mark it on the plan.",
+      "surfaces": [
+        "Floor",
+        "Walls",
+        "Accent wall",
+        "Ceiling",
+        "Trim or liner"
+      ],
+      "layout": [
+        {
+          "name": "Half bath floor",
+          "w": 60,
+          "h": 60,
+          "kind": "floor"
+        },
+        {
+          "name": "Half bath vanity wall",
+          "w": 60,
+          "h": 96,
+          "kind": "wall"
+        }
+      ]
+    },
+    {
       "id": "bedroom",
       "name": "Bedroom",
       "floor": "First floor",
@@ -222,10 +257,10 @@
       "h": 105,
       "plan": "first",
       "box": [
-        400,
-        1490,
-        210,
-        300
+        234,
+        1842,
+        254,
+        366
       ],
       "note": "At the front of the house, with a closet.",
       "surfaces": [
@@ -254,10 +289,10 @@
       "h": 0,
       "plan": "first",
       "box": [
-        388,
-        650,
-        244,
-        135
+        216,
+        780,
+        306,
+        180
       ],
       "note": "Concrete deck off the dining room, 14'-1\" by 8'-0\". Limited common element.",
       "surfaces": [
@@ -283,10 +318,10 @@
       "h": 0,
       "plan": "first",
       "box": [
-        283,
-        60,
-        349,
-        590
+        82,
+        46,
+        440,
+        734
       ],
       "note": "About 782 sq ft of pavers on grade with a raised garden and a metal trellis, plus a 47 sq ft areaway. Limited common element.",
       "surfaces": [
@@ -312,10 +347,10 @@
       "h": 84,
       "plan": "cellar",
       "box": [
-        270,
-        170,
-        340,
-        265
+        318,
+        344,
+        276,
+        336
       ],
       "note": "Marked accessory use: no living, cooking or sleeping, and not to be rented. Plan notes 7'-0\" ceiling.",
       "surfaces": [
@@ -344,10 +379,10 @@
       "h": 84,
       "plan": "cellar",
       "box": [
-        360,
-        490,
-        250,
-        185
+        330,
+        692,
+        264,
+        228
       ],
       "note": "Marked accessory use, with a closet. Plan notes 7'-0\" ceiling.",
       "surfaces": [
@@ -376,10 +411,10 @@
       "h": 84,
       "plan": "cellar",
       "box": [
-        275,
-        675,
+        214,
+        896,
         110,
-        125
+        114
       ],
       "note": "Half bath with a toilet and sink.",
       "surfaces": [
@@ -414,10 +449,10 @@
       "h": 84,
       "plan": "cellar",
       "box": [
-        490,
-        715,
-        120,
-        155
+        444,
+        932,
+        150,
+        168
       ],
       "note": "Washer and dryer, with a closet.",
       "surfaces": [
@@ -439,7 +474,7 @@
   "sizeSources": [
     {
       "id": "offering",
-      "label": "Estimate from the offering plan",
+      "label": "Estimate from the existing plan",
       "short": "Estimate"
     },
     {
@@ -451,6 +486,11 @@
       "id": "measured",
       "label": "Measured on site",
       "short": "Measured"
+    },
+    {
+      "id": "placeholder",
+      "label": "Placeholder: not designed yet",
+      "short": "Placeholder"
     }
   ]
 }

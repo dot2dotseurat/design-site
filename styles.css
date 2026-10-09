@@ -399,3 +399,5 @@ svg [data-r],svg [data-c]{cursor:grab}
 .room__warn{background:var(--warn-bg);color:var(--warn);border-radius:var(--r);padding:8px 10px;font-size:13px;margin:8px 0}
 .rooms__src{font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;background:#f6e6d3;color:#8a4a14}
 .rooms__src--official{background:#dfe9e2;color:#1f4a3a}.rooms__src--measured{background:#dfe9e2;color:#1f4a3a}
+.rooms__new{font:600 11px var(--body);letter-spacing:.04em;text-transform:uppercase;background:#c27b5a;color:#fff;border-radius:999px;padding:2px 8px;vertical-align:middle}
+.rooms__src--placeholder{background:#e7e1d5;color:#6c675d}
