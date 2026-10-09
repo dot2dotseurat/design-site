@@ -8,7 +8,10 @@
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const money = n => '$' + Math.round(n).toLocaleString('en-US');
   const uid = () => Math.random().toString(36).slice(2, 8);
-  const STORE = 'reno.layout';
+  const ROOM = new URLSearchParams(location.search).get('room');
+  const roomsData = ROOM ? await fetch('rooms.json').then(r => r.json()).catch(() => null) : null;
+  const ROOMDEF = roomsData && roomsData.rooms.find(r => r.id === ROOM);
+  const STORE = 'reno.layout' + (ROOMDEF ? '.' + ROOM : '');
   const GROUTS = [[0, 'None'], [0.0625, '1/16"'], [0.125, '1/8"'], [0.1875, '3/16"'], [0.25, '1/4"'], [0.375, '3/8"']];
   const GROUT_COLORS = [['#ece6d8', 'Bone'], ['#d7d2c6', 'Light grey'], ['#9c968b', 'Grey'], ['#3b3a37', 'Charcoal'], ['#c98f8f', 'Rose'], ['#ffffff', 'White']];
   const OFFSETS = [[0, 'None (stack)'], [2, '1/2 offset'], [3, '1/3 offset'], [4, '1/4 offset']];
@@ -16,17 +19,34 @@
   const frac = n => { const w = Math.floor(n + 1e-9), r = n - w; const f = [[0, ''], [.125, '1/8'], [.25, '1/4'], [.375, '3/8'], [.5, '1/2'], [.625, '5/8'], [.75, '3/4'], [.875, '7/8']].find(([v]) => Math.abs(r - v) < .02); return f ? `${w || (f[1] ? '' : 0)}${w && f[1] ? ' ' : ''}${f[1]}` : n.toFixed(2); };
 
   // ---------- project ----------
-  function newWall(name, w, h, kind) {
-    return { id: uid(), name, w, h, kind: kind || 'shower', cutouts: [], regions: [{ id: uid(), role: 'field', name: name + ' field', x: 0, y: 0, w, h, item: 'B2', item2: null, mode: 'single', prints: 'alternate', orient: 'h', offset: 0, grout: 0.125, groutColor: '#ece6d8', dx: 0, dy: 0 }] };
+  function newWall(name, w, h, kind, item) {
+    return { id: uid(), name, w, h, kind: kind || 'shower', cutouts: [], regions: [{ id: uid(), role: 'field', name: name + ' field', x: 0, y: 0, w, h, item: item === undefined ? 'B2' : item, item2: null, mode: 'single', prints: 'alternate', orient: 'h', offset: 0, grout: 0.125, groutColor: '#ece6d8', dx: 0, dy: 0 }] };
+  }
+  // a layout opened from a room: walls sized from the room, tiles taken from what was chosen for it
+  function roomProject() {
+    let mine = {}; try { mine = (JSON.parse(localStorage.getItem('reno.rooms')) || {})[ROOM] || {}; } catch (e) {}
+    const chosen = surface => { const l = (mine.materials || []).find(m => m.surface === surface && byId[m.item] && byId[m.item].geom); return l ? l.item : null; };
+    const pick = s => s.kind === 'floor' ? chosen('Floor') : s.kind === 'shower' ? chosen('Shower walls') : /backsplash/i.test(s.name) ? chosen('Backsplash') : chosen('Walls');
+    const dims = mine.dims || {};
+    const walls = ROOMDEF.layout.map(s => newWall(s.name, s.w, s.h, s.kind, pick(s)));
+    const p = { name: ROOMDEF.name, room: ROOM, zoom: 3, neededBy: mine.neededBy || '', walls, reqs: [], sel: null, wallSel: walls[0].id };
+    p.sel = walls[0].regions[0].id; return p;
   }
   function freshProject() {
+    if (ROOMDEF) return roomProject();
     const p = { name: 'Shower', zoom: 3, neededBy: '', walls: [newWall('Left Wall', 36, 96), newWall('Back Wall', 60, 96), newWall('Right Wall', 36, 96)], reqs: [], sel: null, wallSel: null };
     p.wallSel = p.walls[1].id; p.sel = p.walls[1].regions[0].id; return p;
   }
   let P;
   try { P = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
   if (!P || !P.walls || !P.walls.length) P = freshProject();
-  const save = () => { try { localStorage.setItem(STORE, JSON.stringify(P)); } catch (e) {} };
+  const save = () => {
+    try {
+      // totals, so the room page can show what this layout needs
+      P.totals = summary('all').map(b => { const o = LE.order(b.it, b.total, OVER); return { item: b.it.id, name: b.it.name, total: b.total, units: o.units, unitName: unitName(b.it, o.units), cost: o.cost }; });
+      localStorage.setItem(STORE, JSON.stringify(P));
+    } catch (e) {}
+  };
   const wall = () => P.walls.find(w => w.id === P.wallSel) || P.walls[0];
   const allRegions = w => w.regions;
   const findSel = () => { for (const w of P.walls) { const r = w.regions.find(r => r.id === P.sel); if (r) return { w, r, type: 'region' }; const c = w.cutouts.find(c => c.id === P.sel); if (c) return { w, c, type: 'cutout' }; } return null; };
@@ -380,6 +400,7 @@
     if (rs && ['rMode', 'rPrints', 'rOffset', 'rGrout'].includes(id)) { const k = { rMode: 'mode', rPrints: 'prints', rOffset: 'offset', rGrout: 'grout' }[id]; rs.r[k] = ['rOffset', 'rGrout'].includes(id) ? +t.value : t.value; redraw(); return; }
   });
   document.addEventListener('submit', e => { if (e.target.id === 'reqForm') { e.preventDefault(); const v = $('reqText').value.trim(); if (v) { P.reqs.push({ id: uid(), text: v, done: false }); redraw(); } } });
+  if (ROOMDEF) { const a = document.createElement('a'); a.className = 'btn'; a.href = 'room.html?room=' + ROOM; a.textContent = '← ' + ROOMDEF.name; $('projName').parentNode.insertBefore(a, $('projName')); }
   $('projName').value = P.name; $('projName').onchange = () => { P.name = $('projName').value; save(); };
 
   // ---------- dragging on the canvas ----------
