@@ -3,6 +3,7 @@
   const [data, rooms] = await Promise.all([fetch('data.json').then(r => r.json()), fetch('rooms.json').then(r => r.json())]);
   const byId = Object.fromEntries(data.items.map(i => [i.id, i]));
   const state = RC.load();
+  const srcShort = Object.fromEntries(rooms.sizeSources.map(x => [x.id, x.short]));
   $ = id => document.getElementById(id);
   $('unitEyebrow').textContent = rooms.unit.name;
   $('unitLede').textContent = rooms.unit.summary;
@@ -21,7 +22,7 @@
         return `<a class="rooms__card" href="room.html?room=${r.id}">
           <div class="rooms__plan">${pl ? `<div class="rooms__crop" style="${pl.css}"><span class="rooms__hl" style="left:${pl.box.l}%;top:${pl.box.t}%;width:${pl.box.w}%;height:${pl.box.h}%"></span></div>` : '<span>Floor plan not on this machine</span>'}</div>
           <div class="rooms__body"><h3>${esc(r.name)}</h3>
-            <p>${r.h ? `${RC.ftin(r.dims.w)} × ${RC.ftin(r.dims.d)} · ${Math.round(r.dims.w * r.dims.d / 144)} sq ft` : `${RC.ftin(r.dims.w)} × ${RC.ftin(r.dims.d)} · ${Math.round(r.dims.w * r.dims.d / 144)} sq ft`}</p>
+            <p>${RC.ftin(r.dims.w)} × ${RC.ftin(r.dims.d)} · ${Math.round(r.dims.w * r.dims.d / 144)} sq ft · <span class="rooms__src rooms__src--${r.sizeSource}">${esc(srcShort[r.sizeSource])}</span></p>
             <p class="rooms__stat">${n ? `${n} material${n === 1 ? '' : 's'} · <strong>${money(cost)}</strong>` : 'Nothing chosen yet'}${lay ? ` · layout started` : ''}</p>
             <div class="rooms__thumbs">${r.materials.filter(l => byId[l.item]).slice(0, 5).map(l => `<img src="${esc(byId[l.item].local[0])}" alt="" title="${esc(l.surface)}: ${esc(byId[l.item].name)}">`).join('')}</div>
           </div></a>`; }).join('')}</div></div></section>`;

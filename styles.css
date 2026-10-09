@@ -395,3 +395,7 @@ svg [data-r],svg [data-c]{cursor:grab}
 .room__card .lay__req{border:1px solid var(--line);border-radius:var(--r);background:#fff;padding:10px;margin-top:10px}
 .room__card .lay__reqform{margin-top:8px}.room__card .lay__chips{margin-top:8px}
 @media (max-width:900px){.room__top{grid-template-columns:1fr}.room__line{grid-template-columns:1fr 1fr}}
+
+.room__warn{background:var(--warn-bg);color:var(--warn);border-radius:var(--r);padding:8px 10px;font-size:13px;margin:8px 0}
+.rooms__src{font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;background:#f6e6d3;color:#8a4a14}
+.rooms__src--official{background:#dfe9e2;color:#1f4a3a}.rooms__src--measured{background:#dfe9e2;color:#1f4a3a}
