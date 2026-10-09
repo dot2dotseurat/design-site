@@ -160,6 +160,19 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#a9a591",
+    "colors": [
+     "#3c3b32",
+     "#afab9a"
+    ]
+   },
+   "geom": {
+    "w": 16,
+    "h": 16,
+    "shape": "rect",
+    "per_unit": 2
    }
   },
   {
@@ -323,6 +336,15 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#505b67"
+   },
+   "geom": {
+    "w": 24,
+    "h": 48,
+    "shape": "rect",
+    "per_unit": 2
    }
   },
   {
@@ -486,6 +508,19 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#ebeeec",
+    "colors": [
+     "#adbda7",
+     "#eff2f1"
+    ]
+   },
+   "geom": {
+    "w": 17,
+    "h": 17,
+    "shape": "rect",
+    "paired": true
    }
   },
   {
@@ -650,6 +685,19 @@
      "wall"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#5a6a63",
+    "colors": [
+     "#4c5b57",
+     "#e3e6e5"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "paired": true
    }
   },
   {
@@ -854,6 +902,20 @@
     "care_flags": [
      "4x4 tiles mean lots of grout outdoors: seal it or it darkens with dirt"
     ]
+   },
+   "art": {
+    "color": "#b2b295",
+    "colors": [
+     "#b2b295",
+     "#c0716e"
+    ]
+   },
+   "geom": {
+    "w": 4,
+    "h": 4,
+    "shape": "rect",
+    "per_unit": 110,
+    "paired": true
    }
   },
   {
@@ -966,6 +1028,15 @@
      "outdoor"
     ],
     "sample": "unknown"
+   },
+   "art": {
+    "color": "#bb7c4f"
+   },
+   "geom": {
+    "w": 9,
+    "h": 9,
+    "shape": "rect",
+    "per_unit": 32
    }
   },
   {
@@ -1083,6 +1154,20 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#efefef",
+    "colors": [
+     "#ccd0d3",
+     "#ededed"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "per_unit": 1,
+    "paired": true
    }
   },
   {
@@ -1200,6 +1285,20 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#987e70",
+    "colors": [
+     "#6d3f2f",
+     "#ededed"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "per_unit": 1,
+    "paired": true
    }
   },
   {
@@ -1315,6 +1414,20 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#e5d8bf",
+    "colors": [
+     "#36423b",
+     "#eadec6"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "per_unit": 28,
+    "paired": true
    }
   },
   {
@@ -1425,6 +1538,15 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#979580"
+   },
+   "geom": {
+    "w": 12,
+    "h": 24,
+    "shape": "rect",
+    "per_unit": 8
    }
   },
   {
@@ -1535,6 +1657,20 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#cecabf",
+    "colors": [
+     "#71777a",
+     "#cdc9be"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "per_unit": 26,
+    "paired": true
    }
   },
   {
@@ -1655,6 +1791,19 @@
     "care_flags": [
      "Wood: IKEA says to re-glaze it once or twice a year"
     ]
+   },
+   "art": {
+    "color": "#7f5b36",
+    "colors": [
+     "#352c1d",
+     "#90693f"
+    ]
+   },
+   "geom": {
+    "w": 11.75,
+    "h": 11.75,
+    "shape": "rect",
+    "per_unit": 9
    }
   },
   {
@@ -1839,6 +1988,19 @@
     "care_flags": [
      "Low stock"
     ]
+   },
+   "art": {
+    "color": "#344142",
+    "colors": [
+     "#333f3f",
+     "#cec0af"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "paired": true
    }
   },
   {
@@ -2029,6 +2191,15 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#42668d"
+   },
+   "geom": {
+    "w": 4,
+    "h": 4,
+    "shape": "rect",
+    "per_unit": 110
    }
   },
   {
@@ -2218,6 +2389,15 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#c0716e"
+   },
+   "geom": {
+    "w": 4,
+    "h": 4,
+    "shape": "rect",
+    "per_unit": 110
    }
   },
   {
@@ -2402,7 +2582,12 @@
      "wall"
     ],
     "sample": "sold"
-   }
+   },
+   "art": {
+    "color": "#39403c"
+   },
+   "geom": null,
+   "geom_note": "Mixed-size pattern (2x6 + 6x12): not supported in the layout tool yet"
   },
   {
    "id": "B4",
@@ -2600,6 +2785,14 @@
      "wall"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#d1cdc8"
+   },
+   "geom": {
+    "w": 2,
+    "h": 8,
+    "shape": "rect"
    }
   },
   {
@@ -2755,6 +2948,35 @@
      "wall"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#2f2f2f",
+    "image": "img/B5_0.jpg",
+    "crops": [
+     [
+      0.049166666666666664,
+      0.28583333333333333,
+      0.43166666666666664,
+      0.43166666666666664
+     ],
+     [
+      0.5166666666666667,
+      0.2833333333333333,
+      0.43416666666666665,
+      0.43416666666666665
+     ]
+    ],
+    "colors": [
+     "#2f2f2f",
+     "#e9e1cf"
+    ]
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 12,
+    "variants": 2
    }
   },
   {
@@ -2942,6 +3164,18 @@
      "wall"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#f4f4f1",
+    "colors": [
+     "#a7805f",
+     "#f3ede7"
+    ]
+   },
+   "geom": {
+    "w": 16,
+    "h": 16,
+    "shape": "rect"
    }
   },
   {
@@ -3099,6 +3333,19 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#ccc0b0",
+    "colors": [
+     "#9a9a95",
+     "#cabeae"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "paired": true
    }
   },
   {
@@ -3263,6 +3510,15 @@
      "wall"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#e6c798"
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "per_unit": 10
    }
   },
   {
@@ -3424,6 +3680,19 @@
      "wall"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#917b8a",
+    "colors": [
+     "#4d4a4f",
+     "#ead7c7"
+    ]
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 13
    }
   },
   {
@@ -3586,6 +3855,15 @@
      "wall"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#d0ab7c"
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 13
    }
   },
   {
@@ -3745,6 +4023,19 @@
      "Handmade zellige installs take 2\u20133\u00d7 longer, so expect higher labor cost",
      "Uneven glaze chips and gets slippery on floors, so walls only"
     ]
+   },
+   "art": {
+    "color": "#f2ede8",
+    "colors": [
+     "#5a5946",
+     "#f0ebe7"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "sheet",
+    "per_unit": 1
    }
   },
   {
@@ -3926,6 +4217,15 @@
      "Handmade zellige installs take 2\u20133\u00d7 longer, so expect higher labor cost",
      "Uneven glaze chips and gets slippery on floors, so walls only"
     ]
+   },
+   "art": {
+    "color": "#928199"
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "sheet",
+    "per_unit": 25
    }
   },
   {
@@ -4043,6 +4343,15 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#e2d6cd"
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 1
    }
   },
   {
@@ -4160,6 +4469,19 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#a17e6d",
+    "colors": [
+     "#8a7260",
+     "#d0bead"
+    ]
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 1
    }
   },
   {
@@ -4278,6 +4600,19 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#466e7e",
+    "colors": [
+     "#3a6272",
+     "#e3dacf"
+    ]
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 1
    }
   },
   {
@@ -4384,6 +4719,19 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#305748",
+    "colors": [
+     "#25483c",
+     "#ebe7df"
+    ]
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "per_unit": 1
    }
   },
   {
@@ -4496,6 +4844,19 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#867c73",
+    "colors": [
+     "#736a61",
+     "#d0c8bf"
+    ]
+   },
+   "geom": {
+    "w": 3.8,
+    "h": 3.8,
+    "shape": "rect",
+    "per_unit": 110
    }
   },
   {
@@ -4609,7 +4970,16 @@
      "shower"
     ],
     "sample": "sold"
-   }
+   },
+   "art": {
+    "color": "#a26965",
+    "colors": [
+     "#905b57",
+     "#cfa0a2"
+    ]
+   },
+   "geom": null,
+   "geom_note": "Arch-shaped set: the vendor does not state a tile size"
   },
   {
    "id": "B25",
@@ -4722,6 +5092,15 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#819ea8"
+   },
+   "geom": {
+    "w": 8,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 12
    }
   },
   {
@@ -4825,6 +5204,15 @@
     "care_flags": [
      "Unglazed cement: Zia says sealing is required, and it patinas over time"
     ]
+   },
+   "art": {
+    "color": "#375feb"
+   },
+   "geom": {
+    "w": 2,
+    "h": 8,
+    "shape": "rect",
+    "per_unit": 48
    }
   },
   {
@@ -4939,6 +5327,15 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#81906e"
+   },
+   "geom": {
+    "w": 12,
+    "h": 12,
+    "shape": "rect",
+    "per_unit": 10
    }
   },
   {
@@ -5050,6 +5447,15 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#c2dee1"
+   },
+   "geom": {
+    "w": 3.8,
+    "h": 3.8,
+    "shape": "rect",
+    "per_unit": 110
    }
   },
   {
@@ -5140,6 +5546,15 @@
      "shower"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#707f5d"
+   },
+   "geom": {
+    "w": 3.8,
+    "h": 3.8,
+    "shape": "rect",
+    "per_unit": 110
    }
   },
   {
@@ -5309,6 +5724,18 @@
      "outdoor"
     ],
     "sample": "sold"
+   },
+   "art": {
+    "color": "#cfaa88",
+    "colors": [
+     "#2d4776",
+     "#cfb6a0"
+    ]
+   },
+   "geom": {
+    "w": 6,
+    "h": 6,
+    "shape": "rect"
    }
   },
   {
@@ -5422,6 +5849,15 @@
     "care_flags": [
      "Marble pencil: seal it in the shower, and it can chip at kid height"
     ]
+   },
+   "art": {
+    "color": "#c9c1b1"
+   },
+   "geom": {
+    "w": 12,
+    "h": 1,
+    "shape": "liner",
+    "per_unit": 1
    }
   },
   {
@@ -5545,6 +5981,15 @@
      "wall"
     ],
     "sample": "unknown"
+   },
+   "art": {
+    "color": "#93997e"
+   },
+   "geom": {
+    "w": 8,
+    "h": 1,
+    "shape": "liner",
+    "per_unit": 1
    }
   },
   {
@@ -5654,6 +6099,15 @@
     "care_flags": [
      "Polished marble: seal it in wet areas; edges can chip"
     ]
+   },
+   "art": {
+    "color": "#dccfbb"
+   },
+   "geom": {
+    "w": 12,
+    "h": 1,
+    "shape": "liner",
+    "per_unit": 1
    }
   },
   {
@@ -5757,6 +6211,19 @@
      "wall"
     ],
     "sample": "unknown"
+   },
+   "art": {
+    "color": "#e7e7e5",
+    "colors": [
+     "#443b30",
+     "#eaeae8"
+    ]
+   },
+   "geom": {
+    "w": 5,
+    "h": 0.5,
+    "shape": "liner",
+    "per_unit": 1
    }
   },
   {
@@ -5878,6 +6345,15 @@
      "wall"
     ],
     "sample": "unknown"
+   },
+   "art": {
+    "color": "#e3cabf"
+   },
+   "geom": {
+    "w": 7.87,
+    "h": 0.47,
+    "shape": "liner",
+    "per_unit": 10
    }
   },
   {
@@ -5981,6 +6457,15 @@
      "wall"
     ],
     "sample": "unknown"
+   },
+   "art": {
+    "color": "#3d3d3d"
+   },
+   "geom": {
+    "w": 12,
+    "h": 1,
+    "shape": "liner",
+    "per_unit": 1
    }
   },
   {

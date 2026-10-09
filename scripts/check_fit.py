@@ -21,8 +21,28 @@ def rank(*levels):
     return max(levels, key=lambda l: ORDER[l]) if levels else 'good'
 
 
-def validate(item):
+def validate_geom(item):
+    """Layout-tool geometry: see REQUIREMENTS.md, "Geometry for the layout tool"."""
+    if item['kind'] == 'wallcovering':
+        return []
     errs = []
+    if 'geom' not in item:
+        return [f"{item['id']}: missing geom (use null plus geom_note if it cannot be laid out)"]
+    g = item['geom']
+    if g is None:
+        return [] if item.get('geom_note') else [f"{item['id']}: geom is null but geom_note is missing"]
+    for k in ('w', 'h'):
+        if not isinstance(g.get(k), (int, float)) or g[k] <= 0: errs.append(f"{item['id']}: geom.{k} must be a positive number")
+    if g.get('shape') not in ('rect', 'sheet', 'liner'): errs.append(f"{item['id']}: geom.shape must be rect, sheet or liner")
+    if 'per_unit' in g and (not isinstance(g['per_unit'], (int, float)) or g['per_unit'] <= 0): errs.append(f"{item['id']}: geom.per_unit must be positive")
+    if g.get('paired') and len((item.get('art') or {}).get('colors', [])) != 2: errs.append(f"{item['id']}: paired tiles need art.colors with two colors")
+    if item['kind'] == 'liner' and g.get('shape') != 'liner': errs.append(f"{item['id']}: a liner needs geom.shape = liner")
+    if not (item.get('art') or {}).get('color'): errs.append(f"{item['id']}: missing art.color")
+    return errs
+
+
+def validate(item):
+    errs = validate_geom(item)
     s = item.get('specs')
     if not s:
         return [f"{item['id']}: missing specs"]

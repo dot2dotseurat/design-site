@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Layout · Materials Mood Board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='13' height='13' fill='%232f5d4e'/%3E%3Crect x='17' y='17' width='13' height='13' fill='%232f5d4e'/%3E%3Crect x='17' y='2' width='13' height='13' fill='none' stroke='%232f5d4e' stroke-width='2'/%3E%3Crect x='2' y='17' width='13' height='13' fill='none' stroke='%232f5d4e' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=gambetta@400,500,600&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="lay">
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="index.html" aria-label="Materials mood board">
+      <svg viewBox="0 0 40 40" width="34" height="34" fill="none" aria-hidden="true"><rect x="3" y="3" width="16" height="16" fill="currentColor"/><rect x="21" y="21" width="16" height="16" fill="currentColor"/><rect x="22" y="4" width="14" height="14" stroke="currentColor" stroke-width="2"/><rect x="4" y="22" width="14" height="14" stroke="currentColor" stroke-width="2"/></svg>
+      <span>Reno <em>materials</em></span>
+    </a>
+    <div class="masthead__nav">
+      <nav class="pages" aria-label="Pages"><a href="index.html">Materials</a><a href="layout.html" aria-current="page">Layout</a><a href="budget.html">Budget</a><a href="palettes.html">Palettes</a></nav>
+    </div>
+  </div>
+</header>
+
+<div class="lay__bar">
+  <input class="lay__name" id="projName" aria-label="Project name" value="Shower">
+  <span class="lay__zoom"><button class="btn" id="zoomOut" type="button" aria-label="Zoom out">−</button><span id="zoomLbl"></span><button class="btn" id="zoomIn" type="button" aria-label="Zoom in">+</button><button class="btn" id="zoomFit" type="button">Fit</button></span>
+  <span class="lay__tools" id="tools"></span>
+  <span class="lay__spacer"></span>
+  <button class="btn" id="openBtn" type="button">Open project</button>
+  <button class="btn" id="saveBtn" type="button">Download project</button>
+  <button class="btn btn--quiet" id="resetBtn" type="button">Reset</button>
+  <button class="btn btn--primary" id="budgetBtn" type="button">Add to budget</button>
+  <button class="btn btn--primary" id="pdfBtn" type="button">Export PDF</button>
+  <input type="file" id="openFile" accept="application/json" hidden>
+</div>
+
+<main class="lay__main">
+  <aside class="lay__left" id="left" aria-label="Tile and wall settings"></aside>
+  <section class="lay__canvas" id="canvas" aria-label="Wall layout"><svg id="svg" xmlns="http://www.w3.org/2000/svg"></svg></section>
+  <aside class="lay__right" id="right" aria-label="Summary and requirements"></aside>
+</main>
+
+<div class="lightbox lay__picker" id="picker" hidden>
+  <div class="lay__pickbox" role="dialog" aria-label="Choose a tile">
+    <div class="lay__pickhead"><input type="search" id="pickSearch" placeholder="Search the board" aria-label="Search tiles"><span id="pickKinds"></span><label class="poor"><input type="checkbox" id="pickPoor"><span>Include hidden and poor fits</span></label><button class="btn" id="pickClose" type="button">Close</button></div>
+    <div class="lay__pickgrid" id="pickGrid"></div>
+  </div>
+</div>
+<script src="layout-engine.js"></script>
+<script src="layout.js"></script>
+</body>
+</html>

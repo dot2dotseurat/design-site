@@ -230,6 +230,18 @@
 
   document.body.insertAdjacentHTML('beforeend', `<datalist id="areas">${AREAS.map(a => `<option value="${a}">`).join('')}</datalist>`);
 
+  // Lines sent from the Layout page: ?lines=<base64 json>
+  const sent = new URLSearchParams(location.search).get('lines');
+  if (sent && canEdit && cur()) {
+    try {
+      const incoming = JSON.parse(decodeURIComponent(escape(atob(sent))));
+      const s = cur();
+      incoming.forEach(l => { if (byId[l.item]) s.lines.push({ id: uid(), area: l.area || '', item: l.item, qty: String(l.qty || ''), over: String(l.over ?? defaultOver(byId[l.item])), orderer: l.orderer || 'TBD', note: l.note || '' }); });
+      persist(s);
+    } catch (e) { notice = 'Could not read the lines sent from the layout.'; }
+    history.replaceState(null, '', 'budget.html');
+  }
+
   // "Add to budget" from a card on the Materials page
   const add = new URLSearchParams(location.search).get('add');
   if (add && byId[add] && canEdit && cur()) { addLine(add); history.replaceState(null, '', 'budget.html'); }
